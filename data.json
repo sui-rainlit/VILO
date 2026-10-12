@@ -1405,5 +1405,270 @@
     }
    }
   }
+ },
+ "coord": {
+  "series": [
+   {
+    "id": "s1",
+    "name": "아이카츠!",
+    "mode": "parts",
+    "ratio": "180/262",
+    "catLabel": "브랜드",
+    "cats": [
+     {
+      "id": "s1b1",
+      "name": "Angely Sugar"
+     },
+     {
+      "id": "s1b6",
+      "name": "Aurora Fantasy"
+     },
+     {
+      "id": "s1b13",
+      "name": "Dreamy Crown"
+     },
+     {
+      "id": "s1b2",
+      "name": "FUTURING GIRL"
+     },
+     {
+      "id": "s1b5",
+      "name": "LoLi GoThiC"
+     },
+     {
+      "id": "s1b9",
+      "name": "Swing ROCK"
+     },
+     {
+      "id": "s1b16",
+      "name": "Dance Fusion"
+     },
+     {
+      "id": "s1b3",
+      "name": "SPICY AGEHA"
+     },
+     {
+      "id": "s1b7",
+      "name": "LOVE QUEEN"
+     },
+     {
+      "id": "s1b11",
+      "name": "LOVE MOONRISE"
+     },
+     {
+      "id": "s1b10",
+      "name": "Bohemian Sky"
+     },
+     {
+      "id": "s1b14",
+      "name": "Sangria Rosa"
+     },
+     {
+      "id": "s1b15",
+      "name": "桜色花伝"
+     },
+     {
+      "id": "s1b18",
+      "name": "Dolly devil"
+     },
+     {
+      "id": "s1b4",
+      "name": "HAPPY RAINBOW"
+     },
+     {
+      "id": "s1b8",
+      "name": "MAGICAL TOY"
+     },
+     {
+      "id": "s1b12",
+      "name": "ViVid Kiss"
+     },
+     {
+      "id": "s1b17",
+      "name": "Retro Clover"
+     },
+     {
+      "id": "s1b19",
+      "name": "Mecha Panic"
+     }
+    ],
+    "rarities": [
+     {
+      "id": "s1r1",
+      "name": "N"
+     },
+     {
+      "id": "s1r2",
+      "name": "R"
+     },
+     {
+      "id": "s1r3",
+      "name": "CP"
+     },
+     {
+      "id": "s1r4",
+      "name": "PR"
+     },
+     {
+      "id": "s1r5",
+      "name": "SPR"
+     },
+     {
+      "id": "s1r6",
+      "name": "LPR"
+     }
+    ],
+    "items": []
+   },
+   {
+    "id": "s2",
+    "name": "아이카츠 스타즈!",
+    "mode": "parts",
+    "ratio": "180/262",
+    "catLabel": "브랜드",
+    "cats": [],
+    "rarities": [
+     {
+      "id": "s2r1",
+      "name": "N"
+     },
+     {
+      "id": "s2r2",
+      "name": "R"
+     },
+     {
+      "id": "s2r3",
+      "name": "CP"
+     },
+     {
+      "id": "s2r4",
+      "name": "PR"
+     },
+     {
+      "id": "s2r5",
+      "name": "SPR"
+     },
+     {
+      "id": "s2r6",
+      "name": "LPR"
+     }
+    ],
+    "items": []
+   },
+   {
+    "id": "s3",
+    "name": "아이카츠 프렌즈!",
+    "mode": "parts",
+    "ratio": "180/262",
+    "catLabel": "브랜드",
+    "cats": [],
+    "rarities": [
+     {
+      "id": "s3r1",
+      "name": "N"
+     },
+     {
+      "id": "s3r2",
+      "name": "R"
+     },
+     {
+      "id": "s3r3",
+      "name": "CP"
+     },
+     {
+      "id": "s3r4",
+      "name": "PR"
+     },
+     {
+      "id": "s3r5",
+      "name": "JLR"
+     },
+     {
+      "id": "s3r6",
+      "name": "LPR"
+     }
+    ],
+    "items": []
+   },
+   {
+    "id": "s4",
+    "name": "아이카츠 플래닛!",
+    "mode": "single",
+    "ratio": "1/1",
+    "catLabel": "브랜드",
+    "cats": [],
+    "rarities": [
+     {
+      "id": "s4r1",
+      "name": "N"
+     },
+     {
+      "id": "s4r2",
+      "name": "R"
+     },
+     {
+      "id": "s4r3",
+      "name": "CP"
+     },
+     {
+      "id": "s4r4",
+      "name": "PR"
+     }
+    ],
+    "items": []
+   },
+   {
+    "id": "s5",
+    "name": "VILO!",
+    "mode": "parts",
+    "ratio": "180/262",
+    "catLabel": "종류",
+    "cats": [
+     {
+      "id": "s5c1",
+      "name": "스쿨 드레스"
+     },
+     {
+      "id": "s5c2",
+      "name": "애니버서리 코디"
+     },
+     {
+      "id": "s5c3",
+      "name": "디자이너 코디"
+     },
+     {
+      "id": "s5c4",
+      "name": "특별 이벤트 코디"
+     }
+    ],
+    "rarities": [
+     {
+      "id": "s5r1",
+      "name": "N"
+     },
+     {
+      "id": "s5r2",
+      "name": "R"
+     },
+     {
+      "id": "s5r3",
+      "name": "CP"
+     },
+     {
+      "id": "s5r4",
+      "name": "PR"
+     },
+     {
+      "id": "s5r5",
+      "name": "SPR"
+     },
+     {
+      "id": "s5r6",
+      "name": "LPR"
+     }
+    ],
+    "items": []
+   }
+  ]
  }
 }
