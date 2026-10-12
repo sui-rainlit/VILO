@@ -3,9 +3,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>요츠보시 학원</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css">
 <style>
-:root{--tx:#2d3a5a;--mu:#7b86a3;--ac:#5b7cf0;--ac2:#eef2ff;--bd:#e6ebf7;--ink:#3a4570;--gr:linear-gradient(120deg,#ffcfa8 0%,#ffbccf 35%,#bcc9ff 70%,#a8dfff 100%);--sh:0 4px 16px rgba(140,160,230,.2);--fb:"Gowun Dodum","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;--fh:"Gowun Dodum","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif}
+:root{--cw:clamp(380px,34vw,560px);--tx:#2d3a5a;--mu:#7b86a3;--ac:#5b7cf0;--ac2:#eef2ff;--bd:#e6ebf7;--ink:#3a4570;--gr:linear-gradient(120deg,#ffcfa8 0%,#ffbccf 35%,#bcc9ff 70%,#a8dfff 100%);--sh:0 4px 16px rgba(140,160,230,.2);--fb:"NanumSquare","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;--fh:"NanumSquare","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif}
 *{box-sizing:border-box}html,body{margin:0;min-height:100%}
 body{background:#fff;color:var(--tx);font-family:var(--fb);font-synthesis:none;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 button{font:inherit;color:inherit;cursor:pointer}
@@ -19,26 +19,26 @@ button{font:inherit;color:inherit;cursor:pointer}
 .go{margin-top:22px;width:100%;border:0;border-radius:999px;padding:11px;background:var(--gr);color:var(--ink);font-size:14px;letter-spacing:.14em;box-shadow:var(--sh)}
 .go:active{transform:scale(.97)}
 /* shell */
-.nav{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:8px;padding:8px 12px;padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.nav{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--bd);padding-top:env(safe-area-inset-top,0px)}
+.ni{width:min(100%,var(--cw));margin:0 auto;display:flex;align-items:center;gap:8px;padding:8px 12px}
 .nav .logo{max-height:28px;max-width:80px}.nav .logo.ph{width:64px;height:28px;font-size:9px;border-radius:8px;letter-spacing:.1em;flex:none}
 .nav .m{display:flex;gap:4px;overflow-x:auto;flex:1;scrollbar-width:none}.nav .m::-webkit-scrollbar{display:none}
-.nav a{flex:none;text-decoration:none;color:var(--mu);font-size:13px;letter-spacing:.06em;padding:8px 12px;border-radius:999px}
-.nav a.on{background:var(--gr);color:var(--ink);font-weight:700}
+.nav a{flex:none;text-decoration:none;color:var(--mu);font-size:12px;letter-spacing:.04em;padding:7px 10px;border-radius:999px}
+.nav a.on{background:var(--gr);color:var(--ink)}
 .nav .out{border:0;background:none;color:var(--mu);font-size:12px;flex:none}
-.w{max-width:880px;margin:0 auto;padding:18px 14px 60px}
+.w{width:min(100%,var(--cw));margin:0 auto;padding:16px 14px 60px}
 h2{font-family:var(--fh);font-size:18px;margin:30px 0 12px}
 /* profile */
-.idc{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:0;border-radius:24px;overflow:hidden;box-shadow:var(--sh);border:1px solid var(--bd);background:#fff}
-@media(max-width:560px){.idc{grid-template-columns:1fr}}
+.idc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:0;border-radius:20px;overflow:hidden;box-shadow:var(--sh);border:1px solid var(--bd);background:#fff}
 .ph3{background:linear-gradient(160deg,#fff1e6,#e8f1ff);aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;color:var(--mu);font-size:13px;letter-spacing:.15em}
 .ph3 img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
-.info{padding:22px 20px;position:relative}
+.info{padding:18px 16px;position:relative}
 .info:before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:var(--gr)}
 .tag{font-size:11px;letter-spacing:.3em;color:var(--mu);margin-top:6px}
 .info h1{font-family:var(--fh);font-size:26px;margin:6px 0 2px}.sid{font-size:13px;color:var(--mu)}
-dl{margin:18px 0 0;display:grid;grid-template-columns:auto 1fr;gap:10px 14px;font-size:14px}
+dl{margin:10px 0 0;display:grid;grid-template-columns:auto 1fr;gap:8px 12px;font-size:13px}
 dt{color:var(--mu)}dd{margin:0;border-bottom:1px dotted var(--bd);padding-bottom:6px;min-height:1.4em}
-.idwrap{max-width:520px;margin:0 auto}
+.idwrap{max-width:100%;margin:0 auto}
 .idimg{aspect-ratio:577/399;border-radius:12px;overflow:hidden;box-shadow:var(--sh);background:var(--ac2);display:flex;align-items:center;justify-content:center;color:var(--mu);font-size:13px;letter-spacing:.15em}
 .idimg img{width:100%;height:100%;object-fit:contain;display:block}
 .idact{display:flex;gap:8px;justify-content:center;margin-top:14px}
@@ -97,7 +97,7 @@ function go(){const b=$('#go');b.disabled=true;const r=b.getBoundingClientRect()
  setTimeout(()=>$('#lg').classList.add('out'),RM?0:450);
  setTimeout(()=>{try{sessionStorage.setItem('in','1')}catch(e){}location.hash='#/profile';route()},RM?300:1100)}
 function page(r){if(r==='point')return pointPage();const P=D.profile||{};const nick=((P.fields||[]).find(f=>f.k==='닉네임')||{}).v;const val=v=>{const m=/^#?([0-9a-f]{6})$/i.exec((v||'').trim());return (m?'<i class="sw" style="background:#'+m[1]+'"></i>':'')+esc(v)};
- if(r==='profile')return '<div class="idc"><div class="ph3">'+(P.appearance?'<img src="'+esc(P.appearance)+'" alt="">':'외관 사진')+'</div><div class="info"><div class="tag">STUDENT RECORD</div><h1>'+esc(nick||D.site.id)+'</h1><div class="sid">'+esc(D.site.school)+' · ID '+esc(D.site.id)+'</div><dl>'+(P.fields||[]).map(f=>'<dt>'+esc(f.k)+'</dt><dd>'+val(f.v)+'</dd>').join('')+'</dl></div></div>'
+ if(r==='profile')return '<div class="idc"><div class="ph3">'+(P.appearance?'<img src="'+esc(P.appearance)+'" alt="">':'외관 사진')+'</div><div class="info"><div class="tag">STUDENT RECORD</div><dl>'+(P.fields||[]).map(f=>'<dt>'+esc(f.k)+'</dt><dd>'+val(f.v)+'</dd>').join('')+'</dl></div></div>'
   +'<h2>학생증</h2><div class="idwrap"><div class="idimg">'+(P.idcard?'<img src="'+esc(P.idcard)+'" alt="학생증">':'학생증 사진')+'</div>'+(P.idcard?'<div class="idact"><a class="ab" href="'+esc(P.idcard)+'" download="학생증.'+esc((P.idcard.split('.').pop()||'png').toLowerCase())+'">저장</a><button class="ab" id="cpid" data-src="'+esc(P.idcard)+'">복사</button></div>':'')+'</div>'
   +'<h2>HISTORY</h2>'+((P.bio||[]).length?'<ol class="tl">'+P.bio.map(b=>'<li><div class="d">'+esc(b.d)+'</div><div class="t">'+esc(b.t)+'</div></li>').join('')+'</ol>':'<div class="soon">아직 등록된 기록이 없어요</div>');
  if(r==='coord')return '<div class="chips"><span>아이카츠!</span><span>아이카츠 스타즈!</span><span>아이카츠 프렌즈!</span><span>아이카츠 플래닛!</span><span>VILO!</span></div><div class="soon">COORD<br>바인더북을 이 화면으로 옮기는 중이에요</div>';
@@ -131,7 +131,7 @@ function pointPage(){const P=D.point;if(!P||!(P.activities||[]).length)return '<
 function route(){
  if(!authed()){login();return}
  const r=(location.hash.replace('#/','')||'profile');
- $('#app').innerHTML='<div class="nav">'+logo()+'<div class="m">'+NAV.map(x=>'<a href="#/'+x[0]+'"'+(x[0]===r?' class="on"':'')+'>'+x[1]+'</a>').join('')+'</div><button class="out" id="lo">Log Out</button></div><div class="w">'+page(r)+'</div>';
+ $('#app').innerHTML='<div class="nav"><div class="ni">'+logo()+'<div class="m">'+NAV.map(x=>'<a href="#/'+x[0]+'"'+(x[0]===r?' class="on"':'')+'>'+x[1]+'</a>').join('')+'</div><button class="out" id="lo">Log Out</button></div></div><div class="w">'+page(r)+'</div>';
  const a=document.querySelector('.nav a.on');if(a&&a.scrollIntoView)a.scrollIntoView({inline:'center',block:'nearest'});window.scrollTo(0,0)}
 function toast(t){const e=document.createElement('div');e.className='tt';e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),2600)}
 async function copyImg(p){try{const bl=await (await fetch(p)).blob(),bm=await createImageBitmap(bl),c=document.createElement('canvas');c.width=bm.width;c.height=bm.height;c.getContext('2d').drawImage(bm,0,0);const png=await new Promise(r=>c.toBlob(r,'image/png'));await navigator.clipboard.write([new ClipboardItem({'image/png':png})]);toast('복사했어요')}catch(e){toast('복사가 안 되면 이미지를 길게 눌러 복사하세요')}}
