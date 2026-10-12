@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>관리</title>
+<style>
+:root{--tx:#2d3a5a;--mu:#7b86a3;--ac:#5b7cf0;--ac2:#eef2ff;--bd:#e6ebf7;--ink:#3a4570;--gr:linear-gradient(120deg,#ffcfa8 0%,#ffbccf 35%,#bcc9ff 70%,#a8dfff 100%);--sh:0 3px 12px rgba(140,160,230,.18)}
+*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--tx);font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.w{max-width:720px;margin:0 auto;padding:14px 14px 80px}
+.hero{background:var(--gr);color:var(--ink);border-radius:22px;padding:18px;display:flex;justify-content:space-between;align-items:center;gap:8px;box-shadow:var(--sh)}
+h1{font-size:20px;margin:0}h3{font-size:14px;margin:24px 0 8px;color:var(--ac)}
+button,input,select{font:inherit;color:var(--tx)}
+.b{background:var(--gr);color:var(--ink);border:0;border-radius:999px;padding:8px 15px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}
+.b.g{background:var(--ac2);color:var(--ac)}.b.s{padding:5px 10px;font-size:12px}.b.r{background:#ffe9ec;color:#c0425a}
+input[type=text],input[type=password]{width:100%;background:#fff;border:1px solid var(--bd);border-radius:12px;padding:10px 12px;min-width:0}
+label.l{display:block;font-size:12px;color:var(--mu);margin:12px 0 4px}
+.tabs{display:flex;gap:6px;margin:14px 0 4px;overflow-x:auto}.tab{flex:none;background:var(--ac2);color:var(--ac);border:0;border-radius:12px;padding:9px 14px;font-weight:600}.tab.on{background:var(--gr);color:var(--ink)}
+.mr{display:flex;gap:6px;align-items:center;margin-bottom:8px}.mr input{flex:1}
+.pk{border:1px solid var(--bd);border-radius:12px;padding:8px;display:flex;gap:10px;align-items:center}
+.pk img{width:64px;height:64px;object-fit:cover;border-radius:8px;background:var(--ac2)}.pk .e{width:64px;height:64px;border-radius:8px;background:var(--ac2)}
+.fi{position:relative;overflow:hidden}.fi input{position:absolute;inset:0;width:100%;height:100%;opacity:0;font-size:0;cursor:pointer}
+.note{font-size:12px;color:var(--mu);line-height:1.6}
+.sv{position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.95);border-top:1px solid var(--bd);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));text-align:center}
+.bar{position:fixed;top:0;left:0;right:0;background:var(--ink);color:#fff;text-align:center;padding:calc(8px + env(safe-area-inset-top,0px)) 8px 8px;font-size:13px;z-index:30}
+.tt{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:9px 14px;border-radius:10px;font-size:13px;z-index:40;max-width:90%}
+</style></head>
+<body><div id="app"></div><div id="bar"></div>
+<script>
+let S={};try{S=JSON.parse(localStorage.getItem('gh')||'{}')}catch(e){}
+let D=null,sha='',tab='profile',ed=null,busy=false;const pv={},fu=new WeakMap();
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const uid=p=>p+Date.now().toString(36)+Math.random().toString(36).slice(2,5);
+function toast(t){const e=document.createElement('div');e.className='tt';e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),3500)}
+function status(t){$('#bar').innerHTML=t?'<div class="bar">'+esc(t)+'</div>':''}
+function why(e){if(e&&e.status){const m={401:'토큰이 올바르지 않거나 만료됐어요',403:'권한이 없거나 요청이 너무 많아요. 토큰의 Contents 권한(Read and write)을 확인해 주세요',404:'저장소나 파일을 찾을 수 없어요. 이름과 data.json 업로드를 확인해 주세요',409:'다른 곳에서 먼저 저장돼 충돌했어요. 다시 시도해 주세요',422:'저장 요청이 거절됐어요. 다시 시도해 주세요'};return m[e.status]||'GitHub 오류 ('+e.status+')'}return '오류: '+((e&&(e.message||e.name))||'알 수 없음')}
+const hdr=()=>({Authorization:'Bearer '+S.t,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'});
+const url=p=>'https://api.github.com/repos/'+encodeURIComponent(S.o)+'/'+encodeURIComponent(S.r)+'/contents/'+p.split('/').map(encodeURIComponent).join('/');
+const gh=(p,m,body,q)=>fetch(url(p)+(q||''),{method:m||'GET',headers:Object.assign(hdr(),body?{'Content-Type':'application/json'}:{}),body:body?JSON.stringify(body):undefined});
+const u8b64=u=>{let s='';for(let i=0;i<u.length;i+=32768)s+=String.fromCharCode.apply(null,u.subarray(i,i+32768));return btoa(s)};
+const b64text=t=>u8b64(new TextEncoder().encode(t));
+const fileb64=f=>new Promise((ok,no)=>{const r=new FileReader();r.onload=()=>ok(r.result.split(',')[1]);r.onerror=no;r.readAsDataURL(f)});
+async function load(){const res=await gh('data.json','GET',null,'?ref='+encodeURIComponent(S.b));if(!res.ok)throw res;
+ const j=await res.json();sha=j.sha;let txt;
+ if(j.content)txt=new TextDecoder().decode(Uint8Array.from(atob(j.content.replace(/\s/g,'')),c=>c.charCodeAt(0)));
+ else txt=await (await fetch(url('data.json')+'?ref='+encodeURIComponent(S.b),{headers:Object.assign(hdr(),{Accept:'application/vnd.github.raw+json'})})).text();
+ const d=JSON.parse(txt);d.site=d.site||{};d.profile=Object.assign({fields:[],bio:[]},d.profile||{});return d}
+async function commitData(mut,msg){for(let n=0;n<2;n++){const d=await load();mut(d);
+ const res=await gh('data.json','PUT',{message:msg,content:b64text(JSON.stringify(d,null,1)),sha,branch:S.b});
+ if(res.ok){const j=await res.json();sha=j.content.sha;D=d;return}
+ if(n===0&&(res.status===409||res.status===422))continue;throw res}}
+async function uploadFile(f,key){const ex=({'image/jpeg':'jpg','image/png':'png','image/webp':'webp','image/gif':'gif'})[f.type]||(f.name.split('.').pop()||'jpg').toLowerCase();
+ const p='img/'+key+'-'+uid('')+'.'+ex;const res=await gh(p,'PUT',{message:'add image',content:await fileb64(f),branch:S.b});if(!res.ok)throw res;pv[p]=URL.createObjectURL(f);return p}
+async function delFile(p){try{const r=await gh(p,'GET',null,'?ref='+encodeURIComponent(S.b));if(!r.ok)return;const j=await r.json();await gh(p,'DELETE',{message:'remove image',sha:j.sha,branch:S.b})}catch(e){}}
+async function run(msg,fn){if(busy)return false;busy=true;status(msg);try{await fn();return true}catch(e){toast(why(e));return false}finally{busy=false;status('')}}
+const prev=v=>v instanceof File?(fu.get(v)||(fu.set(v,URL.createObjectURL(v)),fu.get(v))):(v?(pv[v]||v):'');
+const clone=o=>JSON.parse(JSON.stringify(o));
+const IMGS=[['site','logo','VILO 로고'],['profile','appearance','외관 사진'],['profile','idcard','학생증 사진']];
+function pk(g,k,label){const v=ed[g][k];return '<div class="pk">'+(v?'<img src="'+esc(prev(v))+'" alt="">':'<div class="e"></div>')+'<div style="flex:1"><div style="font-size:13px;margin-bottom:6px">'+label+'</div><label class="b g s fi">'+(v?'변경':'사진 선택')+'<input type="file" accept="image/*" data-p="'+g+':'+k+'"></label> '+(v?'<button class="b r s" data-rm="'+g+':'+k+'">삭제</button>':'')+'</div></div>'}
+function rows(k,a,b,pa,pb){return ed.profile[k].map((x,n)=>'<div class="mr"><input type="text" data-r="'+k+':'+n+':'+a+'" value="'+esc(x[a])+'" placeholder="'+pa+'" style="flex:.7"><input type="text" data-r="'+k+':'+n+':'+b+'" value="'+esc(x[b])+'" placeholder="'+pb+'"><button class="b g s" data-ru="'+k+':'+n+'">↑</button><button class="b g s" data-rv="'+k+':'+n+'">↓</button><button class="b r s" data-rd="'+k+':'+n+'">삭제</button></div>').join('')+'<button class="b g s" data-ra="'+k+'">+ 추가</button>'}
+function render(){
+ if(!D){$('#app').innerHTML='<div class="w"><div class="hero"><h1>관리</h1></div><h3>GitHub 연결</h3>'
+ +'<label class="l">GitHub 사용자 이름</label><input type="text" id="o" value="'+esc(S.o)+'" autocapitalize="none">'
+ +'<label class="l">저장소 이름</label><input type="text" id="r" value="'+esc(S.r)+'" autocapitalize="none">'
+ +'<label class="l">브랜치 (보통 main)</label><input type="text" id="b" value="'+esc(S.b||'main')+'" autocapitalize="none">'
+ +'<label class="l">접근 토큰 (이 기기 브라우저에만 저장돼요)</label><input type="password" id="t" value="'+esc(S.t)+'">'
+ +'<p><button class="b" data-a="connect">연결하기</button></p><p class="note">토큰: GitHub 설정 → Developer settings → Fine-grained tokens에서 이 저장소만 선택하고 Contents를 Read and write로 발급하세요.</p></div>';return}
+ if(!ed)ed={site:clone(D.site),profile:clone(D.profile)};
+ $('#app').innerHTML='<div class="w"><div class="hero"><h1>관리</h1><span><a class="b g s" href="./" target="_blank">사이트 보기</a> <button class="b g s" data-a="disc">연결 해제</button></span></div>'
+ +'<div class="tabs"><button class="tab on">사이트·PROFILE</button></div><p class="note">COORD, POINT, PHOTO CARD, IDOL CARD, UNIT 편집은 다음 단계에서 이어서 추가돼요.</p>'
+ +'<h3>사이트</h3><label class="l">학교 이름</label><input type="text" data-f="site:school" value="'+esc(ed.site.school)+'"><label class="l">ID</label><input type="text" data-f="site:id" value="'+esc(ed.site.id)+'" autocapitalize="none"><div style="margin-top:10px">'+pk('site','logo','VILO 로고')+'</div>'
+ +'<h3>프로필</h3><div style="display:grid;gap:8px">'+pk('profile','appearance','외관 사진')+pk('profile','idcard','학생증 사진')+'</div>'
+ +'<h3>설정 항목 (항목명 / 내용)</h3><p class="note">첫 항목 “닉네임”이 프로필 제목이 돼요. 대표색은 #ff8fb1 같은 색 코드를 쓰면 색 점이 같이 보여요.</p>'+rows('fields','k','v','항목명','내용')+'<h3>HISTORY (날짜 / 내용)</h3>'+rows('bio','d','t','날짜','내용')
+ +'</div><div class="sv"><button class="b" data-a="save">저장</button></div>'}
+async function save(){
+ const ok=await run('저장 중…',async()=>{
+  const old=clone(D),n=ed.site,p=ed.profile;let tot=0,dn=0;
+  IMGS.forEach(([g,k])=>{if(ed[g][k] instanceof File)tot++});
+  for(const[g,k]of IMGS){const v=ed[g][k];if(v instanceof File){status('사진 업로드 중 ('+(++dn)+'/'+tot+')');ed[g][k]=await uploadFile(v,k)}}
+  status('저장 중…');
+  await commitData(d=>{d.site=Object.assign(d.site||{},ed.site);d.profile=Object.assign(d.profile||{},ed.profile)},'update profile');
+  for(const[g,k]of IMGS){const o=old[g]&&old[g][k];if(o&&o!==ed[g][k])await delFile(o)}
+ });
+ if(ok){ed=null;render();toast('저장했어요. 사이트에는 1~2분 뒤 반영돼요')}}
+document.addEventListener('click',async e=>{
+ const t=e.target.closest('[data-a],[data-rm],[data-ru],[data-rv],[data-rd],[data-ra]');if(!t)return;const d=t.dataset;
+ if(d.rm){const[g,k]=d.rm.split(':');ed[g][k]='';render();return}
+ if(d.ra){ed.profile[d.ra].push(d.ra==='fields'?{k:'',v:''}:{d:'',t:''});render();return}
+ const s=d.ru||d.rv||d.rd;if(s){const[k,ns]=s.split(':'),n=+ns,a=ed.profile[k];
+  if(d.rd)a.splice(n,1);else{const m=d.ru?n-1:n+1;if(m<0||m>=a.length)return;[a[n],a[m]]=[a[m],a[n]]}render();return}
+ const a=d.a;
+ if(a==='connect'){S={o:$('#o').value.trim(),r:$('#r').value.trim(),b:$('#b').value.trim()||'main',t:$('#t').value.trim()};
+  if(!S.o||!S.r||!S.t){toast('모두 입력해 주세요');return}
+  await run('연결 중…',async()=>{D=await load();localStorage.setItem('gh',JSON.stringify(S));ed=null;render()});return}
+ if(a==='disc'){localStorage.removeItem('gh');S={};D=null;ed=null;render();return}
+ if(a==='save')save()});
+document.addEventListener('input',e=>{const t=e.target,d=t.dataset;
+ if(d.f){const[g,k]=d.f.split(':');ed[g][k]=t.value}
+ else if(d.r){const[k,n,f]=d.r.split(':');ed.profile[k][+n][f]=t.value}});
+document.addEventListener('change',e=>{const t=e.target;if(t.dataset.p&&t.files[0]){const[g,k]=t.dataset.p.split(':');ed[g][k]=t.files[0];render()}});
+(async()=>{if(S.o&&S.r&&S.t){await run('불러오는 중…',async()=>{D=await load()})}render()})();
+</script></body></html>
