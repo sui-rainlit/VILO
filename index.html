@@ -61,6 +61,24 @@ details.yr[open]>summary{border-bottom:1px solid var(--bd)}
 .lgr{display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:baseline;padding:9px 2px;border-bottom:1px dotted var(--bd);font-size:14px}
 .lgr .s{display:block;font-size:12px;color:var(--mu);margin-top:1px}.lgr .p{text-align:right;white-space:nowrap}.lgr .p.neg{color:#d4566b}
 @media(max-width:420px){.hg{grid-template-columns:1fr}}
+.sr{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding:2px 0 8px}.sr::-webkit-scrollbar{display:none}
+.chp{flex:none;border:1px solid var(--bd);background:#fff;border-radius:999px;padding:6px 12px;font:inherit;font-size:12px;cursor:pointer;color:var(--tx)}
+.chp.on{background:var(--gr);background-origin:border-box;color:var(--ink);border-color:transparent}
+.cin{width:100%;border:1px solid var(--bd);border-radius:12px;padding:9px 12px;font:inherit;margin:2px 0 8px}
+.cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:6px}
+.cc{border:0;padding:0;border-radius:8px;overflow:hidden;position:relative;line-height:0;cursor:pointer;background:var(--ac2);box-shadow:var(--sh)}
+.cc img{width:100%;height:100%;object-fit:cover;display:block}
+.bd2{position:absolute;top:5px;right:5px;background:var(--gr);color:var(--ink);font-size:10px;padding:1px 7px;border-radius:999px;line-height:1.5}
+.cd-ov{position:fixed;inset:0;background:rgba(40,50,90,.5);display:flex;align-items:flex-end;justify-content:center;z-index:40}
+.cd-sh{background:#fff;width:min(100%,var(--cw));max-height:92%;overflow:auto;border-radius:20px 20px 0 0;padding:16px;padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+@media(min-width:700px){.cd-ov{align-items:center}.cd-sh{border-radius:20px}}
+.cd-hd{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}.cd-hd h3{margin:0;font-size:17px;font-weight:400}
+.cd-tg{font-size:12px;color:var(--mu);margin-top:4px;display:flex;gap:6px;flex-wrap:wrap}.cd-tg span{background:var(--ac2);color:var(--ac);border-radius:999px;padding:1px 8px}
+.cd-sh h4{font-size:13px;margin:16px 0 8px;color:var(--ac);font-weight:400}
+.cd-pg{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;align-items:start}.cd-pg .full{grid-column:1/-1}
+.cd-t{border:1px solid var(--bd);border-radius:12px;padding:8px}.cd-t img{width:100%;height:auto;display:block;border-radius:6px}
+.cd-r{display:flex;justify-content:space-between;align-items:center;margin-top:6px;font-size:12px;gap:4px}
+.cd-b{border:0;border-radius:999px;padding:6px 11px;font:inherit;font-size:12px;background:var(--ac2);color:var(--ac);cursor:pointer;text-decoration:none;display:inline-block}
 .sw{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;vertical-align:-1px;border:1px solid var(--bd)}
 .tl{list-style:none;margin:0;padding:0 0 0 14px;border-left:2px solid var(--bd)}
 .tl li{position:relative;padding:0 0 18px 16px}.tl li:before{content:"";position:absolute;left:-22px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--gr);box-shadow:0 0 0 3px #fff}
@@ -100,7 +118,7 @@ function page(r){if(r==='point')return pointPage();const P=D.profile||{};const n
  if(r==='profile')return '<div class="idc"><div class="ph3">'+(P.appearance?'<img src="'+esc(P.appearance)+'" alt="">':'외관 사진')+'</div><div class="info"><div class="tag">STUDENT RECORD</div><dl>'+(P.fields||[]).map(f=>'<dt>'+esc(f.k)+'</dt><dd>'+val(f.v)+'</dd>').join('')+'</dl></div></div>'
   +'<h2>학생증</h2><div class="idwrap"><div class="idimg">'+(P.idcard?'<img src="'+esc(P.idcard)+'" alt="학생증">':'학생증 사진')+'</div>'+(P.idcard?'<div class="idact"><a class="ab" href="'+esc(P.idcard)+'" download="학생증.'+esc((P.idcard.split('.').pop()||'png').toLowerCase())+'">저장</a><button class="ab" id="cpid" data-src="'+esc(P.idcard)+'">복사</button></div>':'')+'</div>'
   +'<h2>HISTORY</h2>'+((P.bio||[]).length?'<ol class="tl">'+P.bio.map(b=>'<li><div class="d">'+esc(b.d)+'</div><div class="t">'+esc(b.t)+'</div></li>').join('')+'</ol>':'<div class="soon">아직 등록된 기록이 없어요</div>');
- if(r==='coord')return '<div class="chips"><span>아이카츠!</span><span>아이카츠 스타즈!</span><span>아이카츠 프렌즈!</span><span>아이카츠 플래닛!</span><span>VILO!</span></div><div class="soon">COORD<br>바인더북을 이 화면으로 옮기는 중이에요</div>';
+ if(r==='coord')return coordPage();
  const n=(NAV.find(x=>x[0]===r)||['',''])[1];return '<div class="soon">'+esc(n)+'<br>준비 중이에요</div>'}
 const fmt=n=>(Math.round(n*100)/100).toLocaleString('ko-KR');
 const sgn=n=>(n>0?'+':'')+fmt(n);
@@ -128,11 +146,33 @@ function pointPage(){const P=D.point;if(!P||!(P.activities||[]).length)return '<
  return '<div class="pth"><div class="lab">현재 보유 포인트</div><div class="big">'+fmt(earn+spend)+'<small>P</small></div><div class="row"><span>누적 적립 +'+fmt(earn)+'</span><span>사용 '+fmt(spend)+'</span></div><div class="hg">'+hb('upgrade','UPGRADE')+hb('color','COLOR')+'</div></div>'
  +'<h2>기록</h2>'+(ys.length?ys.map((y,k)=>'<details class="yr"'+(k===ys.length-1?' open':'')+'><summary><span>'+y+'</span><span>'+sgn(Y[y].t)+'P</span></summary>'+Object.keys(Y[y].M).sort().map(ym=>{const mo=Y[y].M[ym];mo.E.sort((a,b)=>((A[a.e.act]||{_i:99})._i-(A[b.e.act]||{_i:99})._i)||a.i-b.i);return '<div class="mo"><div class="mh"><span>'+(+ym.slice(5))+'월</span><span>'+sgn(mo.t)+'P</span></div>'+mo.E.map(row).join('')+'</div>'}).join('')+'</details>').join(''):'<div class="soon">아직 기록이 없어요</div>')
 }
+let cs=0,cb='',cr='',cq='';
+const CPT=[['top','상의'],['bottom','하의'],['shoes','슈즈'],['acc','악세']];
+const cext=p=>(p.split('.').pop()||'jpg').toLowerCase();
+function coordPage(){const C=D.coord;if(!C||!(C.series||[]).length)return '<div class="soon">COORD<br>아직 설정 전이에요</div>';if(cs>=C.series.length)cs=0;
+ return '<div class="sr">'+C.series.map((x,n)=>'<button class="chp'+(n===cs?' on':'')+'" data-cs="'+n+'">'+esc(x.name)+'</button>').join('')+'</div><input class="cin" id="cq" type="search" placeholder="이름·번호 검색" value="'+esc(cq)+'"><div id="cch"></div><div id="cg"></div>'}
+function coordRefresh(){const S=D.coord.series[cs],row=(label,list,at,sel)=>list.length?'<div class="sr"><button class="chp'+(sel?'':' on')+'" data-'+at+'="">'+label+' 전체</button>'+list.map(x=>'<button class="chp'+(sel===x.id?' on':'')+'" data-'+at+'="'+x.id+'">'+esc(x.name)+'</button>').join('')+'</div>':'';
+ $('#cch').innerHTML=row(S.catLabel||'분류',S.cats||[],'cb',cb)+row('레어도',S.rarities||[],'cr',cr);coordGrid()}
+function coordGrid(){const S=D.coord.series[cs],rar=S.rarities||[],ri=id=>rar.findIndex(x=>x.id===id);
+ const l=(S.items||[]).filter(i=>(!cq||((i.name||'')+' '+(i.no||'')).toLowerCase().includes(cq.toLowerCase()))&&(!cb||i.cat===cb)&&(!cr||i.rarity===cr))
+  .sort((a,b)=>ri(b.rarity)-ri(a.rarity)||(!a.no)-(!b.no)||String(a.no||'').localeCompare(String(b.no||''),'ko',{numeric:true})||(a.name||'').localeCompare(b.name||'','ko'));
+ $('#cg').innerHTML=l.length?'<div class="cgrid">'+l.map(i=>'<button class="cc" data-ci="'+esc(i.id)+'" style="aspect-ratio:'+esc(S.ratio||'180/262')+'">'+(i.top?'<img loading="lazy" src="'+esc(i.top)+'" alt="'+esc(i.name)+'">':'')+((i.reprints||[]).length?'<span class="bd2">복각 '+i.reprints.length+'</span>':'')+'</button>').join('')+'</div>':'<div class="soon">'+((S.items||[]).length?'조건에 맞는 카드가 없어요':'아직 등록된 카드가 없어요')+'</div>'}
+function ctile(p,label,nm,full){return '<div class="cd-t'+(full?' full':'')+'"><img src="'+esc(p)+'" alt=""><div class="cd-r"><span>'+label+'</span><span><a class="cd-b" href="'+esc(p)+'" download="'+esc(nm+'_'+label+'.'+cext(p))+'">저장</a> <button class="cd-b" data-cp="'+esc(p)+'">복사</button></span></div></div>'}
+function coordView(id){const S=D.coord.series[cs],i=(S.items||[]).find(x=>x.id===id);if(!i)return;const P=S.mode==='single'?[['top','스윙']]:CPT,cat=(S.cats||[]).find(x=>x.id===i.cat),ra=(S.rarities||[]).find(x=>x.id===i.rarity);
+ const parts=(o,nm)=>'<div class="cd-pg">'+P.map(([k,n])=>o[k]?ctile(o[k],n,nm,P.length===1):'').join('')+'</div>';
+ let m=document.getElementById('cm');if(!m){m=document.createElement('div');m.id='cm';document.body.appendChild(m)}
+ m.innerHTML='<div class="cd-ov" data-cclose><div class="cd-sh"><div class="cd-hd"><div><h3>'+esc(i.name)+'</h3><div class="cd-tg">'+(i.no?'<span>No.'+esc(i.no)+'</span>':'')+(cat?'<span>'+esc(cat.name)+'</span>':'')+(ra?'<span>'+esc(ra.name)+'</span>':'')+'</div></div><button class="cd-b" data-cclose>닫기</button></div><h4>원본</h4>'+parts(i,i.name)+(i.reprints||[]).map((r,n)=>'<h4>복각 · '+esc(r.label||(n+1))+'</h4>'+parts(r,i.name+'_복각'+(n+1))).join('')+'</div></div>'}
+document.addEventListener('click',e=>{const t=e.target.closest('[data-cs],[data-cb],[data-cr],[data-ci],[data-cclose],[data-cp]');if(!t)return;const d=t.dataset;
+ if(d.cclose!==undefined){if(t.tagName==='BUTTON'||e.target===t){const m=document.getElementById('cm');if(m)m.innerHTML=''}return}
+ if(d.cs!==undefined){cs=+d.cs;cb='';cr='';cq='';document.querySelector('.w').innerHTML=coordPage();coordRefresh();return}
+ if(d.cb!==undefined){cb=d.cb;coordRefresh();return}if(d.cr!==undefined){cr=d.cr;coordRefresh();return}
+ if(d.ci){coordView(d.ci);return}if(d.cp)copyImg(d.cp)});
+document.addEventListener('input',e=>{if(e.target.id==='cq'){cq=e.target.value;coordGrid()}});
 function route(){
  if(!authed()){login();return}
  const r=(location.hash.replace('#/','')||'profile');
  $('#app').innerHTML='<div class="nav"><div class="ni">'+logo()+'<div class="m">'+NAV.map(x=>'<a href="#/'+x[0]+'"'+(x[0]===r?' class="on"':'')+'>'+x[1]+'</a>').join('')+'</div><button class="out" id="lo">Log Out</button></div></div><div class="w">'+page(r)+'</div>';
- const a=document.querySelector('.nav a.on');if(a&&a.scrollIntoView)a.scrollIntoView({inline:'center',block:'nearest'});window.scrollTo(0,0)}
+ if(r==='coord')coordRefresh();const a=document.querySelector('.nav a.on');if(a&&a.scrollIntoView)a.scrollIntoView({inline:'center',block:'nearest'});window.scrollTo(0,0)}
 function toast(t){const e=document.createElement('div');e.className='tt';e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),2600)}
 async function copyImg(p){try{const bl=await (await fetch(p)).blob(),bm=await createImageBitmap(bl),c=document.createElement('canvas');c.width=bm.width;c.height=bm.height;c.getContext('2d').drawImage(bm,0,0);const png=await new Promise(r=>c.toBlob(r,'image/png'));await navigator.clipboard.write([new ClipboardItem({'image/png':png})]);toast('복사했어요')}catch(e){toast('복사가 안 되면 이미지를 길게 눌러 복사하세요')}}
 document.addEventListener('click',e=>{if(e.target.id==='cpid')copyImg(e.target.dataset.src);if(e.target.id==='go')go();if(e.target.id==='lo'){try{sessionStorage.removeItem('in')}catch(x){}location.hash='';route()}});
