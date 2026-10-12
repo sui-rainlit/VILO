@@ -120,13 +120,13 @@ function pointPage(){const P=D.point;if(!P||!(P.activities||[]).length)return '<
  let earn=0,spend=0;const Y={};
  L.forEach((e,i)=>{const v=pts(e);if(v>=0)earn+=v;else spend+=v;const ym=(e.date||'0000-00').slice(0,7),y=ym.slice(0,4),yy=Y[y]||(Y[y]={t:0,M:{}});yy.t+=v;const mo=yy.M[ym]||(yy.M[ym]={t:0,E:[]});mo.t+=v;mo.E.push({e,i,v})});
  const hb=(k,t)=>{const h=holdRows(P,k);return '<div class="hb"><h4><span>'+t+'</span><span>보유 <b>'+(h.got-h.used)+'</b></span></h4>'+(h.rows.length?h.rows.map(r=>'<div class="hr"><span>'+r.y+'</span><span>('+r.u+'/'+r.g+')</span></div>').join(''):'<div class="hr"><span>아직 없어요</span><span></span></div>')+'<div class="nt">(사용/획득)</div></div>'};
- const row=({e,v})=>{const a=A[e.act]||{name:'(삭제된 활동)',unit:'',points:0},d=(e.date||'').length===10?e.date.slice(5).replace('-','.')+' ':'';let main,sub=[];
+ const row=({e,v})=>{const a=A[e.act]||{name:'(삭제된 활동)',unit:'',points:0};let main,sub=[];
   if(a.item){main=e.memo||a.name;if(e.memo)sub.push(a.name)}else{main=a.name+' '+fmt(+e.qty||0)+(a.unit||'');if(e.memo)sub.push(e.memo)}
   if(!(e.pts!==''&&e.pts!=null&&!isNaN(e.pts))){let c=a.item?'기본 '+fmt(a.points):fmt(+e.qty||0)+(a.unit||'')+' × '+fmt(a.points);(a.bonuses||[]).forEach(b=>{const n=(e.bon||{})[b.id];if(n)c+=a.item?' + '+b.name+' '+fmt(b.points*n):' + '+b.name+' '+fmt(n)+'회 × '+fmt(b.points)});sub.unshift(c)}
-  return '<div class="lgr"><span>'+esc(d+main)+(sub.length?'<span class="s">'+esc(sub.join(' · '))+'</span>':'')+'</span><span class="p'+(v<0?' neg':'')+'">'+sgn(v)+'P</span></div>'};
- const ys=Object.keys(Y).sort().reverse();
+  return '<div class="lgr"><span>'+esc(main)+(sub.length?'<span class="s">'+esc(sub.join(' · '))+'</span>':'')+'</span><span class="p'+(v<0?' neg':'')+'">'+sgn(v)+'P</span></div>'};
+ const ys=Object.keys(Y).sort();
  return '<div class="pth"><div class="lab">현재 보유 포인트</div><div class="big">'+fmt(earn+spend)+'<small>P</small></div><div class="row"><span>누적 적립 +'+fmt(earn)+'</span><span>사용 '+fmt(spend)+'</span></div><div class="hg">'+hb('upgrade','UPGRADE')+hb('color','COLOR')+'</div></div>'
- +'<h2>기록</h2>'+(ys.length?ys.map((y,k)=>'<details class="yr"'+(k===0?' open':'')+'><summary><span>'+y+'</span><span>'+sgn(Y[y].t)+'P</span></summary>'+Object.keys(Y[y].M).sort().map(ym=>{const mo=Y[y].M[ym];mo.E.sort((a,b)=>((A[a.e.act]||{_i:99})._i-(A[b.e.act]||{_i:99})._i)||a.i-b.i);return '<div class="mo"><div class="mh"><span>'+(+ym.slice(5))+'월</span><span>'+sgn(mo.t)+'P</span></div>'+mo.E.map(row).join('')+'</div>'}).join('')+'</details>').join(''):'<div class="soon">아직 기록이 없어요</div>')
+ +'<h2>기록</h2>'+(ys.length?ys.map((y,k)=>'<details class="yr"'+(k===ys.length-1?' open':'')+'><summary><span>'+y+'</span><span>'+sgn(Y[y].t)+'P</span></summary>'+Object.keys(Y[y].M).sort().map(ym=>{const mo=Y[y].M[ym];mo.E.sort((a,b)=>((A[a.e.act]||{_i:99})._i-(A[b.e.act]||{_i:99})._i)||a.i-b.i);return '<div class="mo"><div class="mh"><span>'+(+ym.slice(5))+'월</span><span>'+sgn(mo.t)+'P</span></div>'+mo.E.map(row).join('')+'</div>'}).join('')+'</details>').join(''):'<div class="soon">아직 기록이 없어요</div>')
 }
 function route(){
  if(!authed()){login();return}
