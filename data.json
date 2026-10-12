@@ -168,22 +168,19 @@
    },
    {
     "date": "2023-06",
-    "memo": "[ 레전드 프리미엄 ] {Glorious Snow}",
+    "memo": "[ 레전드 프리미엄 ] {Glorious Snow} 참가",
     "qty": 1,
     "act": "a6",
     "pts": 8,
     "id": "h003"
    },
    {
-    "id": "h004",
-    "date": "2023-06-01",
-    "act": "a6",
+    "date": "2023-06",
+    "memo": "[ Clown Toy ] 준우승&참가",
     "qty": 1,
+    "act": "a6",
     "pts": 33,
-    "memo": "[ Clown Toy ]",
-    "bon": {
-     "xau1": 1
-    }
+    "id": "h004"
    },
    {
     "date": "2023-07",
@@ -211,7 +208,7 @@
    },
    {
     "date": "2023-07",
-    "memo": "[ K-Pop Contest_10 ]",
+    "memo": "[ K-Pop Contest_10 ] 준우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 33,
@@ -219,7 +216,7 @@
    },
    {
     "date": "2023-07",
-    "memo": "[ Album Release_2 ]",
+    "memo": "[ Album Release_2 ] 참가",
     "qty": 1,
     "act": "a6",
     "pts": 8,
@@ -227,7 +224,7 @@
    },
    {
     "date": "2023-07",
-    "memo": "[ New Combination ]",
+    "memo": "[ New Combination ] 참가",
     "qty": 1,
     "act": "a6",
     "pts": 8,
@@ -235,7 +232,7 @@
    },
    {
     "date": "2023-07",
-    "memo": "[ Connect Ribbon ]",
+    "memo": "[ Connect Ribbon ] 참가",
     "qty": 1,
     "act": "a6",
     "pts": 8,
@@ -243,7 +240,7 @@
    },
    {
     "date": "2023-07",
-    "memo": "[ 스타 프리미엄 ] {금성}",
+    "memo": "[ 스타 프리미엄 ] {금성} 참가",
     "qty": 1,
     "act": "a6",
     "pts": 8,
@@ -251,7 +248,7 @@
    },
    {
     "date": "2023-07",
-    "memo": "[ Kaleido Queen ]",
+    "memo": "[ Kaleido Queen ] 참가",
     "qty": 1,
     "act": "a6",
     "pts": 8,
@@ -259,7 +256,7 @@
    },
    {
     "date": "2023-07",
-    "memo": "[ Rising Star ]",
+    "memo": "[ Rising Star ] 참가",
     "qty": 1,
     "act": "a6",
     "pts": 8,
@@ -267,7 +264,7 @@
    },
    {
     "date": "2023-07",
-    "memo": "[ Gorgeous Leo ]",
+    "memo": "[ Gorgeous Leo ] 참가",
     "qty": 1,
     "act": "a6",
     "pts": 8,
@@ -331,7 +328,7 @@
    },
    {
     "date": "2023-08",
-    "memo": "[ Melody With ]",
+    "memo": "[ Melody With ] 우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 38,
@@ -339,7 +336,7 @@
    },
    {
     "date": "2023-08",
-    "memo": "[ Arabian Queen ]",
+    "memo": "[ Arabian Queen ] 우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 38,
@@ -347,7 +344,7 @@
    },
    {
     "date": "2023-08",
-    "memo": "[ Bright Ribbon ]",
+    "memo": "[ Bright Ribbon ] 참가",
     "qty": 1,
     "act": "a6",
     "pts": 8,
@@ -355,7 +352,7 @@
    },
    {
     "date": "2023-08",
-    "memo": "[ Street Wear ]",
+    "memo": "[ Street Wear ] 우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 38,
@@ -363,7 +360,7 @@
    },
    {
     "date": "2023-08",
-    "memo": "[ Twilight Virgo ]",
+    "memo": "[ Twilight Virgo ] 참가",
     "qty": 1,
     "act": "a6",
     "pts": 8,
@@ -371,7 +368,7 @@
    },
    {
     "date": "2023-08",
-    "memo": "< 무효 > [ Summer Holiday ]",
+    "memo": "< 무효 > [ Summer Holiday ] 참가",
     "qty": 1,
     "act": "a6",
     "pts": 8,
@@ -411,7 +408,7 @@
    },
    {
     "date": "2023-09",
-    "memo": "[ Gentle Girl ]",
+    "memo": "[ Gentle Girl ] 준우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 35,
@@ -419,7 +416,7 @@
    },
    {
     "date": "2023-09",
-    "memo": "[ 스타 프리미엄 ] {명왕성}",
+    "memo": "[ 스타 프리미엄 ] {명왕성} 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -427,7 +424,7 @@
    },
    {
     "date": "2023-09",
-    "memo": "[ 쥬얼링 드레스 ] {핑크 다이아몬드}",
+    "memo": "[ 쥬얼링 드레스 ] {핑크 다이아몬드} 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -435,7 +432,7 @@
    },
    {
     "date": "2023-09",
-    "memo": "[ Lovely Frill ]",
+    "memo": "[ Lovely Frill ] 우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 40,
@@ -443,7 +440,7 @@
    },
    {
     "date": "2023-09",
-    "memo": "[ NEO COLOR ]",
+    "memo": "[ NEO COLOR ] 우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 40,
@@ -451,7 +448,7 @@
    },
    {
     "date": "2023-09",
-    "memo": "[ Dolly Fantasy ]",
+    "memo": "[ Dolly Fantasy ] 준우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 35,
@@ -499,7 +496,7 @@
    },
    {
     "date": "2023-10",
-    "memo": "[ Popping Circle ]",
+    "memo": "[ Popping Circle ] 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -507,7 +504,7 @@
    },
    {
     "date": "2023-10",
-    "memo": "[ Milky Wonder ]",
+    "memo": "[ Milky Wonder ] 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -515,7 +512,7 @@
    },
    {
     "date": "2023-10",
-    "memo": "[ 쥬얼링 드레스 ] {가넷}",
+    "memo": "[ 쥬얼링 드레스 ] {가넷} 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -523,7 +520,7 @@
    },
    {
     "date": "2023-10",
-    "memo": "[ 스윙 프리미엄 ] { FAIRY }",
+    "memo": "[ 스윙 프리미엄 ] { FAIRY } 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -531,7 +528,7 @@
    },
    {
     "date": "2023-10",
-    "memo": "[ Spice Scorpio ] 미니 오디션",
+    "memo": "[ Spice Scorpio ] 미니 오디션 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -539,7 +536,7 @@
    },
    {
     "date": "2023-10",
-    "memo": "[ Blooming Blooming ] 춤 오디션",
+    "memo": "[ Blooming Blooming ] 춤 오디션 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -547,7 +544,7 @@
    },
    {
     "date": "2023-10",
-    "memo": "[ Twinkle Night ] 연기 오디션",
+    "memo": "[ Twinkle Night ] 연기 오디션 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -587,7 +584,7 @@
    },
    {
     "date": "2023-11",
-    "memo": "[ Forest Fortune ] 다양한 장르 오디션",
+    "memo": "[ Forest Fortune ] 다양한 장르 오디션 우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 40,
@@ -595,7 +592,7 @@
    },
    {
     "date": "2023-11",
-    "memo": "[ Trendy Fashion ] 미니 오디션",
+    "memo": "[ Trendy Fashion ] 미니 오디션 우승& 참가",
     "qty": 1,
     "act": "a6",
     "pts": 40,
@@ -603,7 +600,7 @@
    },
    {
     "date": "2023-11",
-    "memo": "[ K-Pop Contest_11 ] 오디션",
+    "memo": "[ K-Pop Contest_11 ] 오디션 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -611,7 +608,7 @@
    },
    {
     "date": "2023-11",
-    "memo": "[ 스윙 프리미엄 ] {JEWEL} 대형 오디션",
+    "memo": "[ 스윙 프리미엄 ] {JEWEL} 대형 오디션 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -619,7 +616,7 @@
    },
    {
     "date": "2023-11",
-    "memo": "[ Arrow Sagittarius ] 미니 오디션",
+    "memo": "[ Arrow Sagittarius ] 미니 오디션 우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 40,
@@ -715,7 +712,7 @@
    },
    {
     "date": "2024-01",
-    "memo": "[ BLUE SWAN ]",
+    "memo": "[ BLUE SWAN ] 준우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 35,
@@ -723,7 +720,7 @@
    },
    {
     "date": "2024-01",
-    "memo": "[ Dream Island ]",
+    "memo": "[ Dream Island ] 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -731,7 +728,7 @@
    },
    {
     "date": "2024-01",
-    "memo": "[ Super Idol ]",
+    "memo": "[ Super Idol ] 우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 40,
@@ -739,7 +736,7 @@
    },
    {
     "date": "2024-01",
-    "memo": "[ K-Pop Contest_12 ]",
+    "memo": "[ K-Pop Contest_12 ] 준우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 35,
@@ -747,7 +744,7 @@
    },
    {
     "date": "2024-01",
-    "memo": "[ Melody With ]",
+    "memo": "[ Melody With ] 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -787,7 +784,7 @@
    },
    {
     "date": "2024-02",
-    "memo": "[ 스타 프리미엄 ] {화성}",
+    "memo": "[ 스타 프리미엄 ] {화성} 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -795,7 +792,7 @@
    },
    {
     "date": "2024-02",
-    "memo": "[ Stylish Police ]",
+    "memo": "[ Stylish Police ] 우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 40,
@@ -835,7 +832,7 @@
    },
    {
     "date": "2024-03",
-    "memo": "[ Wonderful Day ]",
+    "memo": "[ Wonderful Day ] 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -867,7 +864,7 @@
    },
    {
     "date": "2024-04",
-    "memo": "[ 스윙 프리미엄 ] {MUSIC}",
+    "memo": "[ 스윙 프리미엄 ] {MUSIC} 우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 40,
@@ -907,7 +904,7 @@
    },
    {
     "date": "2024-05",
-    "memo": "[ Super Sun ]",
+    "memo": "[ Super Sun ] 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -915,7 +912,7 @@
    },
    {
     "date": "2024-05",
-    "memo": "[ Dreaming Spring ]",
+    "memo": "[ Dreaming Spring ] 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -923,7 +920,7 @@
    },
    {
     "date": "2024-05",
-    "memo": "[ Magical Dance ]",
+    "memo": "[ Magical Dance ] 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -931,7 +928,7 @@
    },
    {
     "date": "2024-05",
-    "memo": "[ Rookie Ribbon ]",
+    "memo": "[ Rookie Ribbon ] 우승&참가&포토",
     "qty": 1,
     "act": "a6",
     "pts": 45,
@@ -939,7 +936,7 @@
    },
    {
     "date": "2024-05",
-    "memo": "[ Sparkle With ]",
+    "memo": "[ Sparkle With ] 우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 40,
@@ -947,7 +944,7 @@
    },
    {
     "date": "2024-05",
-    "memo": "[ 봄의 락(樂) ]",
+    "memo": "[ 봄의 락(樂) ] 준우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 35,
@@ -995,7 +992,7 @@
    },
    {
     "date": "2024-06",
-    "memo": "[ Melody With ]",
+    "memo": "[ Melody With ] 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -1003,7 +1000,7 @@
    },
    {
     "date": "2024-06",
-    "memo": "[ Plant Sky ]",
+    "memo": "[ Plant Sky ] 준우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 35,
@@ -1043,7 +1040,7 @@
    },
    {
     "date": "2024-07",
-    "memo": "[ Summer Carol ]",
+    "memo": "[ Summer Carol ] 준우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 35,
@@ -1075,7 +1072,7 @@
    },
    {
     "date": "2024-08",
-    "memo": "[ 쥬얼링 드레스 ] {사파이어}",
+    "memo": "[ 쥬얼링 드레스 ] {사파이어} 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -1083,7 +1080,7 @@
    },
    {
     "date": "2024-08",
-    "memo": "[ 스윙 프리미엄 ] {COSME}",
+    "memo": "[ 스윙 프리미엄 ] {COSME} 우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 40,
@@ -1171,7 +1168,7 @@
    },
    {
     "date": "2025-09",
-    "memo": "[ British Song ] 오디션",
+    "memo": "[ British Song ] 오디션 준우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 35,
@@ -1219,7 +1216,7 @@
    },
    {
     "date": "2025-10",
-    "memo": "[ Jelly Marble ] 춤 미니 오디션",
+    "memo": "[ Jelly Marble ] 춤 미니 오디션 참가&PR",
     "qty": 1,
     "act": "a6",
     "pts": 15,
@@ -1227,7 +1224,7 @@
    },
    {
     "date": "2025-10",
-    "memo": "스타 아니스 선발 오디션",
+    "memo": "스타 아니스 선발 오디션 우승&참가",
     "qty": 1,
     "act": "a6",
     "pts": 40,
@@ -1235,7 +1232,7 @@
    },
    {
     "date": "2025-10",
-    "memo": "[ 쥬얼링 드레스 ] {핑크 다이아몬드}",
+    "memo": "[ 쥬얼링 드레스 ] {핑크 다이아몬드} 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -1267,7 +1264,7 @@
    },
    {
     "date": "2025-11",
-    "memo": "[ 쥬얼링 드레스 ] {가넷}",
+    "memo": "[ 쥬얼링 드레스 ] {가넷} 참가",
     "qty": 1,
     "act": "a6",
     "pts": 10,
@@ -1291,11 +1288,19 @@
    },
    {
     "date": "2025-12",
-    "memo": "[ 2025 Christmas Parade ]",
+    "memo": "[ 2025 Christmas Parade ] 합동 라이브",
     "qty": 1,
-    "act": "a3",
+    "act": "a7",
     "pts": 10,
     "id": "h143"
+   },
+   {
+    "date": "2026-01",
+    "memo": "",
+    "qty": 5,
+    "act": "a1",
+    "pts": 25,
+    "id": "h144"
    },
    {
     "date": "2026-01",
@@ -1303,7 +1308,63 @@
     "qty": 1,
     "act": "a7",
     "pts": 50,
-    "id": "h144"
+    "id": "h145"
+   },
+   {
+    "date": "2026-03",
+    "memo": "",
+    "qty": 1,
+    "act": "a5",
+    "pts": -135,
+    "id": "h146"
+   },
+   {
+    "date": "2026-03",
+    "memo": "[ Cheerful Peace! ] 유닛 오디션 참가",
+    "qty": 1,
+    "act": "a6",
+    "pts": 10,
+    "id": "h147"
+   },
+   {
+    "date": "2026-04",
+    "memo": "",
+    "qty": 1,
+    "act": "a5",
+    "pts": -60,
+    "id": "h148"
+   },
+   {
+    "date": "2026-05",
+    "memo": "[ 스윙 프리미엄 ] {COSME} 대형 오디션 우승&참가",
+    "qty": 1,
+    "act": "a6",
+    "pts": 40,
+    "id": "h149"
+   },
+   {
+    "date": "2026-09",
+    "memo": "[ 추석 기념 ] 포인트",
+    "qty": 1,
+    "act": "a7",
+    "pts": 100,
+    "id": "h150"
+   },
+   {
+    "date": "2026-10",
+    "memo": "",
+    "qty": 1,
+    "act": "a5",
+    "pts": -120,
+    "id": "h151"
+   },
+   {
+    "date": "2026-10",
+    "memo": "[ 스탬프 파티 ] 잔여 포인트",
+    "qty": 1,
+    "act": "a7",
+    "pts": 5,
+    "id": "h152"
    }
   ],
   "rules": {
