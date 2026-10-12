@@ -125,7 +125,7 @@ function renderPoint(){
  +'<label class="l">메모 (오디션 이름, 이벤트 이름 등)</label><input type="text" data-lf="memo" value="'+esc(lf.memo)+'">'
  +'<p style="font-size:15px">계산 결과 <b id="pv">'+sgn(v)+' P</b></p>'
  +'<p><button class="b" data-pt="addlog">'+(editing?'수정 저장':'기록 추가')+'</button> <button class="b g" data-pt="cancel">새로 입력</button></p>'
- +'<h3>데이터 정리 (한 번만)</h3><p class="note">활동 이름을 “오디션 참가”로 바꾸고, 오디션 기록 이름에서 “참가”, “우승&참가” 같은 끝말을 지워요. “합계 정정” 항목은 삭제해서 월 합계를 줄 합계 기준으로 맞춰요.</p><p><button class="b g" data-pt="tidy">정리하기</button></p>'
+ +'<h3>데이터 정리 (한 번만)</h3><p class="note">활동 이름을 “오디션 참가”로 바꾸고, 오디션 기록 이름에서 “참가”, “우승&참가” 같은 끝말을 지워요. “합계 정정” 항목은 삭제해서 월 합계를 줄 합계 기준으로 맞춰요. 오디션 기본 10P와 준우승(+25P)·우승(+30P) 보너스, 상점 구매 차감 설정도 함께 넣어요.</p><p><button class="b g" data-pt="tidy">정리하기</button></p>'
  +'<h3>기록 보기·수정</h3><input type="month" data-lm value="'+esc(lm)+'">'
  +(mlog.length?'<div style="margin-top:8px">'+mlog.map(row).join('')+'</div>':'<p class="note">이 달 기록이 없어요.</p>')+'</div>'}
 async function savePoint(msg,mut){return run(msg,async()=>{await commitData(d=>{if(!d.point)throw new Error('POINT 데이터를 먼저 불러와 주세요');mut(d.point)},'update point')})}
@@ -134,11 +134,13 @@ document.addEventListener('click',async e=>{const t=e.target.closest('[data-tab]
  if(d.tab){tab=d.tab;render();return}
  const k=d.pt,n=+d.n,m=+d.m;
  if(k==='import'){const ok=await run('불러오는 중…',async()=>{await commitData(x=>{if(!x.point)x.point=clone(SEED)},'import point')});if(ok){pa=null;render();toast('기록을 불러왔어요')}return}
- if(k==='tidy'){const RE=/\s*(?:(?:최우승|준우승|우승)\s*&\s*)?참가(?:\s*&\s*(?:최우승|준우승|우승|PR|포토))*\s*$/;let c=[0,0,0];
-  const ok=await savePoint('정리 중…',p=>{c=[0,0,0];const ids=[];(p.activities||[]).forEach(a=>{if(a.name==='오디션 참가·우승'){a.name='오디션 참가';c[0]++}if(/^오디션/.test(a.name))ids.push(a.id)});
+ if(k==='tidy'){const RE=/\s*(?:(?:최우승|준우승|우승)\s*&\s*)?참가(?:\s*&\s*(?:최우승|준우승|우승|PR|포토))*\s*$/;let c=[0,0,0,0];
+  const ok=await savePoint('정리 중…',p=>{c=[0,0,0,0];const ids=[];(p.activities||[]).forEach(a=>{if(a.name==='오디션 참가·우승'){a.name='오디션 참가';c[0]++}if(/^오디션/.test(a.name))ids.push(a.id)});
    (p.log||[]).forEach(e=>{if(ids.includes(e.act)&&e.memo){const n=e.memo.replace(RE,'').trim();if(n!==e.memo){e.memo=n;c[1]++}}});
-   const b=(p.log||[]).length;p.log=(p.log||[]).filter(e=>!(e.memo||'').startsWith('합계 정정'));c[2]=b-p.log.length});
-  if(ok){pa=null;renderPoint();toast('정리했어요: 이름 '+c[0]+', 기록 이름 '+c[1]+', 정정 삭제 '+c[2])}return}
+   const b=(p.log||[]).length;p.log=(p.log||[]).filter(e=>!(e.memo||'').startsWith('합계 정정'));c[2]=b-p.log.length;
+   const au=(p.activities||[]).find(a=>/^오디션/.test(a.name));if(au){au.item=true;if(!(au.bonuses||[]).length){au.bonuses=[{id:'xau1',name:'준우승',points:25},{id:'xau2',name:'우승',points:30}];c[3]++}if(!au.points){au.points=10;c[3]++}}
+   const sh=(p.activities||[]).find(a=>a.name==='상점 구매');if(sh&&!sh.minus){sh.minus=true;c[3]++}});
+  if(ok){pa=null;renderPoint();toast('정리했어요: 활동 이름 '+c[0]+'건, 기록 이름 '+c[1]+'건, 정정 삭제 '+c[2]+'건, 보너스·차감 설정 '+c[3]+'건')}return}
  if(k==='adda'){pa.push({id:uid('a'),name:'',unit:'회',points:0,item:false,minus:false,bonuses:[]});renderPoint();return}
  if(k==='addb'){pa[n].bonuses.push({id:uid('x'),name:'',points:0});renderPoint();return}
  if(k==='bd'){pa[n].bonuses.splice(m,1);renderPoint();return}
