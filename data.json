@@ -120,20 +120,9 @@
     "id": "a6",
     "name": "오디션 참가",
     "unit": "건",
-    "points": 10,
+    "points": 0,
     "item": true,
-    "bonuses": [
-     {
-      "id": "xau1",
-      "name": "준우승",
-      "points": 25
-     },
-     {
-      "id": "xau2",
-      "name": "우승",
-      "points": 30
-     }
-    ]
+    "bonuses": []
    },
    {
     "id": "a7",
