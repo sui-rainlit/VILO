@@ -196,6 +196,8 @@ document.addEventListener('change',e=>{const t=e.target,d=t.dataset;
 const COORD_SEED={"series":[{"id":"s1","name":"아이카츠!","mode":"parts","ratio":"180/262","catLabel":"브랜드","cats":[{"id":"s1b1","name":"Angely Sugar"},{"id":"s1b2","name":"FUTURING GIRL"},{"id":"s1b3","name":"SPICY AGEHA"},{"id":"s1b4","name":"HAPPY RAINBOW"},{"id":"s1b5","name":"LoLi GoThiC"},{"id":"s1b6","name":"Aurora Fantasy"},{"id":"s1b7","name":"LOVE QUEEN"},{"id":"s1b8","name":"MAGICAL TOY"},{"id":"s1b9","name":"Swing ROCK"},{"id":"s1b10","name":"Bohemian Sky"},{"id":"s1b11","name":"LOVE MOONRISE"},{"id":"s1b12","name":"ViVid Kiss"},{"id":"s1b13","name":"Dreamy Crown"},{"id":"s1b14","name":"Sangria Rosa"},{"id":"s1b15","name":"桜色花伝"},{"id":"s1b16","name":"Dance Fusion"},{"id":"s1b17","name":"Retro Clover"},{"id":"s1b18","name":"Dolly devil"},{"id":"s1b19","name":"Mecha Panic"}],"rarities":[{"id":"s1r1","name":"N"},{"id":"s1r2","name":"R"},{"id":"s1r3","name":"CP"},{"id":"s1r4","name":"PR"},{"id":"s1r5","name":"SPR"},{"id":"s1r6","name":"LPR"}],"items":[]},{"id":"s2","name":"아이카츠 스타즈!","mode":"parts","ratio":"180/262","catLabel":"브랜드","cats":[],"rarities":[{"id":"s2r1","name":"N"},{"id":"s2r2","name":"R"},{"id":"s2r3","name":"CP"},{"id":"s2r4","name":"PR"},{"id":"s2r5","name":"SPR"},{"id":"s2r6","name":"LPR"}],"items":[]},{"id":"s3","name":"아이카츠 프렌즈!","mode":"parts","ratio":"180/262","catLabel":"브랜드","cats":[],"rarities":[{"id":"s3r1","name":"N"},{"id":"s3r2","name":"R"},{"id":"s3r3","name":"CP"},{"id":"s3r4","name":"PR"},{"id":"s3r5","name":"JLR"},{"id":"s3r6","name":"LPR"}],"items":[]},{"id":"s4","name":"아이카츠 플래닛!","mode":"single","ratio":"1/1","catLabel":"브랜드","cats":[],"rarities":[{"id":"s4r1","name":"N"},{"id":"s4r2","name":"R"},{"id":"s4r3","name":"CP"},{"id":"s4r4","name":"PR"}],"items":[]},{"id":"s5","name":"VILO!","mode":"parts","ratio":"180/262","catLabel":"종류","cats":[{"id":"s5c1","name":"스쿨 드레스"},{"id":"s5c2","name":"애니버서리 코디"},{"id":"s5c3","name":"디자이너 코디"},{"id":"s5c4","name":"특별 이벤트 코디"}],"rarities":[{"id":"s5r1","name":"N"},{"id":"s5r2","name":"R"},{"id":"s5r3","name":"CP"},{"id":"s5r4","name":"PR"},{"id":"s5r5","name":"SPR"},{"id":"s5r6","name":"LPR"}],"items":[]}]};
 const CPT=[['top','상의'],['bottom','하의'],['shoes','슈즈'],['acc','악세']];
 let cs=0,cd=null,ci=null,cq='';
+const TODO_IDS=['s1','s2','s3'];const todoOn=S=>TODO_IDS.includes(S.id);
+function pendingList(){const out=[];D.coord.series.forEach(s=>{if(!todoOn(s))return;(s.items||[]).forEach(i=>{if(i.needAcc)out.push({s,i,r:''});(i.reprints||[]).forEach((r,n)=>{if(r.need)out.push({s,i,r:String(n)})})})});return out}
 const curS=()=>D.coord.series[cs];
 const partsOf=S=>S.mode==='single'?[['top','스윙']]:CPT;
 const cpaths=it=>[...CPT.map(([k])=>it[k]),...(it.reprints||[]).flatMap(r=>CPT.map(([k])=>r[k]))].filter(Boolean);
@@ -207,15 +209,17 @@ function renderCoord(){
  const rows=(k,ph)=>cd[k].map((x,n)=>'<div class="mr"><input type="text" data-cn="'+k+':'+n+'" value="'+esc(x.name)+'" placeholder="'+ph+'"><button class="b g s" data-ct="cu" data-k="'+k+'" data-n="'+n+'">↑</button><button class="b g s" data-ct="cv" data-k="'+k+'" data-n="'+n+'">↓</button><button class="b r s" data-ct="cdl" data-k="'+k+'" data-n="'+n+'">삭제</button></div>').join('')+'<button class="b g s" data-ct="cadd" data-k="'+k+'">+ 추가</button>';
  const rn=Object.fromEntries((S.rarities||[]).map(r=>[r.id,r.name])),cn=Object.fromEntries((S.cats||[]).map(r=>[r.id,r.name]));
  const l=sortedItems(S).filter(i=>!cq||((i.name||'')+' '+(i.no||'')).toLowerCase().includes(cq.toLowerCase()));
- $('#app').innerHTML=head()
- +'<div class="tabs">'+D.coord.series.map((x,n)=>'<button class="tab'+(n===cs?' on':'')+'" data-ct="cser" data-n="'+n+'">'+esc(x.name)+'</button>').join('')+'</div>'
+ const pend=pendingList();
+ const chk='<h3>구매 체크리스트 ('+pend.length+')</h3>'+(pend.length?pend.map(p=>'<div class="li" style="cursor:default"><img src="'+esc(pv[p.i.top]||p.i.top||'')+'" alt="" style="aspect-ratio:'+esc(p.s.ratio||'180/262')+'"><div style="flex:1"><b style="font-size:14px">'+esc(p.i.name)+'</b><br><span>'+esc(p.s.name+' · '+(p.r===''?'악세 구매 필요':'복각 '+((p.i.reprints[+p.r].label)||(+p.r+1))+' 구매 필요'))+'</span></div><button class="b g s" data-ct="tdone" data-sid="'+p.s.id+'" data-id="'+esc(p.i.id)+'" data-r="'+p.r+'">구매 완료</button></div>').join(''):'<p class="note">구매해야 할 코디가 없어요. 카드 수정에서 “악세 구매 필요”, “복각 구매 필요”를 체크하면 여기에 모여요.</p>');
+ $('#app').innerHTML=head()+chk
+ +'<div class="tabs" style="margin-top:18px">'+D.coord.series.map((x,n)=>'<button class="tab'+(n===cs?' on':'')+'" data-ct="cser" data-n="'+n+'">'+esc(x.name)+'</button>').join('')+'</div>'
  +'<h3>분류·레어도 설정</h3><label class="l">카드 비율 (가로/세로, 예: 180/262 · 정사각형은 1/1)</label><input type="text" data-cm="ratio" value="'+esc(cd.ratio)+'">'
  +'<label class="l">분류 이름 (예: 브랜드, 종류)</label><input type="text" data-cm="catLabel" value="'+esc(cd.catLabel)+'">'
  +'<h3>'+esc(cd.catLabel||'분류')+' (위에 있을수록 앞에 표시)</h3>'+rows('cats',(cd.catLabel||'분류')+' 이름')
  +'<h3>레어도 (아래로 갈수록 높은 레어도)</h3>'+rows('rarities','레어도 이름')
  +'<p><button class="b" data-ct="ccfg">설정 저장</button></p>'
  +'<h3>카드 ('+(S.items||[]).length+'장)</h3><div style="display:flex;gap:8px"><input type="text" data-cq placeholder="이름·번호 검색" value="'+esc(cq)+'"><button class="b" data-ct="cnew" style="white-space:nowrap">+ 카드 추가</button></div>'
- +(l.length?l.map(i=>'<div class="li" data-ct="cedit" data-id="'+esc(i.id)+'"><img src="'+esc(pv[i.top]||i.top||'')+'" alt="" style="aspect-ratio:'+esc(S.ratio||'180/262')+'"><div><b style="font-size:14px">'+esc(i.name)+'</b><br><span>'+esc([rn[i.rarity],i.no&&'No.'+i.no,cn[i.cat],(i.reprints||[]).length?'복각 '+i.reprints.length:''].filter(Boolean).join(' · '))+'</span></div></div>').join(''):'<p class="note">등록된 카드가 없어요.</p>')+'</div>'}
+ +(l.length?l.map(i=>'<div class="li" data-ct="cedit" data-id="'+esc(i.id)+'"><img src="'+esc(pv[i.top]||i.top||'')+'" alt="" style="aspect-ratio:'+esc(S.ratio||'180/262')+'"><div><b style="font-size:14px">'+esc(i.name)+'</b><br><span>'+esc([rn[i.rarity],i.no&&'No.'+i.no,cn[i.cat],(i.reprints||[]).length?'복각 '+i.reprints.length:'',(i.needAcc||(i.reprints||[]).some(r=>r.need))?'🛒 구매 필요':''].filter(Boolean).join(' · '))+'</span></div></div>').join(''):'<p class="note">등록된 카드가 없어요.</p>')+'</div>'}
 function cform(){const S=curS(),P=partsOf(S),one=P.length===1,m=mbox(),sc=(m.querySelector('.csh')||{}).scrollTop||0,ex=(S.items||[]).some(x=>x.id===ci.id);
  const pk=(o,pre)=>'<div class="cpg">'+P.map(([k,n])=>'<div class="ct'+(one?' full':'')+'"><div class="im">'+(o[k]?'<img src="'+esc(prev(o[k]))+'" alt="">':n)+'</div><div class="r"><label class="b g s fi">'+(o[k]?'변경':'사진')+'<input type="file" accept="image/*" data-cpf="'+pre+':'+k+'"></label>'+(o[k]?'<button class="b g s" data-ct="crm" data-ref="'+pre+':'+k+'">삭제</button>':'')+'</div></div>').join('')+'</div>';
  const sel=(a,v,k,ph)=>'<select data-cf="'+k+'"><option value="">'+ph+'</option>'+(a||[]).map(x=>'<option value="'+x.id+'"'+(x.id===v?' selected':'')+'>'+esc(x.name)+'</option>').join('')+'</select>';
@@ -224,7 +228,8 @@ function cform(){const S=curS(),P=partsOf(S),one=P.length===1,m=mbox(),sc=(m.que
  +'<label class="l">카드 번호 (같은 레어도 안에서 이 순서로 정렬)</label><input type="text" data-cf="no" value="'+esc(ci.no)+'" placeholder="예: 03-01">'
  +'<label class="l">'+esc(S.catLabel||'분류')+'</label>'+sel(S.cats,ci.cat,'cat','선택')+'<label class="l">레어도</label>'+sel(S.rarities,ci.rarity,'rarity','선택')
  +'<h3>원본 (첫 사진 필수'+(one?'':', 악세는 없어도 돼요')+')</h3>'+pk(ci.parts,'o')
- +ci.reprints.map((r,n)=>'<div class="crb"><label class="l">복각 이름 (예: 2026 복각)</label><input type="text" data-crl="'+n+'" value="'+esc(r.label)+'">'+pk(r.parts,'r'+n)+'<p style="margin:8px 0 0"><button class="b r s" data-ct="crr" data-n="'+n+'">이 복각 삭제</button></p></div>').join('')
+ +(todoOn(S)?'<label style="display:flex;gap:8px;align-items:center;margin:12px 0;font-size:14px"><input type="checkbox" data-cchk="acc"'+(ci.needAcc?' checked':'')+'> 악세 구매 필요</label>':'')
+ +ci.reprints.map((r,n)=>'<div class="crb"><label class="l">복각 이름 (예: 2026 복각)</label><input type="text" data-crl="'+n+'" value="'+esc(r.label)+'">'+pk(r.parts,'r'+n)+(todoOn(S)?'<label style="display:flex;gap:8px;align-items:center;margin:10px 0 0;font-size:14px"><input type="checkbox" data-cchk="rp:'+n+'"'+(r.need?' checked':'')+'> 이 복각 구매 필요</label>':'')+'<p style="margin:8px 0 0"><button class="b r s" data-ct="crr" data-n="'+n+'">이 복각 삭제</button></p></div>').join('')
  +'<p><button class="b g" data-ct="car">+ 복각 버전 추가</button></p><p style="margin-top:16px"><button class="b" data-ct="csave">저장</button> '+(ex?'<button class="b r" data-ct="cdel">삭제</button>':'')+'</p></div></div>';
  const c=m.querySelector('.csh');if(c)c.scrollTop=sc}
 const cpo=ref=>{const[a,k]=ref.split(':');return[a==='o'?ci.parts:ci.reprints[+a.slice(1)].parts,k]};
@@ -234,12 +239,13 @@ async function csaveItem(){const S=curS(),sid=S.id,P=partsOf(S);
   const tg=[{o:ci.parts,pre:''},...ci.reprints.map((r,n)=>({o:r.parts,pre:'r'+n}))];let tot=0,dn=0;tg.forEach(t=>P.forEach(([k])=>{if(t.o[k] instanceof File)tot++}));
   for(const t of tg)for(const[k]of P){const v=t.o[k];if(v instanceof File){status('사진 업로드 중 ('+(++dn)+'/'+tot+')');t.o[k]=await uploadFile(v,sid+'-'+ci.id.slice(-5)+t.pre+k)}}
   const pk=o=>{const r={};P.forEach(([k])=>{if(typeof o[k]==='string'&&o[k])r[k]=o[k]});return r};
-  const it=Object.assign({id:ci.id,name:ci.name.trim(),no:ci.no.trim(),cat:ci.cat,rarity:ci.rarity},pk(ci.parts),{reprints:ci.reprints.map(r=>Object.assign({label:r.label.trim()},pk(r.parts)))});
+  const it=Object.assign({id:ci.id,name:ci.name.trim(),no:ci.no.trim(),cat:ci.cat,rarity:ci.rarity},pk(ci.parts),{reprints:ci.reprints.map(r=>Object.assign({label:r.label.trim()},pk(r.parts),todoOn(S)?{need:!!r.need}:{}))},todoOn(S)?{needAcc:!!ci.needAcc}:{});
   status('목록 저장 중…');let old=null;
   await commitData(d=>{const s=d.coord.series.find(x=>x.id===sid);s.items=s.items||[];const i=s.items.findIndex(x=>x.id===it.id);old=i>=0?s.items[i]:null;if(i>=0)s.items[i]=it;else s.items.unshift(it)},'save coord');
   if(old){const keep=new Set(cpaths(it));for(const p of cpaths(old))if(!keep.has(p))await delFile(p)}});
  if(ok){ci=null;mbox().innerHTML='';renderCoord();toast('저장했어요. 사이트에는 1~2분 뒤 반영돼요')}}
 document.addEventListener('click',async e=>{const t=e.target.closest('[data-ct]');if(!t)return;const d=t.dataset,k=d.ct,n=+d.n;
+ if(k==='tdone'){const sid=d.sid,id=d.id,r=d.r;const ok=await run('저장 중…',async()=>{await commitData(x=>{const s=x.coord.series.find(y=>y.id===sid),i=s&&(s.items||[]).find(z=>z.id===id);if(!i)return;if(r==='')i.needAcc=false;else if(i.reprints&&i.reprints[+r])i.reprints[+r].need=false},'purchase done')});if(ok){renderCoord();toast('구매 완료로 표시했어요')}return}
  if(k==='cser'){cs=n;cd=null;cq='';renderCoord();return}
  if(k==='cadd'){cd[d.k].push({id:uid(d.k[0]),name:''});renderCoord();return}
  if(k==='cdl'){const x=cd[d.k][n],S=curS();if((S.items||[]).some(i=>(d.k==='cats'?i.cat:i.rarity)===x.id)){toast('사용 중인 분류는 삭제할 수 없어요');return}cd[d.k].splice(n,1);renderCoord();return}
@@ -248,13 +254,13 @@ document.addEventListener('click',async e=>{const t=e.target.closest('[data-ct]'
   const gone=(l,id)=>id&&!l.find(x=>x.id===id);const bad=(S.items||[]).find(i=>gone(cats,i.cat)||gone(rars,i.rarity));if(bad){toast('“'+bad.name+'” 등이 쓰고 있는 분류는 지울 수 없어요');return}
   const ratio=(cd.ratio||'').trim()||'180/262',lab=(cd.catLabel||'').trim()||'분류';
   const ok=await run('저장 중…',async()=>{await commitData(x=>{const s=x.coord.series.find(y=>y.id===sid);s.ratio=ratio;s.catLabel=lab;s.cats=cats;s.rarities=rars},'update coord settings')});if(ok){cd=null;renderCoord();toast('저장했어요')}return}
- if(k==='cnew'){ci={id:uid('c'),name:'',no:'',cat:'',rarity:'',parts:{},reprints:[]};cform();return}
+ if(k==='cnew'){ci={id:uid('c'),name:'',no:'',cat:'',rarity:'',needAcc:false,parts:{},reprints:[]};cform();return}
  if(k==='cedit'){const i=(curS().items||[]).find(x=>x.id===d.id),P=partsOf(curS()),pk=o=>{const r={};P.forEach(([q])=>{if(typeof o[q]==='string'&&o[q])r[q]=o[q]});return r};
-  ci={id:i.id,name:i.name,no:i.no||'',cat:i.cat||'',rarity:i.rarity||'',parts:pk(i),reprints:(i.reprints||[]).map(r=>({label:r.label||'',parts:pk(r)}))};cform();return}
+  ci={id:i.id,name:i.name,no:i.no||'',cat:i.cat||'',rarity:i.rarity||'',parts:pk(i),needAcc:!!i.needAcc,reprints:(i.reprints||[]).map(r=>({label:r.label||'',need:!!r.need,parts:pk(r)}))};cform();return}
  if(k==='ccancel'){ci=null;mbox().innerHTML='';return}
  if(k==='crm'){const[o,q]=cpo(d.ref);delete o[q];cform();return}
  if(k==='crr'){ci.reprints.splice(n,1);cform();return}
- if(k==='car'){ci.reprints.push({label:'',parts:{}});cform();return}
+ if(k==='car'){ci.reprints.push({label:'',need:false,parts:{}});cform();return}
  if(k==='csave'){csaveItem();return}
  if(k==='cdel'){if(!t.dataset.c){t.dataset.c=1;t.textContent='한 번 더 누르면 삭제';return}
   const sid=curS().id;let old=null;const ok=await run('삭제 중…',async()=>{await commitData(x=>{const s=x.coord.series.find(y=>y.id===sid);old=(s.items||[]).find(i=>i.id===ci.id)||null;s.items=(s.items||[]).filter(i=>i.id!==ci.id)},'delete coord');if(old)for(const p of cpaths(old))await delFile(p)});
@@ -263,7 +269,8 @@ document.addEventListener('input',e=>{const t=e.target,d=t.dataset;
  if(d.cf&&ci)ci[d.cf]=t.value;else if(d.crl!==undefined&&ci)ci.reprints[+d.crl].label=t.value;
  else if(d.cn&&cd){const[k,n]=d.cn.split(':');cd[k][+n].name=t.value}else if(d.cm&&cd)cd[d.cm]=t.value;
  else if(d.cq!==undefined){cq=t.value;renderCoord();const el=document.querySelector('[data-cq]');if(el){el.focus();el.setSelectionRange(cq.length,cq.length)}}});
-document.addEventListener('change',e=>{const t=e.target;if(t.dataset.cpf&&t.files[0]){const[o,k]=cpo(t.dataset.cpf);o[k]=t.files[0];cform()}});
+document.addEventListener('change',e=>{const t=e.target;if(t.dataset.cpf&&t.files[0]){const[o,k]=cpo(t.dataset.cpf);o[k]=t.files[0];cform()}
+ if(t.dataset.cchk&&ci){const v=t.dataset.cchk;if(v==='acc')ci.needAcc=t.checked;else ci.reprints[+v.split(':')[1]].need=t.checked}});
 
 
 const COL={photo:{ratio:'750/1046',lists:[['chars','캐릭터'],['types','타입']],fields:[['name','이름 (비워도 돼요)'],['char','캐릭터','chars'],['type','타입','types']]},idol:{ratio:'400/255',lists:[],fields:[['name','이름 (비워도 돼요)'],['no','고유 번호 (작은 번호부터 정렬)']]}};

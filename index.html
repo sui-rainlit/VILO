@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css">
 <style>
 :root{--cw:640px;--tx:#2d3a5a;--mu:#7b86a3;--ac:#5b7cf0;--ac2:#eef2ff;--bd:#e6ebf7;--ink:#3a4570;--gr:linear-gradient(120deg,#ffcfa8 0%,#ffbccf 35%,#bcc9ff 70%,#a8dfff 100%);--sh:0 4px 16px rgba(140,160,230,.2);--fb:"NanumSquare","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;--fh:"NanumSquare","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif}
-*{box-sizing:border-box}html,body{margin:0;min-height:100%}
+*{box-sizing:border-box}html{overflow-y:scroll;scrollbar-gutter:stable}html,body{margin:0;min-height:100%}
 body{background:#fff;color:var(--tx);font-family:var(--fb);font-synthesis:none;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 button{font:inherit;color:inherit;cursor:pointer}
 /* login */
@@ -35,6 +35,7 @@ h2{font-family:var(--fh);font-size:17px;margin:30px 0 12px}
 .pf-sec i{flex:1;height:1px;background:var(--ac);opacity:.45}
 .pf-sec:after{content:"";width:8px;height:8px;border:1.5px solid var(--ac);transform:rotate(45deg)}
 .idc{display:grid;grid-template-columns:150px 1fr;gap:16px;align-items:start}
+@media(max-width:699px){.idc{grid-template-columns:1fr}}
 .ph3{width:150px;background:linear-gradient(160deg,#fff1e6,#e8f1ff);aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;color:var(--mu);font-size:11px;letter-spacing:.1em;text-align:center}
 .ph3 img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
 .rows{margin:0}.rw{display:flex;align-items:baseline;padding:7px 0;font-size:12px}
@@ -85,6 +86,8 @@ details.yr[open]>summary{border-bottom:1px solid var(--bd)}
 .cd-r{display:flex;justify-content:flex-end;align-items:center;margin-top:6px;font-size:11px;gap:4px}
 .cd-b{border:0;border-radius:0;padding:6px 11px;font:inherit;font-size:11px;background:var(--ac2);color:var(--ac);cursor:pointer;text-decoration:none;display:inline-block}
 .ddrow{display:flex;gap:8px;margin:2px 0 8px}
+.ddrow .cin{flex:1.3;width:auto;min-width:0;margin:0}
+.ddrow .ddb{flex:1;padding:10px 8px}
 .ddb{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--bd);background:#fff;padding:10px 12px;font:inherit;font-size:12px;line-height:1.1;color:var(--tx);cursor:pointer;min-width:0}
 .ddb span{color:var(--mu);flex:none}.ddb b{flex:none;text-align:center;font-weight:700;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ddb i{font-style:normal;font-size:9px;color:var(--mu);flex:none}
 .ddb.open{border-color:var(--ac)}
@@ -168,10 +171,10 @@ let cs=0,cb='',cr='',cq='';
 const CPT=[['top','상의'],['bottom','하의'],['shoes','슈즈'],['acc','악세']];
 const cext=p=>(p.split('.').pop()||'jpg').toLowerCase();
 function coordPage(){const C=D.coord;if(!C||!(C.series||[]).length)return '<div class="soon">COORD<br>아직 설정 전이에요</div>';if(cs>=C.series.length)cs=0;
- return '<div class="sr">'+C.series.map((x,n)=>'<button class="chp'+(n===cs?' on':'')+'" data-cs="'+n+'">'+esc(x.name)+'</button>').join('')+'</div><input class="cin" id="cq" type="search" placeholder="이름·번호 검색" value="'+esc(cq)+'"><div id="cch"></div><div id="cg"></div>'}
+ return '<div class="sr">'+C.series.map((x,n)=>'<button class="chp'+(n===cs?' on':'')+'" data-cs="'+n+'">'+esc(x.name)+'</button>').join('')+'</div><div id="cch"></div><div id="cg"></div>'}
 let ddo='';
 function coordRefresh(){const S=D.coord.series[cs],defs=[['cb',S.catLabel||'분류',S.cats||[],cb],['cr','레어도',S.rarities||[],cr]].filter(x=>x[2].length);
- const bar='<div class="ddrow">'+defs.map(x=>'<button class="ddb'+(ddo===x[0]?' open':'')+'" data-dd="'+x[0]+'"><span>'+esc(x[1])+'</span><b>'+esc(x[3]?(x[2].find(y=>y.id===x[3])||{name:'전체'}).name:'전체')+'</b><i>'+(ddo===x[0]?'▲':'▼')+'</i></button>').join('')+'</div>';
+ const bar='<div class="ddrow"><input class="cin" id="cq" type="search" placeholder="이름·번호 검색" value="'+esc(cq)+'">'+defs.map(x=>'<button class="ddb'+(ddo===x[0]?' open':'')+'" data-dd="'+x[0]+'"><b>'+esc(x[3]?(x[2].find(y=>y.id===x[3])||{name:x[1]}).name:x[1])+'</b><i>'+(ddo===x[0]?'▲':'▼')+'</i></button>').join('')+'</div>';
  const op=defs.find(x=>x[0]===ddo);
  $('#cch').innerHTML=bar+(op?'<div class="ddl"><button class="ddo'+(op[3]?'':' on')+'" data-'+op[0]+'="">전체</button>'+op[2].map(x=>'<button class="ddo'+(op[3]===x.id?' on':'')+'" data-'+op[0]+'="'+x.id+'">'+esc(x.name)+'</button>').join('')+'</div>':'');coordGrid()}
 function coordGrid(){const S=D.coord.series[cs],rar=S.rarities||[],ri=id=>rar.findIndex(x=>x.id===id);
