@@ -1581,7 +1581,20 @@
       "name": "LPR"
      }
     ],
-    "items": []
+    "items": [
+     {
+      "id": "cmv6oqezly3u",
+      "name": "MAGICAL BLUE COORD",
+      "no": "",
+      "cat": "cmv6oq476god",
+      "rarity": "s1r3",
+      "top": "img/s1-zly3utop-mv6orj52bmn.png",
+      "bottom": "img/s1-zly3ubottom-mv6orkudp70.png",
+      "shoes": "img/s1-zly3ushoes-mv6ormkryyx.png",
+      "reprints": [],
+      "needAcc": false
+     }
+    ]
    },
    {
     "id": "s2",
