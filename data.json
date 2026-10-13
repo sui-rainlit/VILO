@@ -1863,6 +1863,17 @@
     ],
     "items": [
      {
+      "id": "cmv6od3fi6pl",
+      "name": "STARRY SKY VILO COORD",
+      "no": "",
+      "cat": "s5c1",
+      "rarity": "s5r1",
+      "top": "img/s5-fi6pltop-mv6odeimpaq.png",
+      "bottom": "img/s5-fi6plbottom-mv6odgit9fz.png",
+      "shoes": "img/s5-fi6plshoes-mv6odiu56aw.png",
+      "reprints": []
+     },
+     {
       "id": "cmv6obwy3ydp",
       "name": "WHITE SUIT VILO COORD",
       "no": "",
