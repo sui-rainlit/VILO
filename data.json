@@ -1573,7 +1573,48 @@
     "mode": "parts",
     "ratio": "180/262",
     "catLabel": "브랜드",
-    "cats": [],
+    "cats": [
+     {
+      "id": "cmv6mtp62g8d",
+      "name": "my little heart"
+     },
+     {
+      "id": "cmv6mtucprbn",
+      "name": "Berry Parfait"
+     },
+     {
+      "id": "cmv6mtxwpo3u",
+      "name": "Rainbow Berry Parfait"
+     },
+     {
+      "id": "cmv6mucfagmu",
+      "name": "SPICE CHORD"
+     },
+     {
+      "id": "cmv6mug25cpu",
+      "name": "Gothic Victoria"
+     },
+     {
+      "id": "cmv6mum2ldbk",
+      "name": "Royal Sword"
+     },
+     {
+      "id": "cmv6muqnoi2t",
+      "name": "Shiny Smile"
+     },
+     {
+      "id": "cmv6muucqqf2",
+      "name": "FuwaFuwa Dream"
+     },
+     {
+      "id": "cmv6muzd0eef",
+      "name": "Romance Kiss"
+     },
+     {
+      "id": "cmv6mv3xrqq8",
+      "name": "Perfect Queen"
+     }
+    ],
     "rarities": [
      {
       "id": "s2r1",
