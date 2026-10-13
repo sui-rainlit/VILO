@@ -1649,7 +1649,64 @@
     "mode": "parts",
     "ratio": "180/262",
     "catLabel": "브랜드",
-    "cats": [],
+    "cats": [
+     {
+      "id": "cmv6mwy5crdn",
+      "name": "Sugar Melody"
+     },
+     {
+      "id": "cmv6mxc4b2oi",
+      "name": "Classical Ange"
+     },
+     {
+      "id": "cmv6mxigqy9u",
+      "name": "Humming Leaf"
+     },
+     {
+      "id": "cmv6mxlu0du9",
+      "name": "Antique Sailor"
+     },
+     {
+      "id": "cmv6mxqiqyyb",
+      "name": "MATERIAL COLOR"
+     },
+     {
+      "id": "cmv6mxv618vo",
+      "name": "Luna Witch"
+     },
+     {
+      "id": "cmv6mxz2qcfk",
+      "name": "Moon Maiden"
+     },
+     {
+      "id": "cmv6my38zr43",
+      "name": "Glorious Snow"
+     },
+     {
+      "id": "cmv6my7o5t08",
+      "name": "Milky Joker"
+     },
+     {
+      "id": "cmv6myc8o767",
+      "name": "COLORFUL SHAKE"
+     },
+     {
+      "id": "cmv6myg1tzl4",
+      "name": "Dancing Mirage"
+     },
+     {
+      "id": "cmv6mym3h2os",
+      "name": "Heavenly Perfume"
+     },
+     {
+      "id": "cmv6mys0702u",
+      "name": "Silky Ocean"
+     },
+     {
+      "id": "cmv6myw8yi9r",
+      "name": "Maple Ribbon"
+     }
+    ],
     "rarities": [
      {
       "id": "s3r1",
@@ -1670,6 +1727,10 @@
      {
       "id": "s3r5",
       "name": "JLR"
+     },
+     {
+      "id": "rmv6nqqfnip0",
+      "name": "SPR"
      },
      {
       "id": "s3r6",
