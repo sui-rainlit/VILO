@@ -1864,32 +1864,7 @@
       "name": "디자이너 코디"
      }
     ],
-    "rarities": [
-     {
-      "id": "s5r1",
-      "name": "N"
-     },
-     {
-      "id": "s5r2",
-      "name": "R"
-     },
-     {
-      "id": "s5r3",
-      "name": "CP"
-     },
-     {
-      "id": "s5r4",
-      "name": "PR"
-     },
-     {
-      "id": "s5r5",
-      "name": "SPR"
-     },
-     {
-      "id": "s5r6",
-      "name": "LPR"
-     }
-    ],
+    "rarities": [],
     "items": [
      {
       "id": "cmv6oghp3lif",
