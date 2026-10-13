@@ -1745,7 +1745,56 @@
     "mode": "single",
     "ratio": "1/1",
     "catLabel": "브랜드",
-    "cats": [],
+    "cats": [
+     {
+      "id": "cmv6ns1jnez3",
+      "name": "FAIRY"
+     },
+     {
+      "id": "cmv6ns24kd1k",
+      "name": "JEWEL"
+     },
+     {
+      "id": "cmv6ns2hh8no",
+      "name": "HOROSCOPE"
+     },
+     {
+      "id": "cmv6ns2u5vkl",
+      "name": "MUSIC"
+     },
+     {
+      "id": "cmv6nsq654s1",
+      "name": "STORY"
+     },
+     {
+      "id": "cmv6nsqk6rsy",
+      "name": "SWEETS"
+     },
+     {
+      "id": "cmv6nsqv04ss",
+      "name": "FLOWER"
+     },
+     {
+      "id": "cmv6nt1o66vi",
+      "name": "COSME"
+     },
+     {
+      "id": "cmv6nt22uw9y",
+      "name": "CAFE"
+     },
+     {
+      "id": "cmv6nt5yy7jo",
+      "name": "FRUITS"
+     },
+     {
+      "id": "cmv6ntb7sg9e",
+      "name": "MELTYHOUSE"
+     },
+     {
+      "id": "cmv6nth5dajg",
+      "name": "AQUARIUM"
+     }
+    ],
     "rarities": [
      {
       "id": "s4r1",
