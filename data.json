@@ -12,7 +12,11 @@
    },
    {
     "k": "대표색",
-    "v": ""
+    "v": "#FFC551 #1F9FFF"
+   },
+   {
+    "k": "신장",
+    "v": "162cm"
    },
    {
     "k": "과",
@@ -20,7 +24,7 @@
    },
    {
     "k": "특기",
-    "v": ""
+    "v": "피겨"
    },
    {
     "k": "취미",
@@ -28,15 +32,15 @@
    },
    {
     "k": "타입",
-    "v": ""
+    "v": "COOL > SEXY = POP > CUTE"
    },
    {
     "k": "브랜드",
-    "v": ""
+    "v": "MATERIAL COLOR, SPICE CHORD, Sangria Rosa"
    },
    {
     "k": "캐릭터",
-    "v": ""
+    "v": "미오, 츠바사, 쥬리"
    }
   ],
   "bio": [
@@ -91,7 +95,8 @@
   ],
   "appearance": "img/appearance-mv67eryx7v6.png",
   "idcard": "img/idcard-mv67eua8461.png",
-  "sub": "HASEGAWA SUI"
+  "sub": "HASEGAWA NAO | SUI",
+  "name": "하세가와 나오 | 스이"
  },
  "point": {
   "activities": [
@@ -1716,5 +1721,15 @@
     "items": []
    }
   ]
+ },
+ "photo": {
+  "ratio": "750/1046",
+  "chars": [],
+  "types": [],
+  "items": []
+ },
+ "idol": {
+  "ratio": "400/255",
+  "items": []
  }
 }
