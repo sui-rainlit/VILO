@@ -7,10 +7,6 @@
  "profile": {
   "fields": [
    {
-    "k": "닉네임",
-    "v": "스이"
-   },
-   {
     "k": "생일",
     "v": "09.18"
    },
@@ -20,11 +16,11 @@
    },
    {
     "k": "과",
-    "v": ""
+    "v": "바람의 춤조"
    },
    {
-    "k": "소속",
-    "v": ""
+    "k": "유닛",
+    "v": "MARCIALE | ON AIR | AESTAS | 4LIPS | SWANKIER | New Generation"
    },
    {
     "k": "특기",
@@ -47,9 +43,59 @@
     "v": ""
    }
   ],
-  "bio": [],
-  "appearance": "",
-  "idcard": ""
+  "bio": [
+   {
+    "d": "2023.07.14",
+    "t": "데뷔"
+   },
+   {
+    "d": "2023.06.25",
+    "t": "Ray of A-Teen 결성"
+   },
+   {
+    "d": "2023.06.25",
+    "t": "rêvé≠sooth 결성"
+   },
+   {
+    "d": "2023.09.27",
+    "t": "rêvé≠sooth 해체"
+   },
+   {
+    "d": "2023.10.22",
+    "t": "AESTAT 결성"
+   },
+   {
+    "d": "2024.01.14",
+    "t": "ON AIR 결성"
+   },
+   {
+    "d": "2024.01.19",
+    "t": "Hertz Wave 결성"
+   },
+   {
+    "d": "2024.01.27",
+    "t": "4LIPS 결성"
+   },
+   {
+    "d": "2024.04.29",
+    "t": "SWANKIER 결성"
+   },
+   {
+    "d": "2024.10.05",
+    "t": "Hertz Wave 해체"
+   },
+   {
+    "d": "2025.09.11",
+    "t": "Ray of A-Teen 해체"
+   },
+   {
+    "d": "2025.11.26",
+    "t": "New Generation 합류"
+   }
+  ],
+  "appearance": "img/appearance-mv67eryx7v6.png",
+  "idcard": "img/idcard-mv67eua8461.png",
+  "sub": "HASEGAWA SUI"
  },
  "point": {
   "activities": [
