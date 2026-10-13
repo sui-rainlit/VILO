@@ -1863,6 +1863,17 @@
     ],
     "items": [
      {
+      "id": "cmv6o3eyvdun",
+      "name": "LIGHT BLUE TOP STAR COORD",
+      "no": "",
+      "cat": "s5c1",
+      "rarity": "s5r1",
+      "top": "img/s5-yvduntop-mv6o3nkcu0r.png",
+      "bottom": "img/s5-yvdunbottom-mv6o3osx2y7.png",
+      "shoes": "img/s5-yvdunshoes-mv6o3pwli2l.png",
+      "reprints": []
+     },
+     {
       "id": "cmv6o29dllxv",
       "name": "PASSION VENUS COORD",
       "no": "",
