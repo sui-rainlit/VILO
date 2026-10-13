@@ -1565,19 +1565,7 @@
       "name": "LPR"
      }
     ],
-    "items": [
-     {
-      "id": "cmv669hykp3h",
-      "name": "STRAWBERRY PEARL COORD",
-      "no": "",
-      "cat": "s1b1",
-      "rarity": "s1r2",
-      "top": "img/s1-ykp3htop-mv66abljc21.png",
-      "bottom": "img/s1-ykp3hbottom-mv66acw87mp.png",
-      "shoes": "img/s1-ykp3hshoes-mv66adycn74.png",
-      "reprints": []
-     }
-    ]
+    "items": []
    },
    {
     "id": "s2",
