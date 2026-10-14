@@ -1879,6 +1879,17 @@
     "rarities": [],
     "items": [
      {
+      "id": "cmv7n3sj5hz0",
+      "name": "VILO 5TH ANNIVERSARY POP COORD",
+      "no": "03-02",
+      "cat": "s5c2",
+      "rarity": "",
+      "top": "img/s5-j5hz0top-mv7n45qcyhv.png",
+      "bottom": "img/s5-j5hz0bottom-mv7n45qilar.png",
+      "shoes": "img/s5-j5hz0shoes-mv7n45qmbr2.png",
+      "reprints": []
+     },
+     {
       "id": "cmv7n2p6a0z6",
       "name": "VILO 3RD ANNIVERSARY POP COORD",
       "no": "03-01",
