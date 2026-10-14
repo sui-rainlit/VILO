@@ -2319,7 +2319,15 @@
     "name": "POP"
    }
   ],
-  "items": []
+  "items": [
+   {
+    "id": "kmv7p325sx8r",
+    "name": "THRONE OF THE BLACK BIRD",
+    "img": "img/photo-5sx8r-mv7p3fzu2k5.jpg",
+    "char": "cmv7oy5lsnyi",
+    "type": "tmv7oxq6lt28"
+   }
+  ]
  },
  "idol": {
   "ratio": "400/255",
