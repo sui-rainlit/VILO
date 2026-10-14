@@ -2037,10 +2037,17 @@
       "no": "01-04",
       "cat": "s5c1",
       "rarity": "",
-      "top": "img/s5-xnx16top-mv6obi30ldd.png",
-      "bottom": "img/s5-xnx16bottom-mv6objep6nn.png",
-      "shoes": "img/s5-xnx16shoes-mv6obkn57sw.png",
-      "reprints": []
+      "top": "img/s5-xnx16top-mv7nusj8qfs.png",
+      "bottom": "img/s5-xnx16bottom-mv7nusjaokz.png",
+      "shoes": "img/s5-xnx16shoes-mv7nusjb7eq.png",
+      "reprints": [
+       {
+        "label": "온 퍼레이드",
+        "top": "img/s5-xnx16r0top-mv7nusjd5fa.png",
+        "bottom": "img/s5-xnx16r0bottom-mv7nusjemek.png",
+        "shoes": "img/s5-xnx16r0shoes-mv7nusjftda.png"
+       }
+      ]
      },
      {
       "id": "cmv6o3eyvdun",
