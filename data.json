@@ -2090,6 +2090,15 @@
   "items": []
  },
  "unit": {
-  "units": []
+  "units": [
+   {
+    "id": "umv7nsfnauko",
+    "name": "새 유닛",
+    "logo": "",
+    "members": [],
+    "lives": [],
+    "coords": []
+   }
+  ]
  }
 }
