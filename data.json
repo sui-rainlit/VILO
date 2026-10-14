@@ -1919,6 +1919,22 @@
     ],
     "items": [
      {
+      "id": "cmv7oh2494n2",
+      "name": "BLUE STAR COORD",
+      "no": "",
+      "cat": "cmv6q7n91t5r",
+      "rarity": "",
+      "top": "img/s5-494n2top-mv7oklk27sx.png",
+      "bottom": "img/s5-494n2bottom-mv7oklk4jjj.png",
+      "shoes": "img/s5-494n2shoes-mv7oklk6bmz.png",
+      "acc": "img/s5-494n2acc-mv7oklk7qar.png",
+      "reprints": [
+       {
+        "label": "온 퍼레이드"
+       }
+      ]
+     },
+     {
       "id": "cmv7nq9ojj4g",
       "name": "FOUR STAR LUXUAL COORD",
       "no": "",
