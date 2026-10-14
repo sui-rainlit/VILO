@@ -230,7 +230,8 @@ const partsOf=S=>S.mode==='single'?SQ:CPT;
 const cpaths=it=>[...ALLK.map(([k])=>it[k]),...(it.reprints||[]).flatMap(r=>ALLK.map(([k])=>r[k]))].filter(Boolean);
 const mbox=()=>{let m=document.getElementById('m');if(!m){m=document.createElement('div');m.id='m';document.body.appendChild(m)}return m};
 function sortedItems(S){const ri=id=>(S.rarities||[]).findIndex(x=>x.id===id);
- return [...(S.items||[])].sort((a,b)=>ri(b.rarity)-ri(a.rarity)||(!a.no)-(!b.no)||String(a.no||'').localeCompare(String(b.no||''),'ko',{numeric:true})||(a.name||'').localeCompare(b.name||'','ko'))}
+ const ci=id=>{const n=(S.cats||[]).findIndex(x=>x.id===id);return n<0?999:n};
+ return [...(S.items||[])].sort((a,b)=>(S.id==='s5'?ci(a.cat)-ci(b.cat):0)||ri(b.rarity)-ri(a.rarity)||(!a.no)-(!b.no)||String(a.no||'').localeCompare(String(b.no||''),'ko',{numeric:true})||(a.name||'').localeCompare(b.name||'','ko'))}
 function renderCoord(){
  const S=curS();if(!cd)cd={ratio:S.ratio||'180/262',catLabel:S.catLabel||'분류',cats:clone(S.cats||[]),rarities:clone(S.rarities||[])};
  const rows=(k,ph)=>cd[k].map((x,n)=>'<div class="mr"><input type="text" data-cn="'+k+':'+n+'" value="'+esc(x.name)+'" placeholder="'+ph+'"><button class="b g s" data-ct="cu" data-k="'+k+'" data-n="'+n+'">↑</button><button class="b g s" data-ct="cv" data-k="'+k+'" data-n="'+n+'">↓</button><button class="b r s" data-ct="cdl" data-k="'+k+'" data-n="'+n+'">삭제</button></div>').join('')+'<button class="b g s" data-ct="cadd" data-k="'+k+'">+ 추가</button>';
