@@ -1879,6 +1879,17 @@
     "rarities": [],
     "items": [
      {
+      "id": "cmv7n2p6a0z6",
+      "name": "VILO 3RD ANNIVERSARY POP COORD",
+      "no": "03-01",
+      "cat": "s5c2",
+      "rarity": "",
+      "top": "img/s5-6a0z6top-mv7n3dahxls.png",
+      "bottom": "img/s5-6a0z6bottom-mv7n3dao0qe.png",
+      "shoes": "img/s5-6a0z6shoes-mv7n3datn9p.png",
+      "reprints": []
+     },
+     {
       "id": "cmv6oghp3lif",
       "name": "STARLIGHT SCHOOL BLUE JERSEY",
       "no": "01-00",
@@ -1978,5 +1989,8 @@
  "idol": {
   "ratio": "400/255",
   "items": []
+ },
+ "unit": {
+  "units": []
  }
 }
