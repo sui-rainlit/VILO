@@ -2119,7 +2119,15 @@
     "logo": "",
     "members": [],
     "lives": [],
-    "coords": []
+    "coords": [
+     {
+      "id": "kmv7o1yyze5q",
+      "name": "PASSION SUNLIGHT COORD",
+      "kind": "parts",
+      "top": "img/unit-aukoze5qtop-mv7o2h42y5e.png",
+      "shoes": "img/unit-aukoze5qshoes-mv7o2h44yyi.png"
+     }
+    ]
    }
   ]
  }
