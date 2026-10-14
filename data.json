@@ -2115,9 +2115,20 @@
   "units": [
    {
     "id": "umv7nsfnauko",
-    "name": "새 유닛",
+    "name": "MARCIALE",
     "logo": "",
-    "members": [],
+    "members": [
+     {
+      "id": "mmv7nso8zq7v",
+      "name": "스이",
+      "note": ""
+     },
+     {
+      "id": "mmv7nss31ll9",
+      "name": "미소",
+      "note": ""
+     }
+    ],
     "lives": [],
     "coords": [
      {
