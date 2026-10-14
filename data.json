@@ -1884,7 +1884,24 @@
       "name": "Poisen's lover"
      }
     ],
-    "rarities": [],
+    "rarities": [
+     {
+      "id": "rmv7nczbsaqx",
+      "name": "N"
+     },
+     {
+      "id": "rmv7nd0vgoys",
+      "name": "R"
+     },
+     {
+      "id": "rmv7nd1jz2g1",
+      "name": "CP"
+     },
+     {
+      "id": "rmv7nd3dqngp",
+      "name": "PR"
+     }
+    ],
     "items": [
      {
       "id": "cmv7nb7zrxil",
