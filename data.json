@@ -1919,6 +1919,18 @@
     ],
     "items": [
      {
+      "id": "cmv7olg2b5zy",
+      "name": "BLUE SHINING LINE COORD",
+      "no": "",
+      "cat": "cmv6qdrrtyxl",
+      "rarity": "",
+      "top": "img/s5-2b5zytop-mv7olq8vqmx.png",
+      "bottom": "img/s5-2b5zybottom-mv7olq8ynh0.png",
+      "shoes": "img/s5-2b5zyshoes-mv7olq8zcac.png",
+      "acc": "img/s5-2b5zyacc-mv7olq90dsz.png",
+      "reprints": []
+     },
+     {
       "id": "cmv7oh2494n2",
       "name": "BLUE STAR COORD",
       "no": "",
