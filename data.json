@@ -2126,6 +2126,15 @@
       "kind": "parts",
       "top": "img/unit-aukoze5qtop-mv7o2h42y5e.png",
       "shoes": "img/unit-aukoze5qshoes-mv7o2h44yyi.png"
+     },
+     {
+      "id": "kmv7oecdfgpz",
+      "name": "BEACHSIDE SUNSET COORD",
+      "kind": "parts",
+      "top": "img/unit-aukofgpztop-mv7oes7avn0.png",
+      "bottom": "img/unit-aukofgpzbottom-mv7oes7frqq.png",
+      "shoes": "img/unit-aukofgpzshoes-mv7oes7h8g4.png",
+      "acc": "img/unit-aukofgpzacc-mv7oes7jl39.png"
      }
     ]
    }
