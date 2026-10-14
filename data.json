@@ -1904,6 +1904,18 @@
     ],
     "items": [
      {
+      "id": "cmv7nilw9vyc",
+      "name": "RED SHINE STARS COORD",
+      "no": "04-01",
+      "cat": "cmv6q66fnb9r",
+      "rarity": "",
+      "top": "img/s5-w9vyctop-mv7njkege88.png",
+      "bottom": "img/s5-w9vycbottom-mv7njkeiznx.png",
+      "shoes": "img/s5-w9vycshoes-mv7njkekvhq.png",
+      "acc": "img/s5-w9vycacc-mv7njkelbe8.png",
+      "reprints": []
+     },
+     {
       "id": "cmv7nb7zrxil",
       "name": "SOFTLY ROMANCE COORD",
       "no": "11-01",
