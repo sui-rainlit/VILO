@@ -2131,8 +2131,194 @@
  },
  "photo": {
   "ratio": "750/1046",
-  "chars": [],
-  "types": [],
+  "chars": [
+   {
+    "id": "cmv7osxsmriw",
+    "name": "호시미야 이치고"
+   },
+   {
+    "id": "cmv7ot2abi5v",
+    "name": "키리야 아오이"
+   },
+   {
+    "id": "cmv7ot2lj8e9",
+    "name": "시부키 란"
+   },
+   {
+    "id": "cmv7ot2w2iud",
+    "name": "아리스가와 오토메"
+   },
+   {
+    "id": "cmv7ot372y7k",
+    "name": "토도 유리카"
+   },
+   {
+    "id": "cmv7ot3lmo2h",
+    "name": "키타오지 사쿠라"
+   },
+   {
+    "id": "cmv7otrka8x1",
+    "name": "이치노세 카에데"
+   },
+   {
+    "id": "cmv7ottv97h5",
+    "name": "카미야 시온"
+   },
+   {
+    "id": "cmv7otu7305n",
+    "name": "미노와 히카리"
+   },
+   {
+    "id": "cmv7otzubxxa",
+    "name": "오토시로 세이라"
+   },
+   {
+    "id": "cmv7ou03ufh2",
+    "name": "사에구사 키이"
+   },
+   {
+    "id": "cmv7ou6u5dbi",
+    "name": "카제사와 소라"
+   },
+   {
+    "id": "cmv7ou9xrvgg",
+    "name": "히메사토 마리아"
+   },
+   {
+    "id": "cmv7ouccyggk",
+    "name": "오토시로 노엘"
+   },
+   {
+    "id": "cmv7ovwarnul",
+    "name": "칸자키 미즈키"
+   },
+   {
+    "id": "cmv7ow30ys74",
+    "name": "나츠키 미쿠루"
+   },
+   {
+    "id": "cmv7ow3kmnic",
+    "name": "오오조라 아카리"
+   },
+   {
+    "id": "cmv7ow3vtiaw",
+    "name": "히카미 스미레"
+   },
+   {
+    "id": "cmv7owdo09j1",
+    "name": "신죠 히나키"
+   },
+   {
+    "id": "cmv7owdyql8v",
+    "name": "쿠레바야시 쥬리"
+   },
+   {
+    "id": "cmv7owem8et2",
+    "name": "쿠로사와 린"
+   },
+   {
+    "id": "cmv7owfgkdoy",
+    "name": "아마하네 마도카"
+   },
+   {
+    "id": "cmv7owqg2q6r",
+    "name": "다이치 노노"
+   },
+   {
+    "id": "cmv7owqp0zcj",
+    "name": "시라카바 리사"
+   },
+   {
+    "id": "cmv7ows1wirt",
+    "name": "핫토리 유우"
+   },
+   {
+    "id": "cmv7owyl47ce",
+    "name": "후지와라 미야비"
+   },
+   {
+    "id": "cmv7owyxjsay",
+    "name": "크리스 코코네"
+   },
+   {
+    "id": "cmv7owzusp6h",
+    "name": "도지마 니나"
+   },
+   {
+    "id": "cmv7oxxc3ght",
+    "name": "니지노 유메"
+   },
+   {
+    "id": "cmv7oy42gkbf",
+    "name": "사쿠라바 로라"
+   },
+   {
+    "id": "cmv7oy4h12bj",
+    "name": "나나쿠라 코하루"
+   },
+   {
+    "id": "cmv7oy4rbhik",
+    "name": "사오토메 아코"
+   },
+   {
+    "id": "cmv7oy51h7re",
+    "name": "카스미 마히루"
+   },
+   {
+    "id": "cmv7oy5budcm",
+    "name": "시라토리 히메"
+   },
+   {
+    "id": "cmv7oy5lsnyi",
+    "name": "키사라기 츠바사"
+   },
+   {
+    "id": "cmv7oy5w5zdm",
+    "name": "카스미 요조라"
+   },
+   {
+    "id": "cmv7oy6669pp",
+    "name": "니카이도 유즈"
+   },
+   {
+    "id": "cmv7oypv5851",
+    "name": "시로가네 리리"
+   },
+   {
+    "id": "cmv7oyq5784o",
+    "name": "유우키 스바루"
+   },
+   {
+    "id": "cmv7oyqfme7k",
+    "name": "이가라시 노조무"
+   },
+   {
+    "id": "cmv7oyqp9tgn",
+    "name": "키라 카나타"
+   },
+   {
+    "id": "cmv7oyr2m14z",
+    "name": "카스미 아사히"
+   }
+  ],
+  "types": [
+   {
+    "id": "tmv7oxnkhbhz",
+    "name": "CUTE"
+   },
+   {
+    "id": "tmv7oxq6lt28",
+    "name": "COOL"
+   },
+   {
+    "id": "tmv7oxqfejke",
+    "name": "SEXY"
+   },
+   {
+    "id": "tmv7oxqslg5d",
+    "name": "POP"
+   }
+  ],
   "items": []
  },
  "idol": {
