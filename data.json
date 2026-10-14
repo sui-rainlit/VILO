@@ -1588,10 +1588,25 @@
       "no": "",
       "cat": "cmv6oq476god",
       "rarity": "s1r3",
-      "top": "img/s1-zly3utop-mv6orj52bmn.png",
-      "bottom": "img/s1-zly3ubottom-mv6orkudp70.png",
-      "shoes": "img/s1-zly3ushoes-mv6ormkryyx.png",
-      "reprints": [],
+      "top": "img/s1-zly3utop-mv7o06yu7l5.png",
+      "bottom": "img/s1-zly3ubottom-mv7o06z12xx.png",
+      "shoes": "img/s1-zly3ushoes-mv7o06z2us1.png",
+      "reprints": [
+       {
+        "label": "온 퍼레이드",
+        "top": "img/s1-zly3ur0top-mv7o06z3b82.png",
+        "bottom": "img/s1-zly3ur0bottom-mv7o06z3sri.png",
+        "shoes": "img/s1-zly3ur0shoes-mv7o06z4buh.png",
+        "need": false
+       },
+       {
+        "label": "룰렛",
+        "top": "img/s1-zly3ur1top-mv7o06z6hkz.png",
+        "bottom": "img/s1-zly3ur1bottom-mv7o06z7oss.png",
+        "shoes": "img/s1-zly3ur1shoes-mv7o06z8vrd.png",
+        "need": false
+       }
+      ],
       "needAcc": false
      }
     ]
