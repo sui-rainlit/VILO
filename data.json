@@ -2907,7 +2907,14 @@
  },
  "idol": {
   "ratio": "400/255",
-  "items": []
+  "items": [
+   {
+    "id": "kmv8c1sky3go",
+    "name": "시라토리 히메",
+    "img": "img/idol-ky3go-mv8c2mzqzct.jpg",
+    "no": "1"
+   }
+  ]
  },
  "unit": {
   "units": [
