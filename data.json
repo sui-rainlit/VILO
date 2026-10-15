@@ -1608,6 +1608,17 @@
        }
       ],
       "needAcc": false
+     },
+     {
+      "id": "cmv911a4gayg",
+      "name": "BORDER KNIT COORD",
+      "cat": "cmv6oq0awwah",
+      "rarity": "s1r1",
+      "top": "img/s1-4gaygtop-mv911l8xasa.png",
+      "bottom": "img/s1-4gaygbottom-mv911l90s8i.png",
+      "shoes": "img/s1-4gaygshoes-mv911l93pbx.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
