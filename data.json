@@ -1833,6 +1833,17 @@
       "shoes": "img/s2-2oihashoes-mv91ai10z30.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmv91anppjba",
+      "name": "COLOR DARK COORD",
+      "cat": "cmv9103g0nei",
+      "rarity": "s2r1",
+      "top": "img/s2-ppjbatop-mv91awr9da9.png",
+      "bottom": "img/s2-ppjbabottom-mv91awrb349.png",
+      "shoes": "img/s2-ppjbashoes-mv91awrdeyr.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
