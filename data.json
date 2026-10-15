@@ -3825,7 +3825,18 @@
     "logo": "",
     "members": [],
     "lives": [],
-    "coords": []
+    "coords": [
+     {
+      "id": "kmv92irgvuzs",
+      "name": "RISING ORANGE COORD",
+      "kind": "parts",
+      "top": "img/unit-udzovuzstop-mv92j9473wi.png",
+      "bottom": "img/unit-udzovuzsbottom-mv92j94ayz1.png",
+      "shoes": "img/unit-udzovuzsshoes-mv92j94crc7.png",
+      "acc": "img/unit-udzovuzsacc-mv92j94dwje.png",
+      "reprints": []
+     }
+    ]
    }
   ]
  }
