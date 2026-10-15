@@ -1822,6 +1822,17 @@
       "shoes": "img/s2-qyjacshoes-mv91a044jrt.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmv91a52oiha",
+      "name": "RHYTHM ROCK'N'ROLL COORD",
+      "cat": "cmv9103g0nei",
+      "rarity": "s2r1",
+      "top": "img/s2-2oihatop-mv91ai0uiyp.png",
+      "bottom": "img/s2-2oihabottom-mv91ai0xe0o.png",
+      "shoes": "img/s2-2oihashoes-mv91ai10z30.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
