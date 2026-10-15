@@ -1880,7 +1880,19 @@
       "name": "LPR"
      }
     ],
-    "items": []
+    "items": [
+     {
+      "id": "cmv914ki09n4",
+      "name": "STITCHED CROSSING COORD",
+      "cat": "cmv910l44fju",
+      "rarity": "s3r1",
+      "top": "img/s3-i09n4top-mv914ya87un.png",
+      "bottom": "img/s3-i09n4bottom-mv914yaa0ut.png",
+      "shoes": "img/s3-i09n4shoes-mv914yacja7.png",
+      "reprints": [],
+      "needAcc": false
+     }
+    ]
    },
    {
     "id": "s4",
