@@ -229,14 +229,19 @@ const SQ=[['top','스윙'],['dressia','드레시아']],ALLK=[...CPT,['dressia','
 const partsOf=S=>S.mode==='single'?SQ:CPT;
 const cpaths=it=>[...ALLK.map(([k])=>it[k]),...(it.reprints||[]).flatMap(r=>ALLK.map(([k])=>r[k]))].filter(Boolean);
 const mbox=()=>{let m=document.getElementById('m');if(!m){m=document.createElement('div');m.id='m';document.body.appendChild(m)}return m};
+let lo=null;
+function listOrder(ctx,items){if(!lo||lo.ctx!==ctx||lo.ids.length!==items.length||items.some(i=>!lo.ids.includes(i.id)))lo={ctx,ids:items.map(i=>i.id),dirty:false};const mp=Object.fromEntries(items.map(i=>[i.id,i]));return lo.ids.map(id=>mp[id])}
+function moveOrd(id,dir,grp,items){const full=listOrder(lo?lo.ctx:'',items),ids=lo.ids,i=ids.indexOf(id),j=i+dir;if(i<0||j<0||j>=ids.length)return false;const mp=Object.fromEntries(items.map(x=>[x.id,x]));if(grp(mp[ids[i]])!==grp(mp[ids[j]]))return false;[ids[i],ids[j]]=[ids[j],ids[i]];lo.dirty=true;return true}
+const ordBtns=(on,ctk,id)=>on?'<span style="display:flex;gap:4px;margin-left:auto"><button class="b g s" data-'+ctk+'="mvu" data-id="'+esc(id)+'">↑</button><button class="b g s" data-'+ctk+'="mvd" data-id="'+esc(id)+'">↓</button></span>':'';
+const grpC=(S,i)=>(S.id==='s5'?(i.cat||''):'')+'|'+(i.rarity||'');
 function sortedItems(S){const ri=id=>(S.rarities||[]).findIndex(x=>x.id===id);
  const ci=id=>{const n=(S.cats||[]).findIndex(x=>x.id===id);return n<0?999:n};
- return [...(S.items||[])].sort((a,b)=>(S.id==='s5'?ci(a.cat)-ci(b.cat):0)||ri(b.rarity)-ri(a.rarity)||(!a.no)-(!b.no)||String(a.no||'').localeCompare(String(b.no||''),'ko',{numeric:true})||(a.name||'').localeCompare(b.name||'','ko'))}
+ return (S.items||[]).map((it,ix)=>({it,ix})).sort((a,b)=>(S.id==='s5'?ci(a.it.cat)-ci(b.it.cat):0)||ri(b.it.rarity)-ri(a.it.rarity)||a.ix-b.ix).map(x=>x.it)}
 function renderCoord(){
  const S=curS();if(!cd)cd={ratio:S.ratio||'180/262',catLabel:S.catLabel||'분류',cats:clone(S.cats||[]),rarities:clone(S.rarities||[])};
  const rows=(k,ph)=>cd[k].map((x,n)=>'<div class="mr"><input type="text" data-cn="'+k+':'+n+'" value="'+esc(x.name)+'" placeholder="'+ph+'"><button class="b g s" data-ct="cu" data-k="'+k+'" data-n="'+n+'">↑</button><button class="b g s" data-ct="cv" data-k="'+k+'" data-n="'+n+'">↓</button><button class="b r s" data-ct="cdl" data-k="'+k+'" data-n="'+n+'">삭제</button></div>').join('')+'<button class="b g s" data-ct="cadd" data-k="'+k+'">+ 추가</button>';
  const rn=Object.fromEntries((S.rarities||[]).map(r=>[r.id,r.name])),cn=Object.fromEntries((S.cats||[]).map(r=>[r.id,r.name]));
- const l=sortedItems(S).filter(i=>!cq||((i.name||'')+' '+(i.no||'')).toLowerCase().includes(cq.toLowerCase()));
+ const full=listOrder('coord:'+S.id,sortedItems(S)),l=full.filter(i=>!cq||(i.name||'').toLowerCase().includes(cq.toLowerCase())),canMove=!cq;
  const pend=pendingList();
  const chk='<h3>구매 체크리스트 ('+pend.length+')</h3>'+(pend.length?pend.map(p=>'<div class="li" style="cursor:default"><img src="'+esc(pv[p.i.top]||p.i.top||'')+'" alt="" style="aspect-ratio:'+esc(p.s.ratio||'180/262')+'"><div style="flex:1"><b style="font-size:14px">'+esc(p.i.name)+'</b><br><span>'+esc(p.s.name+' · '+(p.r===''?'악세 구매 필요':'복각 '+((p.i.reprints[+p.r].label)||(+p.r+1))+' 구매 필요'))+'</span></div><button class="b g s" data-ct="tdone" data-sid="'+p.s.id+'" data-id="'+esc(p.i.id)+'" data-r="'+p.r+'">구매 완료</button></div>').join(''):'<p class="note">구매해야 할 코디가 없어요. 카드 수정에서 “악세 구매 필요”, “복각 구매 필요”를 체크하면 여기에 모여요.</p>');
  $('#app').innerHTML=head()+chk
@@ -246,14 +251,15 @@ function renderCoord(){
  +'<h3>'+esc(cd.catLabel||'분류')+' (위에 있을수록 앞에 표시)</h3>'+rows('cats',(cd.catLabel||'분류')+' 이름')
  +'<h3>레어도 (아래로 갈수록 높은 레어도)</h3>'+rows('rarities','레어도 이름')
  +'<p><button class="b" data-ct="ccfg">설정 저장</button></p>'
- +'<h3>카드 ('+(S.items||[]).length+'장)</h3><div style="display:flex;gap:8px"><input type="text" data-cq placeholder="이름·번호 검색" value="'+esc(cq)+'"><button class="b" data-ct="cnew" style="white-space:nowrap">+ 카드 추가</button></div>'
- +(l.length?l.map(i=>'<div class="li" data-ct="cedit" data-id="'+esc(i.id)+'"><img src="'+esc(pv[i.top]||i.top||'')+'" alt="" style="aspect-ratio:'+esc(S.ratio||'180/262')+'"><div><b style="font-size:14px">'+esc(i.name)+'</b><br><span>'+esc([rn[i.rarity],i.no&&'No.'+i.no,cn[i.cat],(i.reprints||[]).length?'복각 '+i.reprints.length:'',(i.needAcc||(i.reprints||[]).some(r=>r.need))?'🛒 구매 필요':''].filter(Boolean).join(' · '))+'</span></div></div>').join(''):'<p class="note">등록된 카드가 없어요.</p>')+'</div>'}
+ +'<h3>카드 ('+(S.items||[]).length+'장)</h3><div style="display:flex;gap:8px"><input type="text" data-cq placeholder="이름 검색" value="'+esc(cq)+'"><button class="b" data-ct="cnew" style="white-space:nowrap">+ 카드 추가</button></div>'
+ +'<p class="note">순서는 같은 레어도'+(S.id==='s5'?'(같은 종류)':'')+' 안에서 ↑↓로 바꿔요. 바꾼 뒤 “순서 저장”을 눌러야 사이트에 반영돼요.</p>'+(lo&&lo.ctx==='coord:'+S.id&&lo.dirty?'<p><button class="b" data-ct="ordsave">순서 저장</button></p>':'')
+ +(l.length?l.map(i=>'<div class="li" data-ct="cedit" data-id="'+esc(i.id)+'"><img src="'+esc(pv[i.top]||i.top||'')+'" alt="" style="aspect-ratio:'+esc(S.ratio||'180/262')+'"><div><b style="font-size:14px">'+esc(i.name)+'</b><br><span>'+esc([rn[i.rarity],cn[i.cat],(i.reprints||[]).length?'복각 '+i.reprints.length:'',(i.needAcc||(i.reprints||[]).some(r=>r.need))?'🛒 구매 필요':''].filter(Boolean).join(' · '))+'</span></div>'+ordBtns(canMove,'ct',i.id)+'</div>').join(''):'<p class="note">등록된 카드가 없어요.</p>')+'</div>'}
 function cform(){const S=curS(),P=partsOf(S),one=S.mode==='single',m=mbox(),sc=(m.querySelector('.csh')||{}).scrollTop||0,ex=(S.items||[]).some(x=>x.id===ci.id);
  const pk=(o,pre)=>'<div class="cpg">'+P.map(([k,n])=>'<div class="ct"><div class="im">'+(o[k]?'<img src="'+esc(prev(o[k]))+'" alt="">':n)+'</div><div class="r"><label class="b g s fi">'+(o[k]?'변경':'사진')+'<input type="file" accept="image/*" data-cpf="'+pre+':'+k+'"></label>'+(o[k]?'<button class="b g s" data-ct="crm" data-ref="'+pre+':'+k+'">삭제</button>':'')+'</div></div>').join('')+'</div>';
  const sel=(a,v,k,ph)=>'<select data-cf="'+k+'"><option value="">'+ph+'</option>'+(a||[]).map(x=>'<option value="'+x.id+'"'+(x.id===v?' selected':'')+'>'+esc(x.name)+'</option>').join('')+'</select>';
  m.innerHTML='<div class="cov"><div class="csh"><div style="display:flex;justify-content:space-between;align-items:center"><b>'+(ex?'카드 수정':'카드 추가')+' · '+esc(S.name)+'</b><button class="b g s" data-ct="ccancel">취소</button></div>'
  +'<label class="l">이름</label><input type="text" data-cf="name" value="'+esc(ci.name)+'">'
- +'<label class="l">카드 번호 (같은 레어도 안에서 이 순서로 정렬)</label><input type="text" data-cf="no" value="'+esc(ci.no)+'" placeholder="예: 03-01">'
+ 
  +'<label class="l">'+esc(S.catLabel||'분류')+'</label>'+sel(S.cats,ci.cat,'cat','선택')+'<label class="l">레어도</label>'+sel(S.rarities,ci.rarity,'rarity','선택')
  +'<h3>원본 (첫 사진 필수'+(one?', 드레시아는 없어도 돼요':', 악세는 없어도 돼요')+')</h3>'+pk(ci.parts,'o')
  +(todoOn(S)?'<label style="display:flex;gap:8px;align-items:center;margin:12px 0;font-size:14px"><input type="checkbox" data-cchk="acc"'+(ci.needAcc?' checked':'')+'> 악세 구매 필요</label>':'')
@@ -267,13 +273,15 @@ async function csaveItem(){const S=curS(),sid=S.id,P=partsOf(S);
   const tg=[{o:ci.parts,pre:''},...ci.reprints.map((r,n)=>({o:r.parts,pre:'r'+n}))];let tot=0,dn=0;tg.forEach(t=>P.forEach(([k])=>{if(t.o[k] instanceof File)tot++}));
   for(const t of tg)for(const[k]of P){const v=t.o[k];if(v instanceof File){status('사진 업로드 중 ('+(++dn)+'/'+tot+')');t.o[k]=await uploadFile(v,sid+'-'+ci.id.slice(-5)+t.pre+k)}}
   const pk=o=>{const r={};P.forEach(([k])=>{if(typeof o[k]==='string'&&o[k])r[k]=o[k]});return r};
-  const it=Object.assign({id:ci.id,name:ci.name.trim(),no:ci.no.trim(),cat:ci.cat,rarity:ci.rarity},pk(ci.parts),{reprints:(S.mode==='single'?[]:ci.reprints).map(r=>Object.assign({label:r.label.trim()},pk(r.parts),todoOn(S)?{need:!!r.need}:{}))},todoOn(S)?{needAcc:!!ci.needAcc}:{});
+  const it=Object.assign({id:ci.id,name:ci.name.trim(),cat:ci.cat,rarity:ci.rarity},pk(ci.parts),{reprints:(S.mode==='single'?[]:ci.reprints).map(r=>Object.assign({label:r.label.trim()},pk(r.parts),todoOn(S)?{need:!!r.need}:{}))},todoOn(S)?{needAcc:!!ci.needAcc}:{});
   status('목록 저장 중…');let old=null;
-  await commitData(d=>{const s=d.coord.series.find(x=>x.id===sid);s.items=s.items||[];const i=s.items.findIndex(x=>x.id===it.id);old=i>=0?s.items[i]:null;if(i>=0)s.items[i]=it;else s.items.unshift(it)},'save coord');
+  await commitData(d=>{const s=d.coord.series.find(x=>x.id===sid);s.items=s.items||[];const i=s.items.findIndex(x=>x.id===it.id);old=i>=0?s.items[i]:null;if(i>=0)s.items[i]=it;else s.items.push(it)},'save coord');
   if(old){const keep=new Set(cpaths(it));for(const p of cpaths(old))if(!keep.has(p))await delFile(p)}});
  if(ok){ci=null;mbox().innerHTML='';renderCoord();toast('저장했어요. 사이트에는 1~2분 뒤 반영돼요')}}
 document.addEventListener('click',async e=>{const t=e.target.closest('[data-ct]');if(!t)return;const d=t.dataset,k=d.ct,n=+d.n;
  if(k==='tdone'){const sid=d.sid,id=d.id,r=d.r;const ok=await run('저장 중…',async()=>{await commitData(x=>{const s=x.coord.series.find(y=>y.id===sid),i=s&&(s.items||[]).find(z=>z.id===id);if(!i)return;if(r==='')i.needAcc=false;else if(i.reprints&&i.reprints[+r])i.reprints[+r].need=false},'purchase done')});if(ok){renderCoord();toast('구매 완료로 표시했어요')}return}
+ if(k==='mvu'||k==='mvd'){const S=curS();if(moveOrd(d.id,k==='mvu'?-1:1,i=>grpC(S,i),S.items||[]))renderCoord();return}
+ if(k==='ordsave'){const sid=curS().id,ids=[...lo.ids];const ok=await run('순서 저장 중…',async()=>{await commitData(x=>{const s=x.coord.series.find(y=>y.id===sid),mp=Object.fromEntries((s.items||[]).map(i=>[i.id,i]));s.items=ids.map(id=>mp[id]).filter(Boolean).concat((s.items||[]).filter(i=>!ids.includes(i.id)))},'reorder coord')});if(ok){lo=null;renderCoord();toast('순서를 저장했어요')}return}
  if(k==='cser'){cs=n;cd=null;cq='';renderCoord();return}
  if(k==='cadd'){cd[d.k].push({id:uid(d.k[0]),name:''});renderCoord();return}
  if(k==='cdl'){const x=cd[d.k][n],S=curS();if((S.items||[]).some(i=>(d.k==='cats'?i.cat:i.rarity)===x.id)){toast('사용 중인 분류는 삭제할 수 없어요');return}cd[d.k].splice(n,1);renderCoord();return}
@@ -301,21 +309,22 @@ document.addEventListener('change',e=>{const t=e.target;if(t.dataset.cpf&&t.file
  if(t.dataset.cchk&&ci){const v=t.dataset.cchk;if(v==='acc')ci.needAcc=t.checked;else ci.reprints[+v.split(':')[1]].need=t.checked}});
 
 
-const COL={photo:{ratio:'750/1046',lists:[['chars','캐릭터'],['types','타입']],fields:[['name','이름 (비워도 돼요)'],['char','캐릭터','chars'],['type','타입','types']]},idol:{ratio:'400/255',lists:[],fields:[['name','이름 (비워도 돼요)'],['no','고유 번호 (작은 번호부터 정렬)']]}};
+const COL={photo:{ratio:'750/1046',lists:[['chars','캐릭터'],['types','타입']],fields:[['name','이름 (비워도 돼요)'],['char','캐릭터','chars'],['type','타입','types']]},idol:{ratio:'400/255',lists:[],fields:[['name','이름 (비워도 돼요)']]}};
 let kd=null,ki=null;
 const nat=(a,b)=>String(a||'').localeCompare(String(b||''),'ko',{numeric:true});
 function colSorted(key){const X=D[key];const m=(X.items||[]).map((it,i)=>({it,i}));
  if(key==='photo'){const ci=id=>{const n=(X.chars||[]).findIndex(c=>c.id===id);return n<0?999:n};m.sort((a,b)=>ci(a.it.char)-ci(b.it.char)||a.i-b.i)}
- else m.sort((a,b)=>(!a.it.no)-(!b.it.no)||nat(a.it.no,b.it.no)||a.i-b.i);return m.map(x=>x.it)}
+ return m.map(x=>x.it)}
 function renderCol(key){const C=COL[key],X=D[key];
  if(!kd||kd.key!==key){kd={key,ratio:X.ratio||C.ratio};C.lists.forEach(([k])=>{kd[k]=clone(X[k]||[])})}
  const nm={};C.lists.forEach(([k])=>(X[k]||[]).forEach(x=>nm[x.id]=x.name));
  const rows=(k,ph)=>kd[k].map((x,n)=>'<div class="mr"><input type="text" data-kn="'+k+':'+n+'" value="'+esc(x.name)+'" placeholder="'+ph+'"><button class="b g s" data-kt="ku" data-k="'+k+'" data-n="'+n+'">↑</button><button class="b g s" data-kt="kv" data-k="'+k+'" data-n="'+n+'">↓</button><button class="b r s" data-kt="kdl" data-k="'+k+'" data-n="'+n+'">삭제</button></div>').join('')+'<button class="b g s" data-kt="kadd" data-k="'+k+'">+ 추가</button>';
- const l=colSorted(key);
+ const l=listOrder(key,colSorted(key));
  $('#app').innerHTML=head()+'<h3>설정</h3><label class="l">카드 비율 (가로/세로)</label><input type="text" data-kd="ratio" value="'+esc(kd.ratio)+'">'
  +C.lists.map(([k,lab])=>'<h3>'+lab+(k==='chars'?' (위에 있을수록 앞에 표시)':'')+'</h3>'+rows(k,lab+' 이름')).join('')
  +'<p><button class="b" data-kt="ksave">설정 저장</button></p><h3>카드 ('+(X.items||[]).length+'장)</h3><p><button class="b" data-kt="knew">+ 카드 추가</button></p>'
- +(l.length?l.map(i=>'<div class="li" data-kt="kedit" data-id="'+esc(i.id)+'"><img src="'+esc(pv[i.img]||i.img||'')+'" alt="" style="aspect-ratio:'+esc(X.ratio||C.ratio)+'"><div><b style="font-size:14px">'+esc(i.name||(i.no?'No.'+i.no:'(이름 없음)'))+'</b><br><span>'+esc([nm[i.char],nm[i.type],key==='idol'&&i.no&&'No.'+i.no].filter(Boolean).join(' · '))+'</span></div></div>').join(''):'<p class="note">등록된 카드가 없어요.</p>')+'</div>'}
+ +'<p class="note">'+(key==='photo'?'같은 캐릭터 안에서':'전체에서')+' ↑↓로 순서를 바꿔요. 바꾼 뒤 “순서 저장”을 눌러야 사이트에 반영돼요.</p>'+(lo&&lo.ctx===key&&lo.dirty?'<p><button class="b" data-kt="kord">순서 저장</button></p>':'')
+ +(l.length?l.map(i=>'<div class="li" data-kt="kedit" data-id="'+esc(i.id)+'"><img src="'+esc(pv[i.img]||i.img||'')+'" alt="" style="aspect-ratio:'+esc(X.ratio||C.ratio)+'"><div><b style="font-size:14px">'+esc(i.name||'(이름 없음)')+'</b><br><span>'+esc([nm[i.char],nm[i.type]].filter(Boolean).join(' · '))+'</span></div>'+ordBtns(true,'kt',i.id)+'</div>').join(''):'<p class="note">등록된 카드가 없어요.</p>')+'</div>'}
 function kform(){const key=tab,C=COL[key],X=D[key],m=mbox(),ex=(X.items||[]).some(x=>x.id===ki.id);
  const f=C.fields.map(([k,lab,lst])=>'<label class="l">'+lab+'</label>'+(lst?'<select data-kf="'+k+'"><option value="">선택</option>'+(X[lst]||[]).map(x=>'<option value="'+x.id+'"'+(x.id===ki[k]?' selected':'')+'>'+esc(x.name)+'</option>').join('')+'</select>':'<input type="text" data-kf="'+k+'" value="'+esc(ki[k]||'')+'">')).join('');
  m.innerHTML='<div class="cov"><div class="csh"><div style="display:flex;justify-content:space-between;align-items:center"><b>'+(ex?'카드 수정':'카드 추가')+' · '+(key==='photo'?'PHOTO CARD':'IDOL CARD')+'</b><button class="b g s" data-kt="kcancel">취소</button></div>'+f
@@ -323,14 +332,16 @@ function kform(){const key=tab,C=COL[key],X=D[key],m=mbox(),ex=(X.items||[]).som
  +'<p style="margin-top:16px"><button class="b" data-kt="ksaveitem">저장</button> '+(ex?'<button class="b r" data-kt="kdel">삭제</button>':'')+'</p></div></div>'}
 async function ksaveItem(){const key=tab,X=D[key];
  if(!ki.img){toast('사진을 올려 주세요');return}
- if(key==='idol'&&!(ki.no||'').trim()){toast('고유 번호를 입력해 주세요');return}
+ 
  const ok=await run('저장 중…',async()=>{let img=ki.img;if(img instanceof File){status('사진 업로드 중…');img=await uploadFile(img,key+'-'+ki.id.slice(-5))}
-  const it={id:ki.id,name:(ki.name||'').trim(),img};if(key==='photo'){it.char=ki.char||'';it.type=ki.type||''}else it.no=(ki.no||'').trim();
+  const it={id:ki.id,name:(ki.name||'').trim(),img};if(key==='photo'){it.char=ki.char||'';it.type=ki.type||''}
   status('목록 저장 중…');let old=null;
   await commitData(d=>{const c=d[key];c.items=c.items||[];const i=c.items.findIndex(x=>x.id===it.id);old=i>=0?c.items[i]:null;if(i>=0)c.items[i]=it;else c.items.push(it)},'save '+key);
   if(old&&old.img&&old.img!==it.img)await delFile(old.img)});
  if(ok){ki=null;mbox().innerHTML='';renderCol(key);toast('저장했어요. 사이트에는 1~2분 뒤 반영돼요')}}
 document.addEventListener('click',async e=>{const t=e.target.closest('[data-kt]');if(!t)return;const d=t.dataset,k=d.kt,n=+d.n,key=tab;
+ if(k==='mvu'||k==='mvd'){if(moveOrd(d.id,k==='mvu'?-1:1,i=>key==='photo'?(i.char||''):'',D[key].items||[]))renderCol(key);return}
+ if(k==='kord'){const ids=[...lo.ids];const ok=await run('순서 저장 중…',async()=>{await commitData(x=>{const c=x[key],mp=Object.fromEntries((c.items||[]).map(i=>[i.id,i]));c.items=ids.map(id=>mp[id]).filter(Boolean).concat((c.items||[]).filter(i=>!ids.includes(i.id)))},'reorder '+key)});if(ok){lo=null;renderCol(key);toast('순서를 저장했어요')}return}
  if(k==='kadd'){kd[d.k].push({id:uid(d.k[0]),name:''});renderCol(key);return}
  if(k==='kdl'){const x=kd[d.k][n],f=d.k==='chars'?'char':'type';if((D[key].items||[]).some(i=>i[f]===x.id)){toast('사용 중인 항목은 삭제할 수 없어요');return}kd[d.k].splice(n,1);renderCol(key);return}
  if(k==='ku'||k==='kv'){const a=kd[d.k],m=k==='ku'?n-1:n+1;if(m<0||m>=a.length)return;[a[n],a[m]]=[a[m],a[n]];renderCol(key);return}
@@ -351,26 +362,31 @@ document.addEventListener('change',e=>{const t=e.target;if(t.dataset.kp&&t.files
 
 let us=0,ud=null,uf=null;
 const unitList=()=>D.unit.units||[];
-const upaths=u=>[u.logo,...(u.coords||[]).flatMap(c=>ALLK.map(([k])=>c[k]))].filter(Boolean);
+const ucp=c=>[...ALLK.map(([k])=>c[k]),...(c.reprints||[]).flatMap(r=>ALLK.map(([k])=>r[k]))].filter(Boolean);
+const upaths=u=>[u.logo,...(u.coords||[]).flatMap(ucp)].filter(Boolean);
 function renderUnit(){const U=unitList();if(us>=U.length)us=Math.max(0,U.length-1);const u=U[us];
  let h=head()+'<div class="tabs">'+U.map((x,n)=>'<button class="tab'+(n===us?' on':'')+'" data-ut="usel" data-n="'+n+'">'+esc(x.name||'(이름 없음)')+'</button>').join('')+'<button class="tab" data-ut="uadd">+ 유닛 추가</button></div>';
  if(!u){$('#app').innerHTML=h+'<p class="note">등록된 유닛이 없어요. “+ 유닛 추가”로 시작하세요.</p></div>';return}
- if(!ud||ud.id!==u.id)ud={id:u.id,name:u.name||'',logo:u.logo||'',members:clone(u.members||[]),lives:clone(u.lives||[])};
+ if(!ud||ud.id!==u.id)ud={id:u.id,name:u.name||'',desc:u.desc||'',logo:u.logo||'',members:clone(u.members||[]),lives:clone(u.lives||[])};
  const mrow=ud.members.map((m,n)=>'<div class="mr"><input type="text" data-um="'+n+':name" value="'+esc(m.name)+'" placeholder="멤버 이름" style="flex:1.2"><input type="text" data-um="'+n+':note" value="'+esc(m.note||'')+'" placeholder="메모(선택)" style="flex:1"><button class="b g s" data-ut="mu" data-n="'+n+'">↑</button><button class="b g s" data-ut="mv" data-n="'+n+'">↓</button><button class="b r s" data-ut="md" data-n="'+n+'">삭제</button></div>').join('');
- const lrow=ud.lives.map((l,n)=>'<div class="crb"><div class="mr" style="margin-bottom:6px"><input type="date" data-ul="'+n+':date" value="'+esc(l.date||'')+'" style="flex:.8"><input type="text" data-ul="'+n+':title" value="'+esc(l.title||'')+'" placeholder="라이브 이름" style="flex:1.4"></div><div class="mr" style="margin:0"><input type="text" data-ul="'+n+':memo" value="'+esc(l.memo||'')+'" placeholder="메모(선택) 예: 참여 인원, 곡"><button class="b r s" data-ut="ld" data-n="'+n+'">삭제</button></div></div>').join('');
+ const lrow=ud.lives.map((l,n)=>'<div class="crb"><div class="mr" style="margin-bottom:6px"><input type="date" data-ul="'+n+':date" value="'+esc(l.date||'')+'" style="flex:.8"><input type="text" data-ul="'+n+':title" value="'+esc(l.title||'')+'" placeholder="라이브 이름" style="flex:1.4"></div><div class="mr" style="margin-bottom:6px"><input type="text" data-ul="'+n+':memo" value="'+esc(l.memo||'')+'" placeholder="메모(선택) 예: 참여 인원, 곡"></div><div class="mr" style="margin:0"><input type="text" data-ul="'+n+':url" value="'+esc(l.url||'')+'" placeholder="링크 주소(선택) https://…" autocapitalize="none"><button class="b r s" data-ut="ld" data-n="'+n+'">삭제</button></div></div>').join('');
  const crow=(u.coords||[]).map(c=>'<div class="li" data-ut="ucedit" data-id="'+esc(c.id)+'"><img src="'+esc(pv[c.top]||c.top||'')+'" alt="" style="aspect-ratio:'+(c.kind==='square'?'1/1':'180/262')+'"><div><b style="font-size:14px">'+esc(c.name)+'</b><br><span>'+(c.kind==='square'?'스윙(정사각형)':'4파츠')+'</span></div></div>').join('');
- $('#app').innerHTML=h+'<h3>유닛 정보</h3><label class="l">유닛 이름</label><input type="text" data-ud="name" value="'+esc(ud.name)+'">'
+ $('#app').innerHTML=h+'<h3>유닛 정보</h3><label class="l">유닛 이름</label><input type="text" data-ud="name" value="'+esc(ud.name)+'"><label class="l">유닛 설명 (비워도 돼요)</label><textarea data-ud="desc" rows="4">'+esc(ud.desc)+'</textarea>'
  +'<div class="pk" style="margin-top:10px">'+(ud.logo?'<img src="'+esc(prev(ud.logo))+'" alt="" style="object-fit:contain">':'<div class="e"></div>')+'<div style="flex:1"><div style="font-size:13px;margin-bottom:6px">유닛 로고</div><label class="b g s fi">'+(ud.logo?'변경':'사진 선택')+'<input type="file" accept="image/*" data-ulogo="1"></label> '+(ud.logo?'<button class="b r s" data-ut="ulrm">삭제</button>':'')+'</div></div>'
  +'<h3>멤버</h3>'+mrow+'<button class="b g s" data-ut="madd">+ 멤버 추가</button>'
  +'<h3>라이브 정리</h3>'+lrow+'<button class="b g s" data-ut="ladd">+ 라이브 추가</button>'
  +'<p style="margin-top:16px"><button class="b" data-ut="usave">유닛 정보 저장</button> <button class="b g s" data-ut="uup">◀ 앞으로</button> <button class="b g s" data-ut="udn">뒤로 ▶</button> <button class="b r s" data-ut="udel">유닛 삭제</button></p>'
  +'<h3>유닛 코디 ('+(u.coords||[]).length+')</h3><p><button class="b" data-ut="ucnew">+ 유닛 코디 추가</button></p>'+(crow||'<p class="note">등록된 유닛 코디가 없어요.</p>')+'</div>'}
-function uform(){const m=mbox(),ex=((unitList()[us]||{}).coords||[]).some(c=>c.id===uf.id),P=uf.kind==='square'?SQ:CPT,one=uf.kind==='square';
+function uform(){const m=mbox(),ex=((unitList()[us]||{}).coords||[]).some(c=>c.id===uf.id),sq=uf.kind==='square',P=sq?SQ:CPT;
+ const pk=(o,pre)=>'<div class="cpg">'+P.map(([k,n])=>'<div class="ct"><div class="im">'+(o[k]?'<img src="'+esc(prev(o[k]))+'" alt="">':n)+'</div><div class="r"><label class="b g s fi">'+(o[k]?'변경':'사진')+'<input type="file" accept="image/*" data-ufp="'+pre+':'+k+'"></label>'+(o[k]?'<button class="b g s" data-ut="ucrm" data-ref="'+pre+':'+k+'">삭제</button>':'')+'</div></div>').join('')+'</div>';
  m.innerHTML='<div class="cov"><div class="csh"><div style="display:flex;justify-content:space-between;align-items:center"><b>'+(ex?'유닛 코디 수정':'유닛 코디 추가')+'</b><button class="b g s" data-ut="uccancel">취소</button></div>'
  +'<label class="l">코디 이름</label><input type="text" data-uf="name" value="'+esc(uf.name)+'">'
- +'<label class="l">종류</label><select data-uf="kind"><option value="parts"'+(uf.kind==='parts'?' selected':'')+'>상의·하의·슈즈·악세 (4파츠)</option><option value="square"'+(uf.kind==='square'?' selected':'')+'>스윙 + 드레시아 (정사각형 2장)</option></select>'
- +'<h3>사진 (첫 사진 필수'+(one?', 드레시아는 없어도 돼요':', 악세는 없어도 돼요')+')</h3><div class="cpg">'+P.map(([k,n])=>'<div class="ct"><div class="im">'+(uf.parts[k]?'<img src="'+esc(prev(uf.parts[k]))+'" alt="">':n)+'</div><div class="r"><label class="b g s fi">'+(uf.parts[k]?'변경':'사진')+'<input type="file" accept="image/*" data-ufp="'+k+'"></label>'+(uf.parts[k]?'<button class="b g s" data-ut="ucrm" data-k="'+k+'">삭제</button>':'')+'</div></div>').join('')+'</div>'
+ +'<label class="l">종류</label><select data-uf="kind"><option value="parts"'+(uf.kind==='parts'?' selected':'')+'>상의·하의·슈즈·악세 (4파츠)</option><option value="square"'+(sq?' selected':'')+'>스윙 + 드레시아 (정사각형 2장)</option></select>'
+ +'<h3>원본 (첫 사진 필수'+(sq?', 드레시아는 없어도 돼요':', 악세는 없어도 돼요')+')</h3>'+pk(uf.parts,'o')
+ +uf.reprints.map((r,n)=>'<div class="crb"><label class="l">복각 이름 (예: 2026 복각)</label><input type="text" data-ufl="'+n+'" value="'+esc(r.label)+'">'+pk(r.parts,'r'+n)+'<p style="margin:8px 0 0"><button class="b r s" data-ut="ucrr" data-n="'+n+'">이 복각 삭제</button></p></div>').join('')
+ +'<p><button class="b g" data-ut="ucar">+ 복각 버전 추가</button></p>'
  +'<p style="margin-top:16px"><button class="b" data-ut="ucsave">저장</button> '+(ex?'<button class="b r" data-ut="ucdel">삭제</button>':'')+'</p></div></div>'}
+const ufo=ref=>{const[a,k]=ref.split(':');return[a==='o'?uf.parts:uf.reprints[+a.slice(1)].parts,k]};
 document.addEventListener('click',async e=>{const t=e.target.closest('[data-ut]');if(!t)return;const d=t.dataset,k=d.ut,n=+d.n;
  if(k==='usel'){us=n;ud=null;renderUnit();return}
  if(k==='uadd'){const id=uid('u');const ok=await run('추가 중…',async()=>{await commitData(x=>{x.unit.units.push({id,name:'새 유닛',logo:'',members:[],lives:[],coords:[]})},'add unit')});if(ok){us=unitList().length-1;ud=null;renderUnit()}return}
@@ -381,35 +397,38 @@ document.addEventListener('click',async e=>{const t=e.target.closest('[data-ut]'
  if(k==='ld'){ud.lives.splice(n,1);renderUnit();return}
  if(k==='ulrm'){ud.logo='';renderUnit();return}
  if(k==='usave'){const sid=ud.id,u0=ud;const ok=await run('저장 중…',async()=>{let logo=u0.logo;if(logo instanceof File){status('로고 업로드 중…');logo=await uploadFile(logo,'unit-'+sid.slice(-5))}
-   const members=u0.members.filter(m=>m.name.trim()).map(m=>({id:m.id,name:m.name.trim(),note:(m.note||'').trim()})),lives=u0.lives.filter(l=>(l.title||'').trim()||l.date).map(l=>({id:l.id,date:l.date||'',title:(l.title||'').trim(),memo:(l.memo||'').trim()}));
-   let old='';await commitData(x=>{const y=x.unit.units.find(z=>z.id===sid);if(!y)return;old=y.logo||'';y.name=u0.name.trim()||y.name;y.logo=logo||'';y.members=members;y.lives=lives},'update unit');if(old&&old!==logo)await delFile(old)});
+   const members=u0.members.filter(m=>m.name.trim()).map(m=>({id:m.id,name:m.name.trim(),note:(m.note||'').trim()})),lives=u0.lives.filter(l=>(l.title||'').trim()||l.date).map(l=>({id:l.id,date:l.date||'',title:(l.title||'').trim(),memo:(l.memo||'').trim(),url:(l.url||'').trim()}));
+   let old='';await commitData(x=>{const y=x.unit.units.find(z=>z.id===sid);if(!y)return;old=y.logo||'';y.name=u0.name.trim()||y.name;y.desc=(u0.desc||'').trim();y.logo=logo||'';y.members=members;y.lives=lives},'update unit');if(old&&old!==logo)await delFile(old)});
   if(ok){ud=null;renderUnit();toast('저장했어요. 사이트에는 1~2분 뒤 반영돼요')}return}
  if(k==='uup'||k==='udn'){const sid=ud.id,dir=k==='uup'?-1:1;const ok=await run('저장 중…',async()=>{await commitData(x=>{const a=x.unit.units,i=a.findIndex(z=>z.id===sid),j=i+dir;if(i<0||j<0||j>=a.length)return;[a[i],a[j]]=[a[j],a[i]]},'reorder unit')});
   if(ok){us=Math.max(0,unitList().findIndex(z=>z.id===sid));renderUnit()}return}
  if(k==='udel'){if(!t.dataset.c){t.dataset.c=1;t.textContent='한 번 더 누르면 삭제';return}
   const sid=ud.id;let old=null;const ok=await run('삭제 중…',async()=>{await commitData(x=>{old=x.unit.units.find(z=>z.id===sid)||null;x.unit.units=x.unit.units.filter(z=>z.id!==sid)},'delete unit');if(old)for(const p of upaths(old))await delFile(p)});
   if(ok){ud=null;us=0;renderUnit()}return}
- if(k==='ucnew'){uf={id:uid('k'),name:'',kind:'parts',parts:{}};uform();return}
- if(k==='ucedit'){const c=(unitList()[us].coords||[]).find(z=>z.id===d.id);uf={id:c.id,name:c.name,kind:c.kind||'parts',parts:{}};ALLK.forEach(([q])=>{if(c[q])uf.parts[q]=c[q]});uform();return}
+ if(k==='ucnew'){uf={id:uid('k'),name:'',kind:'parts',parts:{},reprints:[]};uform();return}
+ if(k==='ucedit'){const c=(unitList()[us].coords||[]).find(z=>z.id===d.id),pk=o=>{const r={};ALLK.forEach(([q])=>{if(o[q])r[q]=o[q]});return r};uf={id:c.id,name:c.name,kind:c.kind||'parts',parts:pk(c),reprints:(c.reprints||[]).map(r=>({label:r.label||'',parts:pk(r)}))};uform();return}
  if(k==='uccancel'){uf=null;mbox().innerHTML='';return}
- if(k==='ucrm'){delete uf.parts[d.k];uform();return}
+ if(k==='ucrm'){const[o,q]=ufo(d.ref);delete o[q];uform();return}
+ if(k==='ucar'){uf.reprints.push({label:'',parts:{}});uform();return}
+ if(k==='ucrr'){uf.reprints.splice(n,1);uform();return}
  if(k==='ucsave'){const sid=unitList()[us].id,P=uf.kind==='square'?SQ:CPT;
   if(!uf.name.trim()||!uf.parts.top){toast('이름과 첫 번째 사진은 꼭 필요해요');return}
-  const ok=await run('저장 중…',async()=>{const parts={};let tot=0,dn=0;P.forEach(([q])=>{if(uf.parts[q] instanceof File)tot++});
-   for(const[q]of P){const v=uf.parts[q];if(v instanceof File){status('사진 업로드 중 ('+(++dn)+'/'+tot+')');parts[q]=await uploadFile(v,'unit-'+sid.slice(-4)+uf.id.slice(-4)+q)}else if(v)parts[q]=v}
-   const it=Object.assign({id:uf.id,name:uf.name.trim(),kind:uf.kind},parts);status('저장 중…');let old=null;
+  const ok=await run('저장 중…',async()=>{const tg=[{o:uf.parts,pre:''},...uf.reprints.map((r,i)=>({o:r.parts,pre:'r'+i}))];let tot=0,dn=0;tg.forEach(g=>P.forEach(([q])=>{if(g.o[q] instanceof File)tot++}));
+   for(const g of tg)for(const[q]of P){const v=g.o[q];if(v instanceof File){status('사진 업로드 중 ('+(++dn)+'/'+tot+')');g.o[q]=await uploadFile(v,'unit-'+sid.slice(-4)+uf.id.slice(-4)+g.pre+q)}}
+   const pk=o=>{const r={};P.forEach(([q])=>{if(typeof o[q]==='string'&&o[q])r[q]=o[q]});return r};
+   const it=Object.assign({id:uf.id,name:uf.name.trim(),kind:uf.kind},pk(uf.parts),{reprints:uf.reprints.map(r=>Object.assign({label:r.label.trim()},pk(r.parts)))});status('저장 중…');let old=null;
    await commitData(x=>{const y=x.unit.units.find(z=>z.id===sid);y.coords=y.coords||[];const i=y.coords.findIndex(z=>z.id===it.id);old=i>=0?y.coords[i]:null;if(i>=0)y.coords[i]=it;else y.coords.push(it)},'save unit coord');
-   if(old){const keep=new Set(ALLK.map(([q])=>it[q]).filter(Boolean));for(const[q]of ALLK)if(old[q]&&!keep.has(old[q]))await delFile(old[q])}});
+   if(old){const keep=new Set(ucp(it));for(const p of ucp(old))if(!keep.has(p))await delFile(p)}});
   if(ok){uf=null;mbox().innerHTML='';renderUnit();toast('저장했어요. 사이트에는 1~2분 뒤 반영돼요')}return}
  if(k==='ucdel'){if(!t.dataset.c){t.dataset.c=1;t.textContent='한 번 더 누르면 삭제';return}
-  const sid=unitList()[us].id;let old=null;const ok=await run('삭제 중…',async()=>{await commitData(x=>{const y=x.unit.units.find(z=>z.id===sid);old=(y.coords||[]).find(z=>z.id===uf.id)||null;y.coords=(y.coords||[]).filter(z=>z.id!==uf.id)},'delete unit coord');if(old)for(const[q]of ALLK)if(old[q])await delFile(old[q])});
+  const sid=unitList()[us].id;let old=null;const ok=await run('삭제 중…',async()=>{await commitData(x=>{const y=x.unit.units.find(z=>z.id===sid);old=(y.coords||[]).find(z=>z.id===uf.id)||null;y.coords=(y.coords||[]).filter(z=>z.id!==uf.id)},'delete unit coord');if(old)for(const p of ucp(old))await delFile(p)});
   if(ok){uf=null;mbox().innerHTML='';renderUnit()}}});
 document.addEventListener('input',e=>{const t=e.target,d=t.dataset;
  if(d.ud&&ud)ud[d.ud]=t.value;else if(d.um&&ud){const[n,f]=d.um.split(':');ud.members[+n][f]=t.value}else if(d.ul&&ud){const[n,f]=d.ul.split(':');ud.lives[+n][f]=t.value}
- else if(d.uf&&uf){uf[d.uf]=t.value}});
+ else if(d.uf&&uf){uf[d.uf]=t.value}else if(d.ufl!==undefined&&uf){uf.reprints[+d.ufl].label=t.value}});
 document.addEventListener('change',e=>{const t=e.target,d=t.dataset;
  if(d.ulogo&&t.files[0]){ud.logo=t.files[0];renderUnit()}
- else if(d.ufp&&t.files[0]){uf.parts[d.ufp]=t.files[0];uform()}
+ else if(d.ufp&&t.files[0]){const[o,q]=ufo(d.ufp);o[q]=t.files[0];uform()}
  else if(d.uf==='kind'&&uf){uf.kind=t.value;uform()}});
 
 async function save(){
