@@ -29,7 +29,7 @@ label.l{display:block;font-size:12px;color:var(--mu);margin:12px 0 4px}
 .ct{border:1px solid var(--bd);border-radius:12px;padding:8px}.ct .im{min-height:60px;background:var(--ac2);border-radius:8px;overflow:hidden;display:flex;align-items:center;justify-content:center;color:var(--mu);font-size:12px}.ct img{width:100%;height:auto;display:block}
 .ct .r{display:flex;justify-content:space-between;gap:4px;margin-top:6px;align-items:center}
 .crb{border:1px dashed var(--bd);border-radius:12px;padding:10px;margin-top:10px}
-.li{display:flex;gap:10px;align-items:center;padding:8px;border:1px solid var(--bd);border-radius:12px;margin-top:8px;cursor:pointer}.li img{width:44px;object-fit:cover;border-radius:5px;background:var(--ac2);flex:none}.li span{font-size:12px;color:var(--mu)}
+.li{display:flex;gap:10px;align-items:center;padding:8px;border:1px solid var(--bd);border-radius:12px;margin-top:8px;cursor:pointer}.li img{width:44px;object-fit:cover;border-radius:0;background:#fff;flex:none}.li span{font-size:12px;color:var(--mu)}
 .w textarea{font:inherit;color:var(--tx);resize:vertical}
 .tt{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:9px 14px;border-radius:10px;font-size:13px;z-index:40;max-width:90%}
 </style></head>
@@ -233,10 +233,10 @@ let lo=null;
 function listOrder(ctx,items){if(!lo||lo.ctx!==ctx||lo.ids.length!==items.length||items.some(i=>!lo.ids.includes(i.id)))lo={ctx,ids:items.map(i=>i.id),dirty:false};const mp=Object.fromEntries(items.map(i=>[i.id,i]));return lo.ids.map(id=>mp[id])}
 function moveOrd(id,dir,grp,items){const full=listOrder(lo?lo.ctx:'',items),ids=lo.ids,i=ids.indexOf(id),j=i+dir;if(i<0||j<0||j>=ids.length)return false;const mp=Object.fromEntries(items.map(x=>[x.id,x]));if(grp(mp[ids[i]])!==grp(mp[ids[j]]))return false;[ids[i],ids[j]]=[ids[j],ids[i]];lo.dirty=true;return true}
 const ordBtns=(on,ctk,id)=>on?'<span style="display:flex;gap:4px;margin-left:auto"><button class="b g s" data-'+ctk+'="mvu" data-id="'+esc(id)+'">↑</button><button class="b g s" data-'+ctk+'="mvd" data-id="'+esc(id)+'">↓</button></span>':'';
-const grpC=(S,i)=>(S.id==='s5'?(i.cat||''):'')+'|'+(i.rarity||'');
+const grpC=(S,i)=>(i.cat||'')+'|'+(i.rarity||'');
 function sortedItems(S){const ri=id=>(S.rarities||[]).findIndex(x=>x.id===id);
  const ci=id=>{const n=(S.cats||[]).findIndex(x=>x.id===id);return n<0?999:n};
- return (S.items||[]).map((it,ix)=>({it,ix})).sort((a,b)=>(S.id==='s5'?ci(a.it.cat)-ci(b.it.cat):0)||ri(b.it.rarity)-ri(a.it.rarity)||a.ix-b.ix).map(x=>x.it)}
+ return (S.items||[]).map((it,ix)=>({it,ix})).sort((a,b)=>ci(a.it.cat)-ci(b.it.cat)||ri(b.it.rarity)-ri(a.it.rarity)||a.ix-b.ix).map(x=>x.it)}
 function renderCoord(){
  const S=curS();if(!cd)cd={ratio:S.ratio||'180/262',catLabel:S.catLabel||'분류',cats:clone(S.cats||[]),rarities:clone(S.rarities||[])};
  const rows=(k,ph)=>cd[k].map((x,n)=>'<div class="mr"><input type="text" data-cn="'+k+':'+n+'" value="'+esc(x.name)+'" placeholder="'+ph+'"><button class="b g s" data-ct="cu" data-k="'+k+'" data-n="'+n+'">↑</button><button class="b g s" data-ct="cv" data-k="'+k+'" data-n="'+n+'">↓</button><button class="b r s" data-ct="cdl" data-k="'+k+'" data-n="'+n+'">삭제</button></div>').join('')+'<button class="b g s" data-ct="cadd" data-k="'+k+'">+ 추가</button>';
@@ -252,7 +252,7 @@ function renderCoord(){
  +'<h3>레어도 (아래로 갈수록 높은 레어도)</h3>'+rows('rarities','레어도 이름')
  +'<p><button class="b" data-ct="ccfg">설정 저장</button></p>'
  +'<h3>카드 ('+(S.items||[]).length+'장)</h3><div style="display:flex;gap:8px"><input type="text" data-cq placeholder="이름 검색" value="'+esc(cq)+'"><button class="b" data-ct="cnew" style="white-space:nowrap">+ 카드 추가</button></div>'
- +'<p class="note">순서는 같은 레어도'+(S.id==='s5'?'(같은 종류)':'')+' 안에서 ↑↓로 바꿔요. 바꾼 뒤 “순서 저장”을 눌러야 사이트에 반영돼요.</p>'+(lo&&lo.ctx==='coord:'+S.id&&lo.dirty?'<p><button class="b" data-ct="ordsave">순서 저장</button></p>':'')
+ +'<p class="note">순서는 같은 '+esc(S.catLabel||'분류')+'의 같은 레어도 안에서 ↑↓로 바꿔요. 바꾼 뒤 “순서 저장”을 눌러야 사이트에 반영돼요.</p>'+(lo&&lo.ctx==='coord:'+S.id&&lo.dirty?'<p><button class="b" data-ct="ordsave">순서 저장</button></p>':'')
  +(l.length?l.map(i=>'<div class="li" data-ct="cedit" data-id="'+esc(i.id)+'"><img src="'+esc(pv[i.top]||i.top||'')+'" alt="" style="aspect-ratio:'+esc(S.ratio||'180/262')+'"><div><b style="font-size:14px">'+esc(i.name)+'</b><br><span>'+esc([rn[i.rarity],cn[i.cat],(i.reprints||[]).length?'복각 '+i.reprints.length:'',(i.needAcc||(i.reprints||[]).some(r=>r.need))?'🛒 구매 필요':''].filter(Boolean).join(' · '))+'</span></div>'+ordBtns(canMove,'ct',i.id)+'</div>').join(''):'<p class="note">등록된 카드가 없어요.</p>')+'</div>'}
 function cform(){const S=curS(),P=partsOf(S),one=S.mode==='single',m=mbox(),sc=(m.querySelector('.csh')||{}).scrollTop||0,ex=(S.items||[]).some(x=>x.id===ci.id);
  const pk=(o,pre)=>'<div class="cpg">'+P.map(([k,n])=>'<div class="ct"><div class="im">'+(o[k]?'<img src="'+esc(prev(o[k]))+'" alt="">':n)+'</div><div class="r"><label class="b g s fi">'+(o[k]?'변경':'사진')+'<input type="file" accept="image/*" data-cpf="'+pre+':'+k+'"></label>'+(o[k]?'<button class="b g s" data-ct="crm" data-ref="'+pre+':'+k+'">삭제</button>':'')+'</div></div>').join('')+'</div>';

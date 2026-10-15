@@ -72,7 +72,7 @@ details.yr[open]>summary{border-bottom:1px solid var(--bd)}
 .cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:6px}
 @media(min-width:700px){.cgrid{grid-template-columns:repeat(4,1fr)}.cgrid.land{grid-template-columns:repeat(3,1fr)}}
 .cgrid.land{grid-template-columns:repeat(2,1fr)}
-.cc{border:0;padding:0;border-radius:0;overflow:hidden;position:relative;line-height:0;cursor:pointer;background:var(--ac2);box-shadow:var(--sh)}
+.cc{border:0;padding:0;border-radius:0;overflow:hidden;position:relative;line-height:0;cursor:pointer;background:#fff;box-shadow:var(--sh)}
 .cc img{width:100%;height:100%;object-fit:cover;display:block}
 .bd2{position:absolute;top:5px;right:5px;background:var(--gr);color:var(--ink);font-size:9px;padding:1px 7px;border-radius:0;line-height:1.5}
 .cd-ov{position:fixed;inset:0;background:rgba(40,50,90,.5);display:flex;align-items:flex-end;justify-content:center;z-index:40}
@@ -186,7 +186,7 @@ function coordRefresh(){const S=D.coord.series[cs],defs=[['cb',S.catLabel||'분�
  $('#cch').innerHTML=bar+(op?'<div class="ddl"><button class="ddo'+(op[3]?'':' on')+'" data-'+op[0]+'="">전체</button>'+op[2].map(x=>'<button class="ddo'+(op[3]===x.id?' on':'')+'" data-'+op[0]+'="'+x.id+'">'+esc(x.name)+'</button>').join('')+'</div>':'');coordGrid()}
 function coordGrid(){const S=D.coord.series[cs],rar=S.rarities||[],ri=id=>rar.findIndex(x=>x.id===id);const ci=id=>{const n=(S.cats||[]).findIndex(x=>x.id===id);return n<0?999:n};
  const l=(S.items||[]).map((it,ix)=>({it,ix})).filter(x=>(!cq||(x.it.name||'').toLowerCase().includes(cq.toLowerCase()))&&(!cb||x.it.cat===cb)&&(!cr||x.it.rarity===cr))
-  .sort((a,b)=>(S.id==='s5'?ci(a.it.cat)-ci(b.it.cat):0)||ri(b.it.rarity)-ri(a.it.rarity)||a.ix-b.ix).map(x=>x.it);
+  .sort((a,b)=>ci(a.it.cat)-ci(b.it.cat)||ri(b.it.rarity)-ri(a.it.rarity)||a.ix-b.ix).map(x=>x.it);
  $('#cg').innerHTML=l.length?'<div class="cgrid">'+l.map(i=>'<button class="cc" data-ci="'+esc(i.id)+'" style="aspect-ratio:'+esc(S.ratio||'180/262')+'">'+(i.top?'<img loading="lazy" src="'+esc(i.top)+'" alt="'+esc(i.name)+'">':'')+((i.reprints||[]).length?'<span class="bd2">복각 '+i.reprints.length+'</span>':'')+'</button>').join('')+'</div>':'<div class="soon">'+((S.items||[]).length?'조건에 맞는 카드가 없어요':'아직 등록된 카드가 없어요')+'</div>'}
 function ctile(p,label,nm,full){return '<div class="cd-t'+(full?' full':'')+'"><img src="'+esc(p)+'" alt=""><div class="cd-r"><span></span><span><a class="cd-b" href="'+esc(p)+'" download="'+esc(nm+(label?'_'+label:'')+'.'+cext(p))+'">저장</a> <button class="cd-b" data-cp="'+esc(p)+'">복사</button></span></div></div>'}
 function coordView(id){const S=D.coord.series[cs],i=(S.items||[]).find(x=>x.id===id);if(!i)return;const P=S.mode==='single'?[['top','스윙']]:CPT,cat=(S.cats||[]).find(x=>x.id===i.cat),ra=(S.rarities||[]).find(x=>x.id===i.rarity);
