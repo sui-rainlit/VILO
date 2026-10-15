@@ -3962,11 +3962,43 @@
    },
    {
     "id": "umv92q39xn06",
-    "name": "새 유닛",
+    "name": "NEW GENERATION",
     "logo": "",
-    "members": [],
+    "members": [
+     {
+      "id": "mmv92qbhbvow",
+      "name": "나라",
+      "note": ""
+     },
+     {
+      "id": "mmv92qbrx4rp",
+      "name": "피어",
+      "note": ""
+     },
+     {
+      "id": "mmv92qc229fl",
+      "name": "라비",
+      "note": ""
+     },
+     {
+      "id": "mmv92qcbqnqk",
+      "name": "호시",
+      "note": ""
+     },
+     {
+      "id": "mmv92qclu5k8",
+      "name": "미소",
+      "note": ""
+     },
+     {
+      "id": "mmv92qcx3jig",
+      "name": "스이",
+      "note": ""
+     }
+    ],
     "lives": [],
-    "coords": []
+    "coords": [],
+    "desc": ""
    }
   ]
  }
