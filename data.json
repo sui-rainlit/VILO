@@ -3902,11 +3902,33 @@
    },
    {
     "id": "umv92oq4qm21",
-    "name": "새 유닛",
+    "name": "4LIPS",
     "logo": "",
-    "members": [],
+    "members": [
+     {
+      "id": "mmv92owgwfko",
+      "name": "나라",
+      "note": ""
+     },
+     {
+      "id": "mmv92owpvt4u",
+      "name": "스이",
+      "note": ""
+     },
+     {
+      "id": "mmv92ox05xfx",
+      "name": "호시",
+      "note": ""
+     },
+     {
+      "id": "mmv92oxam9f0",
+      "name": "이나",
+      "note": ""
+     }
+    ],
     "lives": [],
-    "coords": []
+    "coords": [],
+    "desc": ""
    }
   ]
  }
