@@ -1855,6 +1855,17 @@
       "shoes": "img/s2-xnjlushoes-mv91bgzo6fm.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmv91bqzead3",
+      "name": "COLOR SHINY COORD",
+      "cat": "cmv9103g0nei",
+      "rarity": "s2r1",
+      "top": "img/s2-zead3top-mv91c0s8ta9.png",
+      "bottom": "img/s2-zead3bottom-mv91c0saph2.png",
+      "shoes": "img/s2-zead3shoes-mv91c0sc0wv.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
