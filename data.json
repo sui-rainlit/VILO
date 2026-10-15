@@ -3821,9 +3821,25 @@
    },
    {
     "id": "umv92gzaudzo",
-    "name": "새 유닛",
+    "name": "ON AIR",
     "logo": "",
-    "members": [],
+    "members": [
+     {
+      "id": "mmv92h6vgsvg",
+      "name": "호시",
+      "note": ""
+     },
+     {
+      "id": "mmv92h6emnux",
+      "name": "스이",
+      "note": ""
+     },
+     {
+      "id": "mmv92h77ig09",
+      "name": "라비",
+      "note": ""
+     }
+    ],
     "lives": [],
     "coords": [
      {
@@ -3846,7 +3862,8 @@
       "acc": "img/unit-udzov6k2acc-mv92lid4sco.png",
       "reprints": []
      }
-    ]
+    ],
+    "desc": ""
    }
   ]
  }
