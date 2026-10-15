@@ -1844,6 +1844,17 @@
       "shoes": "img/s2-ppjbashoes-mv91awrdeyr.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmv91b2xnjlu",
+      "name": "WHITE CASUAL COORD",
+      "cat": "cmv9103g0nei",
+      "rarity": "s2r1",
+      "top": "img/s2-xnjlutop-mv91bgzkjc5.png",
+      "bottom": "img/s2-xnjlubottom-mv91bgzmdwl.png",
+      "shoes": "img/s2-xnjlushoes-mv91bgzo6fm.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
