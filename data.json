@@ -1811,6 +1811,17 @@
       "shoes": "img/s2-7krypshoes-mv9149x4rdv.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmv919oqyjac",
+      "name": "CROSS PLANETARIUM COORD",
+      "cat": "cmv9103g0nei",
+      "rarity": "s2r1",
+      "top": "img/s2-qyjactop-mv91a0414u3.png",
+      "bottom": "img/s2-qyjacbottom-mv91a043lfy.png",
+      "shoes": "img/s2-qyjacshoes-mv91a044jrt.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
