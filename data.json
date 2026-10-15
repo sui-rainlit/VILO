@@ -2463,7 +2463,17 @@
       "name": "PR"
      }
     ],
-    "items": []
+    "items": [
+     {
+      "id": "cmv91sokrys1",
+      "name": "PUREFUL PHOENIX",
+      "cat": "cmv6ns1jnez3",
+      "rarity": "s4r2",
+      "top": "img/s4-krys1top-mv91szj49e7.png",
+      "dressia": "img/s4-krys1dressia-mv91szj7jk8.png",
+      "reprints": []
+     }
+    ]
    },
    {
     "id": "s5",
