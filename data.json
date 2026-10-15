@@ -1630,6 +1630,17 @@
       "shoes": "img/s1-coq1zshoes-mv91210segi.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmv916uonh4z",
+      "name": "STRIPPED TIE COORD",
+      "cat": "cmv6oq476god",
+      "rarity": "s1r1",
+      "top": "img/s1-onh4ztop-mv9174ehzp7.png",
+      "bottom": "img/s1-onh4zbottom-mv9174evua3.png",
+      "shoes": "img/s1-onh4zshoes-mv9174ew59w.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
