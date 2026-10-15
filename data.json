@@ -1723,7 +1723,19 @@
       "name": "LPR"
      }
     ],
-    "items": []
+    "items": [
+     {
+      "id": "cmv9127ox6sy",
+      "name": "MINI FRILL PINK COORD",
+      "cat": "cmv910372yxe",
+      "rarity": "s2r1",
+      "top": "img/s2-ox6sytop-mv912v2vrju.png",
+      "bottom": "img/s2-ox6sybottom-mv912v2x6fg.png",
+      "shoes": "img/s2-ox6syshoes-mv912v2yjzb.png",
+      "reprints": [],
+      "needAcc": false
+     }
+    ]
    },
    {
     "id": "s3",
