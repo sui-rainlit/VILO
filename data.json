@@ -3932,11 +3932,33 @@
    },
    {
     "id": "umv92p9lvjqq",
-    "name": "새 유닛",
+    "name": "SWANKIER",
     "logo": "",
-    "members": [],
+    "members": [
+     {
+      "id": "mmv92ph6je3u",
+      "name": "보름",
+      "note": ""
+     },
+     {
+      "id": "mmv92phhlddh",
+      "name": "래월",
+      "note": ""
+     },
+     {
+      "id": "mmv92phv9iqd",
+      "name": "스이",
+      "note": ""
+     },
+     {
+      "id": "mmv92pi7szv3",
+      "name": "아설",
+      "note": ""
+     }
+    ],
     "lives": [],
-    "coords": []
+    "coords": [],
+    "desc": ""
    }
   ]
  }
