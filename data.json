@@ -1877,6 +1877,17 @@
       "shoes": "img/s2-n2ciishoes-mv91cfox0h6.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmv91ckeb8ks",
+      "name": "CROOS PLANETARIUM COORD",
+      "cat": "cmv9103g0nei",
+      "rarity": "s2r1",
+      "top": "img/s2-eb8kstop-mv91cuy5h8w.png",
+      "bottom": "img/s2-eb8ksbottom-mv91cuy79ew.png",
+      "shoes": "img/s2-eb8ksshoes-mv91cuy9iar.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
