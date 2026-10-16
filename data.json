@@ -1902,6 +1902,23 @@
       "acc": "img/s1-a45yfacc-mvaoaoidtf4.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvaoatv2yh9",
+      "name": "STRAWBERRY PEARL COORD",
+      "cat": "s1b1",
+      "rarity": "s1r2",
+      "top": "img/s1-v2yh9top-mvaobhyriay.png",
+      "bottom": "img/s1-v2yh9bottom-mvaobhyu9nu.png",
+      "shoes": "img/s1-v2yh9shoes-mvaobhyvk9r.png",
+      "acc": "img/s1-v2yh9acc-mvaobhyx2m7.png",
+      "reprints": [
+       {
+        "label": "온 퍼레이드",
+        "need": true
+       }
+      ],
+      "needAcc": false
      }
     ]
    },
