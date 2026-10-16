@@ -2381,6 +2381,18 @@
       "acc": "img/s1-l4w7racc-mvapbszi7fq.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvapbzacetb",
+      "name": "FLOWER PIROUETTE COORD",
+      "cat": "s1b6",
+      "rarity": "s1r1",
+      "top": "img/s1-acetbtop-mvapc96dwtx.png",
+      "bottom": "img/s1-acetbbottom-mvapc96gyad.png",
+      "shoes": "img/s1-acetbshoes-mvapc96i9xm.png",
+      "acc": "img/s1-acetbacc-mvapc96jme3.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
