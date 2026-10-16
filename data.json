@@ -1852,6 +1852,22 @@
       "acc": "img/s1-trp76acc-mvao6ait1u5.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvao6id8b4g",
+      "name": "GIRLY STRAWBERRY COORD",
+      "cat": "s1b1",
+      "rarity": "s1r1",
+      "top": "img/s1-d8b4gtop-mvao77tykdj.png",
+      "shoes": "img/s1-d8b4gshoes-mvao77u0uhu.png",
+      "acc": "img/s1-d8b4gacc-mvao77u2kox.png",
+      "reprints": [
+       {
+        "label": "무인편",
+        "need": true
+       }
+      ],
+      "needAcc": false
      }
     ]
    },
