@@ -2358,6 +2358,17 @@
       "shoes": "img/s1-jb23bshoes-mvapb102h6d.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvapb5h1tdk",
+      "name": "FOLIAGE COORD",
+      "cat": "s1b6",
+      "rarity": "s1r1",
+      "top": "img/s1-h1tdktop-mvapbdk5yux.png",
+      "bottom": "img/s1-h1tdkbottom-mvapbdk8gws.png",
+      "shoes": "img/s1-h1tdkshoes-mvapbdk9q2r.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
