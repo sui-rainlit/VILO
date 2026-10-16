@@ -2210,6 +2210,22 @@
       "shoes": "img/s1-53pukshoes-mvaoynk16h9.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvaoyte8b9j",
+      "name": "BLOCK CHECK COORD",
+      "cat": "s1b5",
+      "rarity": "s1r2",
+      "top": "img/s1-e8b9jtop-mvaoz7w2eus.png",
+      "bottom": "img/s1-e8b9jbottom-mvaoz7w52ly.png",
+      "shoes": "img/s1-e8b9jshoes-mvaoz7w7khe.png",
+      "reprints": [
+       {
+        "label": "무인편",
+        "need": true
+       }
+      ],
+      "needAcc": false
      }
     ]
    },
