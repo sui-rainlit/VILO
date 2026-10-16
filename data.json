@@ -2336,6 +2336,17 @@
        }
       ],
       "needAcc": false
+     },
+     {
+      "id": "cmvapabn688x",
+      "name": "PRINCESS DREAM COORD",
+      "cat": "s1b6",
+      "rarity": "s1r1",
+      "top": "img/s1-n688xtop-mvapan2p3ny.png",
+      "bottom": "img/s1-n688xbottom-mvapan35dah.png",
+      "shoes": "img/s1-n688xshoes-mvapan37pdk.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
