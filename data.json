@@ -1890,6 +1890,18 @@
       "shoes": "img/s1-hwqxvshoes-mvaoab6uy9r.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvaoafa45yf",
+      "name": "AQUA SWAN COORD",
+      "cat": "s1b1",
+      "rarity": "s1r2",
+      "top": "img/s1-a45yftop-mvaoaoi74ln.png",
+      "bottom": "img/s1-a45yfbottom-mvaoaoiadtw.png",
+      "shoes": "img/s1-a45yfshoes-mvaoaoicrgg.png",
+      "acc": "img/s1-a45yfacc-mvaoaoidtf4.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
