@@ -2101,6 +2101,17 @@
       "shoes": "img/s1-mokw9shoes-mvaopeg83fn.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvaopjfenww",
+      "name": "LEOPARD COORD",
+      "cat": "s1b3",
+      "rarity": "s1r1",
+      "top": "img/s1-fenwwtop-mvaoprj5c82.png",
+      "bottom": "img/s1-fenwwbottom-mvaoprj82dm.png",
+      "shoes": "img/s1-fenwwshoes-mvaoprj91xn.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
