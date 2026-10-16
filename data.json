@@ -2369,6 +2369,18 @@
       "shoes": "img/s1-h1tdkshoes-mvapbdk9q2r.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvapbjl4w7r",
+      "name": "PINK PIROUETTE COORD",
+      "cat": "s1b6",
+      "rarity": "s1r1",
+      "top": "img/s1-l4w7rtop-mvapbszav3m.png",
+      "bottom": "img/s1-l4w7rbottom-mvapbszff12.png",
+      "shoes": "img/s1-l4w7rshoes-mvapbszh3yr.png",
+      "acc": "img/s1-l4w7racc-mvapbszi7fq.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
