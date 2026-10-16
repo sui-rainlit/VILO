@@ -1919,6 +1919,31 @@
        }
       ],
       "needAcc": false
+     },
+     {
+      "id": "cmvaobms1eu0",
+      "name": "AURORA KISS COORD",
+      "cat": "s1b1",
+      "rarity": "s1r4",
+      "top": "img/s1-s1eu0top-mvaocn8dv9s.png",
+      "bottom": "img/s1-s1eu0bottom-mvaocn8fu98.png",
+      "shoes": "img/s1-s1eu0shoes-mvaocn8hn0n.png",
+      "acc": "img/s1-s1eu0acc-mvaocn8i0gj.png",
+      "reprints": [
+       {
+        "label": "무인편",
+        "need": true
+       },
+       {
+        "label": "스타즈",
+        "need": true
+       },
+       {
+        "label": "룰렛",
+        "need": true
+       }
+      ],
+      "needAcc": false
      }
     ]
    },
