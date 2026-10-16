@@ -2023,6 +2023,22 @@
       "shoes": "img/s1-sbt9cshoes-mvaokv494dj.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvaol6ucay5",
+      "name": "SPARKLING NOIR COORD",
+      "cat": "s1b2",
+      "rarity": "s1r2",
+      "top": "img/s1-ucay5top-mvaolnihiv4.png",
+      "bottom": "img/s1-ucay5bottom-mvaolniknop.png",
+      "shoes": "img/s1-ucay5shoes-mvaolnilpoj.png",
+      "reprints": [
+       {
+        "label": "무인편",
+        "need": true
+       }
+      ],
+      "needAcc": false
      }
     ]
    },
