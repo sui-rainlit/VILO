@@ -2226,6 +2226,16 @@
        }
       ],
       "needAcc": false
+     },
+     {
+      "id": "cmvaozce5uts",
+      "name": "ZIZ NIGHT DOLL COORD",
+      "cat": "s1b5",
+      "rarity": "s1r2",
+      "top": "img/s1-e5utstop-mvaozkvzav0.png",
+      "shoes": "img/s1-e5utsshoes-mvaozkw1zjc.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
