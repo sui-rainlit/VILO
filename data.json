@@ -1991,6 +1991,16 @@
       "shoes": "img/s1-lvc2ishoes-mvaoj5epbdj.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvaojas3gmq",
+      "name": "PURPLE BON VOYAGE COORD",
+      "cat": "s1b2",
+      "rarity": "s1r1",
+      "top": "img/s1-s3gmqtop-mvaojj1fabj.png",
+      "shoes": "img/s1-s3gmqshoes-mvaojj1haau.png",
+      "reprints": [],
+      "needAcc": true
      }
     ]
    },
