@@ -2001,6 +2001,17 @@
       "shoes": "img/s1-s3gmqshoes-mvaojj1haau.png",
       "reprints": [],
       "needAcc": true
+     },
+     {
+      "id": "cmvaojomv92d",
+      "name": "SKY BLUE COORD",
+      "cat": "s1b2",
+      "rarity": "s1r1",
+      "top": "img/s1-mv92dtop-mvaojx464ig.png",
+      "bottom": "img/s1-mv92dbottom-mvaojx48vba.png",
+      "shoes": "img/s1-mv92dshoes-mvaojx4byxu.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
