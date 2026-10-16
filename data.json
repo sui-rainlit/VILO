@@ -2269,6 +2269,17 @@
       "shoes": "img/s1-berl6shoes-mvap3f53kuc.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvap3j1l859",
+      "name": "ADVENTURE MAP COORD",
+      "cat": "s1b9",
+      "rarity": "s1r1",
+      "top": "img/s1-1l859top-mvap3rgfh9d.png",
+      "bottom": "img/s1-1l859bottom-mvap3rgitmn.png",
+      "shoes": "img/s1-1l859shoes-mvap3rgj4sl.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
