@@ -1840,6 +1840,18 @@
       "acc": "img/s1-9424eacc-mvao5iy3y9s.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvao5ytrp76",
+      "name": "ANGELY BEAR COORD",
+      "cat": "s1b1",
+      "rarity": "s1r1",
+      "top": "img/s1-trp76top-mvao6ainnjc.png",
+      "bottom": "img/s1-trp76bottom-mvao6aipbsk.png",
+      "shoes": "img/s1-trp76shoes-mvao6airap3.png",
+      "acc": "img/s1-trp76acc-mvao6ait1u5.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
