@@ -2415,6 +2415,17 @@
       "shoes": "img/s1-vgwf6shoes-mvapczmb8oi.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvapd4t0z9g",
+      "name": "FAIRYTALE COORD",
+      "cat": "s1b6",
+      "rarity": "s1r2",
+      "top": "img/s1-t0z9gtop-mvapdr66qq4.png",
+      "bottom": "img/s1-t0z9gbottom-mvapdr69ndd.png",
+      "shoes": "img/s1-t0z9gshoes-mvapdr6bwcc.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
