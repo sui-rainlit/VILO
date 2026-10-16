@@ -2079,6 +2079,17 @@
        }
       ],
       "needAcc": false
+     },
+     {
+      "id": "cmvaoojr0xs4",
+      "name": "BEAUNE PREMIERE COORD",
+      "cat": "s1b3",
+      "rarity": "s1r1",
+      "top": "img/s1-r0xs4top-mvaooxg3hvq.png",
+      "bottom": "img/s1-r0xs4bottom-mvaooxg63cn.png",
+      "shoes": "img/s1-r0xs4shoes-mvaooxg9q27.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
