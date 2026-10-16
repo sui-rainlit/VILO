@@ -2199,6 +2199,17 @@
       "shoes": "img/s1-1pr21shoes-mvaoy82dj9d.png",
       "reprints": [],
       "needAcc": true
+     },
+     {
+      "id": "cmvaoyd53puk",
+      "name": "VIOLET HATTER COORD",
+      "cat": "s1b5",
+      "rarity": "s1r1",
+      "top": "img/s1-53puktop-mvaoynjwym1.png",
+      "bottom": "img/s1-53pukbottom-mvaoynjzp97.png",
+      "shoes": "img/s1-53pukshoes-mvaoynk16h9.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
