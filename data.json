@@ -2039,6 +2039,16 @@
        }
       ],
       "needAcc": false
+     },
+     {
+      "id": "cmvaolsz7f4o",
+      "name": "PRISM CYBER COORD",
+      "cat": "s1b2",
+      "rarity": "s1r2",
+      "top": "img/s1-z7f4otop-mvaom5b6llk.png",
+      "acc": "img/s1-z7f4oacc-mvaom5b8sz5.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
