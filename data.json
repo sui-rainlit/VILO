@@ -2393,6 +2393,17 @@
       "acc": "img/s1-acetbacc-mvapc96jme3.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvapcf2kd1i",
+      "name": "CLASSICAL WALTZ COORD",
+      "cat": "s1b6",
+      "rarity": "s1r1",
+      "top": "img/s1-2kd1itop-mvapcn0pysb.png",
+      "bottom": "img/s1-2kd1ibottom-mvapcn0sjck.png",
+      "shoes": "img/s1-2kd1ishoes-mvapcn0vkwx.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
