@@ -1817,6 +1817,17 @@
       "shoes": "img/s1-tj9ahshoes-mvao2othlgh.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvao3cyb2g7",
+      "name": "SWEET CUPCAKE COORD",
+      "cat": "s1b1",
+      "rarity": "s1r1",
+      "top": "img/s1-yb2g7top-mvao3ozbr00.png",
+      "bottom": "img/s1-yb2g7bottom-mvao3ozdjcy.png",
+      "shoes": "img/s1-yb2g7shoes-mvao3ozfszr.png",
+      "reprints": [],
+      "needAcc": true
      }
     ]
    },
