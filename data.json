@@ -2047,7 +2047,12 @@
       "rarity": "s1r2",
       "top": "img/s1-z7f4otop-mvaom5b6llk.png",
       "acc": "img/s1-z7f4oacc-mvaom5b8sz5.png",
-      "reprints": [],
+      "reprints": [
+       {
+        "label": "앙코르",
+        "need": true
+       }
+      ],
       "needAcc": false
      },
      {
