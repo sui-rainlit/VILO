@@ -2347,6 +2347,17 @@
       "shoes": "img/s1-n688xshoes-mvapan37pdk.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvapasjb23b",
+      "name": "PRINCESS FRESH COORD",
+      "cat": "s1b6",
+      "rarity": "s1r1",
+      "top": "img/s1-jb23btop-mvapb0zy6qk.png",
+      "bottom": "img/s1-jb23bbottom-mvapb1018ml.png",
+      "shoes": "img/s1-jb23bshoes-mvapb102h6d.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
