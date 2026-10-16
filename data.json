@@ -2112,6 +2112,17 @@
       "shoes": "img/s1-fenwwshoes-mvaoprj91xn.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvaopvy5lty",
+      "name": "PIED DE POULE COORD",
+      "cat": "s1b3",
+      "rarity": "s1r1",
+      "top": "img/s1-y5ltytop-mvaoq9p0jbk.png",
+      "bottom": "img/s1-y5ltybottom-mvaoq9pb62t.png",
+      "shoes": "img/s1-y5ltyshoes-mvaoq9pcacn.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
