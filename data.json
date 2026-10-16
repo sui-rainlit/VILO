@@ -2258,6 +2258,17 @@
       "shoes": "img/s1-0xtp3shoes-mvap329448e.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvap36berl6",
+      "name": "PUNK COORD",
+      "cat": "s1b9",
+      "rarity": "s1r1",
+      "top": "img/s1-berl6top-mvap3f4zr76.png",
+      "bottom": "img/s1-berl6bottom-mvap3f52d3k.png",
+      "shoes": "img/s1-berl6shoes-mvap3f53kuc.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
