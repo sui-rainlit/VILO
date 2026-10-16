@@ -1879,6 +1879,17 @@
       "shoes": "img/s1-3d7amshoes-mvao9yefnu3.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvaoa2hwqxv",
+      "name": "PURPLE FATA COORD",
+      "cat": "s1b1",
+      "rarity": "s1r1",
+      "top": "img/s1-hwqxvtop-mvaoab6p7v9.png",
+      "bottom": "img/s1-hwqxvbottom-mvaoab6sfii.png",
+      "shoes": "img/s1-hwqxvshoes-mvaoab6uy9r.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
