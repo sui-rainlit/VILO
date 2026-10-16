@@ -2123,6 +2123,18 @@
       "shoes": "img/s1-y5ltyshoes-mvaoq9pcacn.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvaoqdqmiid",
+      "name": "LEONIDS NIGHT COORD",
+      "cat": "s1b3",
+      "rarity": "s1r1",
+      "top": "img/s1-qmiidtop-mvaoqrffaha.png",
+      "bottom": "img/s1-qmiidbottom-mvaoqrfjx03.png",
+      "shoes": "img/s1-qmiidshoes-mvaoqrfk4jb.png",
+      "acc": "img/s1-qmiidacc-mvaoqrfmun8.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
