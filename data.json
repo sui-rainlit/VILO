@@ -2315,6 +2315,27 @@
       "acc": "img/s1-sah9sacc-mvap5g0gqn1.png",
       "reprints": [],
       "needAcc": true
+     },
+     {
+      "id": "cmvap95x7ean",
+      "name": "MUSICAL SCORPIO COORD",
+      "cat": "s1b9",
+      "rarity": "s1r4",
+      "top": "img/s1-x7eantop-mvap9she2qr.png",
+      "bottom": "img/s1-x7eanbottom-mvap9shgksj.png",
+      "shoes": "img/s1-x7eanshoes-mvap9ship0l.png",
+      "acc": "img/s1-x7eanacc-mvap9shjtwf.png",
+      "reprints": [
+       {
+        "label": "무인편",
+        "need": true
+       },
+       {
+        "label": "룰렛",
+        "need": true
+       }
+      ],
+      "needAcc": false
      }
     ]
    },
