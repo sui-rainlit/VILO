@@ -2135,6 +2135,17 @@
       "acc": "img/s1-qmiidacc-mvaoqrfmun8.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvaor666ijz",
+      "name": "BLUE BLOCK CHECK COORD",
+      "cat": "s1b5",
+      "rarity": "s1r1",
+      "top": "img/s1-66ijztop-mvaorvxpffa.png",
+      "bottom": "img/s1-66ijzbottom-mvaorvy12ye.png",
+      "shoes": "img/s1-66ijzshoes-mvaorvy2j3b.png",
+      "reprints": [],
+      "needAcc": true
      }
     ]
    },
