@@ -2291,6 +2291,17 @@
       "shoes": "img/s1-sj3jhshoes-mvap46a07h3.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvap4ewo0gy",
+      "name": "PURPLE PUNK COORD",
+      "cat": "s1b9",
+      "rarity": "s1r1",
+      "top": "img/s1-wo0gytop-mvap4otnpsg.png",
+      "bottom": "img/s1-wo0gybottom-mvap4otpgby.png",
+      "shoes": "img/s1-wo0gyshoes-mvap4otr540.png",
+      "reprints": [],
+      "needAcc": true
      }
     ]
    },
