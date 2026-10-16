@@ -1868,6 +1868,17 @@
        }
       ],
       "needAcc": false
+     },
+     {
+      "id": "cmvao9k3d7am",
+      "name": "GIRLY GELATO COORD",
+      "cat": "s1b1",
+      "rarity": "s1r1",
+      "top": "img/s1-3d7amtop-mvao9yea64v.png",
+      "bottom": "img/s1-3d7ambottom-mvao9yedjsu.png",
+      "shoes": "img/s1-3d7amshoes-mvao9yefnu3.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
