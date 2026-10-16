@@ -2049,6 +2049,31 @@
       "acc": "img/s1-z7f4oacc-mvaom5b8sz5.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvaomfyf2uw",
+      "name": "MILKY WAY COSMIC COORD",
+      "cat": "s1b2",
+      "rarity": "s1r4",
+      "top": "img/s1-yf2uwtop-mvaon0n0w6a.png",
+      "bottom": "img/s1-yf2uwbottom-mvaon0n3tnt.png",
+      "shoes": "img/s1-yf2uwshoes-mvaon0n4qk4.png",
+      "acc": "img/s1-yf2uwacc-mvaon0n5j66.png",
+      "reprints": [
+       {
+        "label": "무인편",
+        "need": true
+       },
+       {
+        "label": "스타즈",
+        "need": true
+       },
+       {
+        "label": "앙코르",
+        "need": true
+       }
+      ],
+      "needAcc": false
      }
     ]
    },
