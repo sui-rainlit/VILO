@@ -1941,6 +1941,10 @@
        {
         "label": "룰렛",
         "need": true
+       },
+       {
+        "label": "앙코르",
+        "need": true
        }
       ],
       "needAcc": false
