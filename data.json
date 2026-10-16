@@ -2146,6 +2146,17 @@
       "shoes": "img/s1-66ijzshoes-mvaorvy2j3b.png",
       "reprints": [],
       "needAcc": true
+     },
+     {
+      "id": "cmvaosfzl3vf",
+      "name": "HOLY VIOLET COORD",
+      "cat": "s1b5",
+      "rarity": "s1r1",
+      "top": "img/s1-zl3vftop-mvaot9udk0n.png",
+      "bottom": "img/s1-zl3vfbottom-mvaot9uf34b.png",
+      "shoes": "img/s1-zl3vfshoes-mvaot9ug0tz.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
