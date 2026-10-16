@@ -2189,6 +2189,16 @@
       "shoes": "img/s1-0n6bushoes-mvaoxvzxv7p.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvaoy01pr21",
+      "name": "BLUE TRENCH COORD",
+      "cat": "s1b5",
+      "rarity": "s1r1",
+      "top": "img/s1-1pr21top-mvaoy82ai23.png",
+      "shoes": "img/s1-1pr21shoes-mvaoy82dj9d.png",
+      "reprints": [],
+      "needAcc": true
      }
     ]
    },
