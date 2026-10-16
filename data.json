@@ -2157,6 +2157,18 @@
       "shoes": "img/s1-zl3vfshoes-mvaot9ug0tz.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvaov3p6m5b",
+      "name": "WINTER FORMULA COORD",
+      "cat": "s1b5",
+      "rarity": "s1r1",
+      "top": "img/s1-p6m5btop-mvaox9cl8ox.png",
+      "bottom": "img/s1-p6m5bbottom-mvaox9cpw5i.png",
+      "shoes": "img/s1-p6m5bshoes-mvaox9crjc1.png",
+      "acc": "img/s1-p6m5bacc-mvaox9csmrt.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
