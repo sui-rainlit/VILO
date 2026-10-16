@@ -2247,6 +2247,17 @@
       "shoes": "img/s1-s3c98shoes-mvaozyih1si.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvap2t0xtp3",
+      "name": "PINK CAT COORD",
+      "cat": "s1b9",
+      "rarity": "s1r1",
+      "top": "img/s1-0xtp3top-mvap328z027.png",
+      "bottom": "img/s1-0xtp3bottom-mvap3293sho.png",
+      "shoes": "img/s1-0xtp3shoes-mvap329448e.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
