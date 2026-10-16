@@ -2169,6 +2169,16 @@
       "acc": "img/s1-p6m5bacc-mvaox9csmrt.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvaoxdrzfq2",
+      "name": "CLOCK CHECK COORD",
+      "cat": "s1b5",
+      "rarity": "s1r1",
+      "top": "img/s1-rzfq2top-mvaoxk1rvjs.png",
+      "shoes": "img/s1-rzfq2shoes-mvaoxk210qg.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
