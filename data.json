@@ -2302,6 +2302,18 @@
       "shoes": "img/s1-wo0gyshoes-mvap4otr540.png",
       "reprints": [],
       "needAcc": true
+     },
+     {
+      "id": "cmvap4tsah9s",
+      "name": "SUITE DEVIL COORD",
+      "cat": "s1b9",
+      "rarity": "s1r2",
+      "top": "img/s1-sah9stop-mvap5g0boi4.png",
+      "bottom": "img/s1-sah9sbottom-mvap5g0eepr.png",
+      "shoes": "img/s1-sah9sshoes-mvap5g0fusr.png",
+      "acc": "img/s1-sah9sacc-mvap5g0gqn1.png",
+      "reprints": [],
+      "needAcc": true
      }
     ]
    },
