@@ -2803,6 +2803,17 @@
       "shoes": "img/s1-xt1jvshoes-mvbs2hxchnp.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbs2nwi7a3",
+      "name": "COSMO CAPTAIN COORD",
+      "cat": "s1b16",
+      "rarity": "s1r1",
+      "top": "img/s1-wi7a3top-mvbs2wso4v6.png",
+      "bottom": "img/s1-wi7a3bottom-mvbs2wsr3mx.png",
+      "shoes": "img/s1-wi7a3shoes-mvbs2wstsak.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
