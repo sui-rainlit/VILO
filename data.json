@@ -3336,6 +3336,15 @@
        }
       ],
       "needAcc": true
+     },
+     {
+      "id": "cmvbsqy76ru8",
+      "name": "GOOD LUCK SKY COORD",
+      "cat": "s1b19",
+      "rarity": "s1r2",
+      "top": "img/s1-76ru8top-mvbsr4q387c.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
