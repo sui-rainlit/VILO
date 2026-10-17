@@ -2870,6 +2870,17 @@
       "acc": "img/s1-s5qn6acc-mvbs5m1gv11.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbs5soxoi4",
+      "name": "GREEN PROM COORD",
+      "cat": "s1b14",
+      "rarity": "s1r1",
+      "top": "img/s1-oxoi4top-mvbs63dk31q.png",
+      "bottom": "img/s1-oxoi4bottom-mvbs63dmmww.png",
+      "shoes": "img/s1-oxoi4shoes-mvbs63do48x.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
