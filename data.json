@@ -3320,6 +3320,22 @@
       "shoes": "img/s1-oao5pshoes-mvbsq8j8u2c.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbsqd1s1zf",
+      "name": "PASTEL PANIC COORD",
+      "cat": "s1b19",
+      "rarity": "s1r2",
+      "top": "img/s1-1s1zftop-mvbsqszh9ub.png",
+      "bottom": "img/s1-1s1zfbottom-mvbsqszkf8g.png",
+      "shoes": "img/s1-1s1zfshoes-mvbsqszly4u.png",
+      "reprints": [
+       {
+        "label": "무인편",
+        "need": true
+       }
+      ],
+      "needAcc": true
      }
     ]
    },
