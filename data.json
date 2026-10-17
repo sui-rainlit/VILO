@@ -2601,6 +2601,17 @@
        }
       ],
       "needAcc": false
+     },
+     {
+      "id": "cmvbrs07fvqm",
+      "name": "BRITISH CASUAL SWEET COORD",
+      "cat": "s1b13",
+      "rarity": "s1r1",
+      "top": "img/s1-7fvqmtop-mvbrsd7j2le.png",
+      "bottom": "img/s1-7fvqmbottom-mvbrsd81lmz.png",
+      "shoes": "img/s1-7fvqmshoes-mvbrsd83vjb.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
