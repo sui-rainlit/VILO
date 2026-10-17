@@ -2679,6 +2679,17 @@
       "shoes": "img/s1-ix7yxshoes-mvbrvninetd.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbrvsvo255",
+      "name": "CUTIE BARON COORD",
+      "cat": "s1b13",
+      "rarity": "s1r1",
+      "top": "img/s1-vo255top-mvbrw0dx4z8.png",
+      "bottom": "img/s1-vo255bottom-mvbrw0e02zg.png",
+      "shoes": "img/s1-vo255shoes-mvbrw0e18xs.png",
+      "reprints": [],
+      "needAcc": true
      }
     ]
    },
