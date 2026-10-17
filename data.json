@@ -4679,7 +4679,11 @@
       "top": "img/unit-qm21bwm9top-mvbrc5em9jt.png",
       "shoes": "img/unit-qm21bwm9shoes-mvbrc5eowi2.png",
       "acc": "img/unit-qm21bwm9acc-mvbrc5epopx.png",
-      "reprints": []
+      "reprints": [
+       {
+        "label": "온 퍼레이드"
+       }
+      ]
      }
     ],
     "desc": ""
