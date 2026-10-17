@@ -2543,6 +2543,17 @@
       "shoes": "img/s1-1cgvkshoes-mvbrp6et7fd.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbrpcjpbyh",
+      "name": "ROSE CRESCENT COORD",
+      "cat": "s1b11",
+      "rarity": "s1r1",
+      "top": "img/s1-jpbyhtop-mvbrpo8sfmg.png",
+      "bottom": "img/s1-jpbyhbottom-mvbrpo8vy6n.png",
+      "shoes": "img/s1-jpbyhshoes-mvbrpo8ze44.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
