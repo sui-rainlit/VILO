@@ -3233,6 +3233,18 @@
       "shoes": "img/s1-n9afbshoes-mvbsm966ec6.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbsmfn8zzr",
+      "name": "CHOCO-POP HAPPENING COORD",
+      "cat": "s1b8",
+      "rarity": "s1r1",
+      "top": "img/s1-n8zzrtop-mvbsmp392g0.png",
+      "bottom": "img/s1-n8zzrbottom-mvbsmp3cq0a.png",
+      "shoes": "img/s1-n8zzrshoes-mvbsmp3en6w.png",
+      "acc": "img/s1-n8zzracc-mvbsmp3fl6h.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
