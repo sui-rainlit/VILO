@@ -2503,6 +2503,23 @@
       "shoes": "img/s1-vfudeshoes-mvbr26a6t60.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbr468tbk1",
+      "name": "SOUL MARIONETTE COORD",
+      "cat": "s1b16",
+      "rarity": "s1r4",
+      "top": "img/s1-8tbk1top-mvbr4znwqmw.png",
+      "bottom": "img/s1-8tbk1bottom-mvbr4zo0e8r.png",
+      "shoes": "img/s1-8tbk1shoes-mvbr4zo2axh.png",
+      "acc": "img/s1-8tbk1acc-mvbr4zo3fw8.png",
+      "reprints": [
+       {
+        "label": "온 퍼레이드",
+        "need": true
+       }
+      ],
+      "needAcc": false
      }
     ]
    },
