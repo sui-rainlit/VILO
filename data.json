@@ -3091,6 +3091,22 @@
       "shoes": "img/s1-jmpy6shoes-mvbsff5o15z.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbsflgqmnj",
+      "name": "ELEGANT AMETHYST COORD",
+      "cat": "s1b18",
+      "rarity": "s1r2",
+      "top": "img/s1-gqmnjtop-mvbsfza9ner.png",
+      "bottom": "img/s1-gqmnjbottom-mvbsfzac4ju.png",
+      "shoes": "img/s1-gqmnjshoes-mvbsfzaer6z.png",
+      "reprints": [
+       {
+        "label": "온 퍼레이드",
+        "need": true
+       }
+      ],
+      "needAcc": false
      }
     ]
    },
