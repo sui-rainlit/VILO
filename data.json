@@ -2776,6 +2776,23 @@
        }
       ],
       "needAcc": false
+     },
+     {
+      "id": "cmvbrzdq5qlw",
+      "name": "THUMBELINA BOUQUET COORD",
+      "cat": "s1b13",
+      "rarity": "s1r4",
+      "top": "img/s1-q5qlwtop-mvbrzwv96cw.png",
+      "bottom": "img/s1-q5qlwbottom-mvbrzwvcee4.png",
+      "shoes": "img/s1-q5qlwshoes-mvbrzwves5x.png",
+      "acc": "img/s1-q5qlwacc-mvbrzwvfgh0.png",
+      "reprints": [
+       {
+        "label": "무인편",
+        "need": true
+       }
+      ],
+      "needAcc": false
      }
     ]
    },
