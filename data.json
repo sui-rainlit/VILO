@@ -2755,6 +2755,27 @@
       "acc": "img/s1-r0nutacc-mvbryiqfwso.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbryp9cgf0",
+      "name": "ODETTE SWAN COORD",
+      "cat": "s1b13",
+      "rarity": "s1r4",
+      "top": "img/s1-9cgf0top-mvbrz8agiks.png",
+      "bottom": "img/s1-9cgf0bottom-mvbrz8aiwxy.png",
+      "shoes": "img/s1-9cgf0shoes-mvbrz8akcdl.png",
+      "acc": "img/s1-9cgf0acc-mvbrz8alcvo.png",
+      "reprints": [
+       {
+        "label": "무인편",
+        "need": true
+       },
+       {
+        "label": "룰렛",
+        "need": true
+       }
+      ],
+      "needAcc": false
      }
     ]
    },
