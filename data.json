@@ -2848,6 +2848,17 @@
       "shoes": "img/s1-602ijshoes-mvbs495s9mu.png",
       "reprints": [],
       "needAcc": true
+     },
+     {
+      "id": "cmvbs4eboyn2",
+      "name": "NEON LINE COORD",
+      "cat": "s1b16",
+      "rarity": "s1r1",
+      "top": "img/s1-boyn2top-mvbs4litj17.png",
+      "bottom": "img/s1-boyn2bottom-mvbs4live2c.png",
+      "shoes": "img/s1-boyn2shoes-mvbs4liymx4.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
