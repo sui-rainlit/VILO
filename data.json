@@ -3144,6 +3144,18 @@
       "shoes": "img/s1-68jwsshoes-mvbsidtbo3s.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbsil3likt",
+      "name": "SUNNY DREAMER COORD",
+      "cat": "s1b4",
+      "rarity": "s1r1",
+      "top": "img/s1-3likttop-mvbsiy3ybqu.png",
+      "bottom": "img/s1-3liktbottom-mvbsiy41qsi.png",
+      "shoes": "img/s1-3liktshoes-mvbsiy434v1.png",
+      "acc": "img/s1-3liktacc-mvbsiy44ti1.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
