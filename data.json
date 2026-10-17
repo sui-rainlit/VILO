@@ -2449,6 +2449,17 @@
       "shoes": "img/s1-tfqlyshoes-mvbqvdguo6r.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbqviu4qlq",
+      "name": "ARABESQUE HERB COORD",
+      "cat": "s1b10",
+      "rarity": "s1r1",
+      "top": "img/s1-u4qlqtop-mvbqvrvsmus.png",
+      "bottom": "img/s1-u4qlqbottom-mvbqvrw77mp.png",
+      "shoes": "img/s1-u4qlqshoes-mvbqvrw8p83.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
