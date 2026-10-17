@@ -2520,6 +2520,18 @@
        }
       ],
       "needAcc": false
+     },
+     {
+      "id": "cmvbrhe5fyuq",
+      "name": "PARTY QUEEN COORD",
+      "cat": "s1b7",
+      "rarity": "s1r2",
+      "top": "img/s1-5fyuqtop-mvbri91u3ea.png",
+      "bottom": "img/s1-5fyuqbottom-mvbri91wrpp.png",
+      "shoes": "img/s1-5fyuqshoes-mvbri91ycbg.png",
+      "acc": "img/s1-5fyuqacc-mvbri91z3n3.png",
+      "reprints": [],
+      "needAcc": true
      }
     ]
    },
