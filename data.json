@@ -2993,6 +2993,17 @@
        }
       ],
       "needAcc": false
+     },
+     {
+      "id": "cmvbsbedofdl",
+      "name": "RAIN-COLORED FLORAL COORD",
+      "cat": "s1b15",
+      "rarity": "s1r1",
+      "top": "img/s1-dofdltop-mvbsbvi082f.png",
+      "bottom": "img/s1-dofdlbottom-mvbsbvi35i8.png",
+      "shoes": "img/s1-dofdlshoes-mvbsbvi5y76.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
