@@ -2721,6 +2721,17 @@
       "shoes": "img/s1-0i057shoes-mvbrx51eei1.png",
       "reprints": [],
       "needAcc": true
+     },
+     {
+      "id": "cmvbrxaamc8u",
+      "name": "MONSTER CAT COORD",
+      "cat": "s1b13",
+      "rarity": "s1r2",
+      "top": "img/s1-amc8utop-mvbrxl17rwq.png",
+      "bottom": "img/s1-amc8ubottom-mvbrxl19y7q.png",
+      "shoes": "img/s1-amc8ushoes-mvbrxl1bjms.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
