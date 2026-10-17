@@ -2825,6 +2825,18 @@
       "shoes": "img/s1-98owwshoes-mvbs3anp4b1.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbs3hko6mt",
+      "name": "WONDER RABBIT COORD",
+      "cat": "s1b16",
+      "rarity": "s1r1",
+      "top": "img/s1-ko6mttop-mvbs3unv267.png",
+      "bottom": "img/s1-ko6mtbottom-mvbs3unyjxb.png",
+      "shoes": "img/s1-ko6mtshoes-mvbs3uo2s8p.png",
+      "acc": "img/s1-ko6mtacc-mvbs3uo3cub.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
