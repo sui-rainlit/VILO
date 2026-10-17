@@ -3107,6 +3107,22 @@
        }
       ],
       "needAcc": false
+     },
+     {
+      "id": "cmvbsg4s1gok",
+      "name": "BABY DEVIL COORD",
+      "cat": "s1b18",
+      "rarity": "s1r2",
+      "top": "img/s1-s1goktop-mvbsgk59dfz.png",
+      "bottom": "img/s1-s1gokbottom-mvbsgk5c7rx.png",
+      "shoes": "img/s1-s1gokshoes-mvbsgk5evlj.png",
+      "reprints": [
+       {
+        "label": "온 퍼레이드",
+        "need": true
+       }
+      ],
+      "needAcc": false
      }
     ]
    },
