@@ -2743,6 +2743,18 @@
       "shoes": "img/s1-xcuykshoes-mvbrxyipjaz.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbry5r0nut",
+      "name": "KITTY TRICKY COORD",
+      "cat": "s1b13",
+      "rarity": "s1r3",
+      "top": "img/s1-r0nuttop-mvbryiq8br2.png",
+      "bottom": "img/s1-r0nutbottom-mvbryiqb79n.png",
+      "shoes": "img/s1-r0nutshoes-mvbryiqd9ye.png",
+      "acc": "img/s1-r0nutacc-mvbryiqfwso.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
