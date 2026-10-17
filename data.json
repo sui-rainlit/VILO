@@ -2668,6 +2668,17 @@
       "shoes": "img/s1-6f6xgshoes-mvbrv2ys0eu.png",
       "reprints": [],
       "needAcc": true
+     },
+     {
+      "id": "cmvbrvcix7yx",
+      "name": "FANTASY MARINE COORD",
+      "cat": "s1b13",
+      "rarity": "s1r1",
+      "top": "img/s1-ix7yxtop-mvbrvnii4nc.png",
+      "bottom": "img/s1-ix7yxbottom-mvbrvnildzc.png",
+      "shoes": "img/s1-ix7yxshoes-mvbrvninetd.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
