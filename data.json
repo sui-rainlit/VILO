@@ -3211,6 +3211,17 @@
       "shoes": "img/s1-6kfczshoes-mvbsla782p3.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbslemqaj3",
+      "name": "WONDER COORD",
+      "cat": "s1b8",
+      "rarity": "s1r1",
+      "top": "img/s1-mqaj3top-mvbslntpv92.png",
+      "bottom": "img/s1-mqaj3bottom-mvbslnts7w6.png",
+      "shoes": "img/s1-mqaj3shoes-mvbslntuvy9.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
