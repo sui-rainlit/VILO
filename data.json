@@ -2926,6 +2926,17 @@
       "acc": "img/s1-uc5mnacc-mvbs86vionn.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbs8blegcm",
+      "name": "DRAGEE FAIRY COORD",
+      "cat": "s1b14",
+      "rarity": "s1r2",
+      "top": "img/s1-legcmtop-mvbs8jolhaa.png",
+      "bottom": "img/s1-legcmbottom-mvbs8jon70a.png",
+      "shoes": "img/s1-legcmshoes-mvbs8jopspe.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
