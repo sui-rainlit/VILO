@@ -2903,6 +2903,17 @@
       "shoes": "img/s1-72skwshoes-mvbs6xcd4c4.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbs72nrdk4",
+      "name": "FLOUNCE SWALLOW COORD",
+      "cat": "s1b14",
+      "rarity": "s1r2",
+      "top": "img/s1-nrdk4top-mvbs7c34ryy.png",
+      "bottom": "img/s1-nrdk4bottom-mvbs7c37k4d.png",
+      "shoes": "img/s1-nrdk4shoes-mvbs7c39con.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
