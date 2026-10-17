@@ -2959,6 +2959,23 @@
       "shoes": "img/s1-fhskishoes-mvbs9duqtli.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbs9ikty25",
+      "name": "ROSE GLASS PRINCESS COORD",
+      "cat": "s1b14",
+      "rarity": "s1r4",
+      "top": "img/s1-kty25top-mvbsa5ritzu.png",
+      "bottom": "img/s1-kty25bottom-mvbsa5rmwt7.png",
+      "shoes": "img/s1-kty25shoes-mvbsa5ror5n.png",
+      "acc": "img/s1-kty25acc-mvbsa5rpied.png",
+      "reprints": [
+       {
+        "label": "무인편",
+        "need": true
+       }
+      ],
+      "needAcc": false
      }
     ]
    },
