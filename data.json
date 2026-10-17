@@ -2576,6 +2576,31 @@
       "shoes": "img/s1-mu18gshoes-mvbrqnp8oe6.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbrqsieukv",
+      "name": "MYSTERIOUS VIRGO COORD",
+      "cat": "s1b11",
+      "rarity": "s1r4",
+      "top": "img/s1-ieukvtop-mvbrrpyijpe.png",
+      "bottom": "img/s1-ieukvbottom-mvbrrpyly2t.png",
+      "shoes": "img/s1-ieukvshoes-mvbrrpymsxa.png",
+      "acc": "img/s1-ieukvacc-mvbrrpynn2e.png",
+      "reprints": [
+       {
+        "label": "무인편",
+        "need": true
+       },
+       {
+        "label": "온 퍼레이드",
+        "need": true
+       },
+       {
+        "label": "룰렛",
+        "need": true
+       }
+      ],
+      "needAcc": false
      }
     ]
    },
