@@ -4697,6 +4697,19 @@
       "top": "img/unit-vjqq3s3vtop-mvbr9zvx51r.png",
       "shoes": "img/unit-vjqq3s3vshoes-mvbr9zvzzdf.png",
       "reprints": []
+     },
+     {
+      "id": "kmvbraiy0lqv",
+      "name": "FLORAL QUARTETTE STAR COORD",
+      "kind": "parts",
+      "top": "img/unit-vjqq0lqvtop-mvbrbgdqlxa.png",
+      "shoes": "img/unit-vjqq0lqvshoes-mvbrbgdsk3p.png",
+      "acc": "img/unit-vjqq0lqvacc-mvbrbgdtag4.png",
+      "reprints": [
+       {
+        "label": "온 퍼레이드"
+       }
+      ]
      }
     ],
     "desc": ""
