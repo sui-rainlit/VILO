@@ -4611,7 +4611,16 @@
      }
     ],
     "lives": [],
-    "coords": [],
+    "coords": [
+     {
+      "id": "kmvbr6g17p6z",
+      "name": "BLUE STARRY MEMORIAL COORD",
+      "kind": "parts",
+      "top": "img/unit-k2fu7p6ztop-mvbr6tl0lm6.png",
+      "shoes": "img/unit-k2fu7p6zshoes-mvbr6tl3wps.png",
+      "reprints": []
+     }
+    ],
     "desc": ""
    },
    {
