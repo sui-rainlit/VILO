@@ -2732,6 +2732,17 @@
       "shoes": "img/s1-amc8ushoes-mvbrxl1bjms.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbrxpxcuyk",
+      "name": "RUBY BLOSSOM COORD",
+      "cat": "s1b13",
+      "rarity": "s1r3",
+      "top": "img/s1-xcuyktop-mvbrxyijves.png",
+      "bottom": "img/s1-xcuykbottom-mvbrxyimkm2.png",
+      "shoes": "img/s1-xcuykshoes-mvbrxyipjaz.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
