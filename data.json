@@ -2793,6 +2793,16 @@
        }
       ],
       "needAcc": false
+     },
+     {
+      "id": "cmvbs29xt1jv",
+      "name": "GO CAMP COORD",
+      "cat": "s1b16",
+      "rarity": "s1r1",
+      "top": "img/s1-xt1jvtop-mvbs2hx9hwy.png",
+      "shoes": "img/s1-xt1jvshoes-mvbs2hxchnp.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
