@@ -2976,6 +2976,23 @@
        }
       ],
       "needAcc": false
+     },
+     {
+      "id": "cmvbsaedwuaf",
+      "name": "SENORITA SCHEHERAZADE COORD",
+      "cat": "s1b14",
+      "rarity": "s1r4",
+      "top": "img/s1-dwuaftop-mvbsawv8zwx.png",
+      "bottom": "img/s1-dwuafbottom-mvbsawvbxnh.png",
+      "shoes": "img/s1-dwuafshoes-mvbsawvdti1.png",
+      "acc": "img/s1-dwuafacc-mvbsawvemmu.png",
+      "reprints": [
+       {
+        "label": "무인편",
+        "need": true
+       }
+      ],
+      "needAcc": false
      }
     ]
    },
