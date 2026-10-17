@@ -4650,7 +4650,16 @@
      }
     ],
     "lives": [],
-    "coords": [],
+    "coords": [
+     {
+      "id": "kmvbra5jufre",
+      "name": "SALVIA BLUE COORD",
+      "kind": "parts",
+      "top": "img/unit-qm21ufretop-mvbrabnq4ox.png",
+      "shoes": "img/unit-qm21ufreshoes-mvbrabnse6m.png",
+      "reprints": []
+     }
+    ],
     "desc": ""
    },
    {
