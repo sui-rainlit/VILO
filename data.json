@@ -3156,6 +3156,17 @@
       "acc": "img/s1-3liktacc-mvbsiy44ti1.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbsj2gx15w",
+      "name": "FIREWORKS COORD",
+      "cat": "s1b4",
+      "rarity": "s1r1",
+      "top": "img/s1-gx15wtop-mvbsjcqpnw2.png",
+      "bottom": "img/s1-gx15wbottom-mvbsjcqsjiw.png",
+      "shoes": "img/s1-gx15wshoes-mvbsjcqumv3.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
