@@ -3298,6 +3298,17 @@
       "shoes": "img/s1-7qcdushoes-mvbsp81jeqg.png",
       "reprints": [],
       "needAcc": true
+     },
+     {
+      "id": "cmvbspmp1du3",
+      "name": "GHOST FRIEND COORD",
+      "cat": "s1b19",
+      "rarity": "s1r1",
+      "top": "img/s1-p1du3top-mvbspvaqu94.png",
+      "bottom": "img/s1-p1du3bottom-mvbspvatgf8.png",
+      "shoes": "img/s1-p1du3shoes-mvbspvau4af.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
