@@ -4627,7 +4627,11 @@
       "top": "img/unit-k2fum3ketop-mvbrd1ltmk1.png",
       "shoes": "img/unit-k2fum3keshoes-mvbrd1lva8f.png",
       "acc": "img/unit-k2fum3keacc-mvbrd1lx1cy.png",
-      "reprints": []
+      "reprints": [
+       {
+        "label": "온 퍼레이드"
+       }
+      ]
      }
     ],
     "desc": ""
