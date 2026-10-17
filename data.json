@@ -3278,6 +3278,16 @@
       "shoes": "img/s1-b6zr1shoes-mvbsoh3colj.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbsolkfu8b",
+      "name": "YELLOW RESTAURANT COORD",
+      "cat": "s1b17",
+      "rarity": "s1r1",
+      "top": "img/s1-kfu8btop-mvbsosrom1w.png",
+      "shoes": "img/s1-kfu8bshoes-mvbsosrrwfy.png",
+      "reprints": [],
+      "needAcc": true
      }
     ]
    },
