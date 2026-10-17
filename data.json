@@ -2646,6 +2646,17 @@
       "shoes": "img/s1-s6qbishoes-mvbrtop1qhr.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbrtstsx6h",
+      "name": "GIRLY FANCY COORD",
+      "cat": "s1b13",
+      "rarity": "s1r1",
+      "top": "img/s1-tsx6htop-mvbru7d04hh.png",
+      "bottom": "img/s1-tsx6hbottom-mvbru7diiy0.png",
+      "shoes": "img/s1-tsx6hshoes-mvbru7dky5n.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
