@@ -2623,6 +2623,18 @@
       "shoes": "img/s1-zn553shoes-mvbrspu9tqj.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbrswztmro",
+      "name": "HEARTFUL KEY COORD",
+      "cat": "s1b13",
+      "rarity": "s1r1",
+      "top": "img/s1-ztmrotop-mvbrtb86wxv.png",
+      "bottom": "img/s1-ztmrobottom-mvbrtb88ksc.png",
+      "shoes": "img/s1-ztmroshoes-mvbrtb8ajwm.png",
+      "acc": "img/s1-ztmroacc-mvbrtb8byaw.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
