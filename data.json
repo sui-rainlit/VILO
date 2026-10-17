@@ -2914,6 +2914,18 @@
       "shoes": "img/s1-nrdk4shoes-mvbs7c39con.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbs7vuc5mn",
+      "name": "OCEAN HEX COORD",
+      "cat": "s1b14",
+      "rarity": "s1r2",
+      "top": "img/s1-uc5mntop-mvbs86vbe0t.png",
+      "bottom": "img/s1-uc5mnbottom-mvbs86venw3.png",
+      "shoes": "img/s1-uc5mnshoes-mvbs86vf338.png",
+      "acc": "img/s1-uc5mnacc-mvbs86vionn.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
