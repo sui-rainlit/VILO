@@ -2814,6 +2814,17 @@
       "shoes": "img/s1-wi7a3shoes-mvbs2wstsak.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbs3198oww",
+      "name": "HARD LINE COORD",
+      "cat": "s1b16",
+      "rarity": "s1r1",
+      "top": "img/s1-98owwtop-mvbs3anfu43.png",
+      "bottom": "img/s1-98owwbottom-mvbs3annw9n.png",
+      "shoes": "img/s1-98owwshoes-mvbs3anp4b1.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
