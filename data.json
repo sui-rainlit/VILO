@@ -2438,6 +2438,17 @@
       "acc": "img/s1-kk7ddacc-mvbquvq821n.png",
       "reprints": [],
       "needAcc": true
+     },
+     {
+      "id": "cmvbqv0tfqly",
+      "name": "BATIK DESIGN COORD",
+      "cat": "s1b10",
+      "rarity": "s1r1",
+      "top": "img/s1-tfqlytop-mvbqvdgnb3p.png",
+      "bottom": "img/s1-tfqlybottom-mvbqvdgrywb.png",
+      "shoes": "img/s1-tfqlyshoes-mvbqvdguo6r.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
