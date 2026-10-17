@@ -2710,6 +2710,17 @@
       "shoes": "img/s1-wh050shoes-mvbrwrnptgr.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbrww0i057",
+      "name": "PINK KING MOUSE COORD",
+      "cat": "s1b13",
+      "rarity": "s1r2",
+      "top": "img/s1-0i057top-mvbrx51aikl.png",
+      "bottom": "img/s1-0i057bottom-mvbrx51cy1f.png",
+      "shoes": "img/s1-0i057shoes-mvbrx51eei1.png",
+      "reprints": [],
+      "needAcc": true
      }
     ]
    },
