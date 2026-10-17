@@ -2859,6 +2859,17 @@
       "shoes": "img/s1-boyn2shoes-mvbs4liymx4.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbs5as5qn6",
+      "name": "MODEL ELEGANCE COORD",
+      "cat": "s1b14",
+      "rarity": "s1r1",
+      "top": "img/s1-s5qn6top-mvbs5m1be7m.png",
+      "shoes": "img/s1-s5qn6shoes-mvbs5m1f0l4.png",
+      "acc": "img/s1-s5qn6acc-mvbs5m1gv11.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
