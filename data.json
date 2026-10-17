@@ -2948,6 +2948,17 @@
       "shoes": "img/s1-dhgbvshoes-mvbs8z5fuwy.png",
       "reprints": [],
       "needAcc": true
+     },
+     {
+      "id": "cmvbs94fhski",
+      "name": "POINSETTIA WREATH COORD",
+      "cat": "s1b14",
+      "rarity": "s1r3",
+      "top": "img/s1-fhskitop-mvbs9dul2e9.png",
+      "bottom": "img/s1-fhskibottom-mvbs9duos8t.png",
+      "shoes": "img/s1-fhskishoes-mvbs9duqtli.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
