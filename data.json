@@ -3309,6 +3309,17 @@
       "shoes": "img/s1-p1du3shoes-mvbspvau4af.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbspzoao5p",
+      "name": "GOAST PANIC COORD",
+      "cat": "s1b19",
+      "rarity": "s1r1",
+      "top": "img/s1-oao5ptop-mvbsq8j32el.png",
+      "bottom": "img/s1-oao5pbottom-mvbsq8j6mre.png",
+      "shoes": "img/s1-oao5pshoes-mvbsq8j8u2c.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
