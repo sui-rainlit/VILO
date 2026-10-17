@@ -2554,6 +2554,18 @@
       "shoes": "img/s1-jpbyhshoes-mvbrpo8ze44.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbrpsuaau1",
+      "name": "RED MOON CACTUS COORD",
+      "cat": "s1b11",
+      "rarity": "s1r1",
+      "top": "img/s1-uaau1top-mvbrqbqxhv4.png",
+      "bottom": "img/s1-uaau1bottom-mvbrqbr0r6q.png",
+      "shoes": "img/s1-uaau1shoes-mvbrqbr2pmk.png",
+      "acc": "img/s1-uaau1acc-mvbrqbr4ceq.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
