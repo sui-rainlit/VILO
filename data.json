@@ -2937,6 +2937,17 @@
       "shoes": "img/s1-legcmshoes-mvbs8jopspe.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbs8odhgbv",
+      "name": "QUEEN OF HEARTS COORD",
+      "cat": "s1b14",
+      "rarity": "s1r2",
+      "top": "img/s1-dhgbvtop-mvbs8z5a0mq.png",
+      "bottom": "img/s1-dhgbvbottom-mvbs8z5dwjr.png",
+      "shoes": "img/s1-dhgbvshoes-mvbs8z5fuwy.png",
+      "reprints": [],
+      "needAcc": true
      }
     ]
    },
