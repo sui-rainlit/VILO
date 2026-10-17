@@ -2426,6 +2426,18 @@
       "shoes": "img/s1-t0z9gshoes-mvapdr6bwcc.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbqudkk7dd",
+      "name": "SELF STRIPE COORD",
+      "cat": "s1b10",
+      "rarity": "s1r1",
+      "top": "img/s1-kk7ddtop-mvbquvq2ry7.png",
+      "bottom": "img/s1-kk7ddbottom-mvbquvq5yw7.png",
+      "shoes": "img/s1-kk7ddshoes-mvbquvq74sq.png",
+      "acc": "img/s1-kk7ddacc-mvbquvq821n.png",
+      "reprints": [],
+      "needAcc": true
      }
     ]
    },
