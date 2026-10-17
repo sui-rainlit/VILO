@@ -101,6 +101,7 @@ details.yr[open]>summary{border-bottom:1px solid var(--bd)}
 .mem{display:flex;flex-wrap:wrap;gap:8px}.mm{border:1px solid var(--bd);padding:9px 14px;font-size:13px;display:inline-flex;flex-direction:column;align-items:center;gap:3px;min-width:84px}.mm i{font-style:normal;color:var(--mu);font-size:11px}
 .ly{margin:16px 0 2px;color:var(--ac);font-size:13px}
 .lv{display:grid;grid-template-columns:78px 1fr;gap:10px;padding:9px 0;border-bottom:1px dotted var(--bd);font-size:13px}.lv .d{color:var(--mu);font-size:12px}.lv .m{display:block;color:var(--mu);font-size:12px;margin-top:2px}
+.cr-note{font-size:11px;line-height:1.9;color:var(--mu);word-break:break-all}
 .lk{color:var(--ac);text-decoration:underline;text-underline-offset:3px}
 .sw{display:inline-block;width:12px;height:12px;border-radius:0;margin-right:6px;vertical-align:-1px;border:1px solid var(--bd)}
 .tl{list-style:none;margin:0;padding:0 0 0 14px;border-left:2px solid var(--bd)}
@@ -142,12 +143,15 @@ function page(r){if(r==='point')return pointPage();const P=D.profile||{};const n
   return '<div class="pf-top">'+(P.sub?'<div class="pf-sub">'+esc(P.sub)+'</div>':'')+'<div class="pf-name">'+esc(P.name||'하세가와 스이')+'</div>'+(P.intro?'<div class="pf-intro">'+esc(P.intro).replace(/\n/g,'<br>')+'</div>':'')+'</div>'
   +sec('PROFILE')+'<div class="idc"><div class="ph3">'+(P.appearance?'<img src="'+esc(P.appearance)+'" alt="">':'외관 사진')+'</div><div class="rows">'+rows.map(f=>'<div class="rw"><span class="kk"><span>'+esc(f.k)+'</span><span class="dots"></span></span><span class="v">'+val(f.v)+'</span></div>').join('')+'</div></div>'
   +sec('학생증')+'<div class="idwrap"><div class="idimg">'+(P.idcard?'<img src="'+esc(P.idcard)+'" alt="학생증">':'학생증 사진')+'</div>'+(P.idcard?'<div class="idact"><a class="ab" href="'+esc(P.idcard)+'" download="학생증.'+esc((P.idcard.split('.').pop()||'png').toLowerCase())+'">저장</a><button class="ab" id="cpid" data-src="'+esc(P.idcard)+'">복사</button></div>':'')+'</div>'
-  +sec('HISTORY')+((P.bio||[]).length?'<ol class="tl">'+P.bio.map(b=>'<li><div class="d">'+esc(b.d)+'</div><div class="t">'+esc(b.t)+'</div></li>').join('')+'</ol>':'<div class="soon">아직 등록된 기록이 없어요</div>')}
+  +sec('HISTORY')+((P.bio||[]).length?'<ol class="tl">'+P.bio.map(b=>'<li><div class="d">'+esc(b.d)+'</div><div class="t">'+esc(b.t)+'</div></li>').join('')+'</ol>':'<div class="soon">아직 등록된 기록이 없어요</div>')+(P.credits?sec('CREDIT')+'<div class="cr-note">'+esc(P.credits).replace(/https?:\/\/[^\s<]+/g,u=>'<a class="lk" href="'+u+'" target="_blank" rel="noopener noreferrer">'+u+'</a>').replace(/\n/g,'<br>')+'</div>':'')}
  if(r==='coord')return coordPage();
  if(r==='photo')return photoPage();
  if(r==='idol')return idolPage();
  if(r==='unit')return unitPage();
  const n=(NAV.find(x=>x[0]===r)||['',''])[1];return '<div class="soon">'+esc(n)+'<br>준비 중이에요</div>'}
+function normAccs(o,isItem){if(Array.isArray(o.accs))return o.accs;const a=[];if(o.acc)a.push({img:o.acc,label:''});return a}
+const accTiles=(o,nm,isItem)=>normAccs(o,isItem).filter(a=>a.img).map((a,n)=>ctile(a.img,'악세'+(a.label?' '+a.label:' '+(n+1)),nm,false)).join('');
+const CP3=[['top','상의'],['bottom','하의'],['shoes','슈즈']];
 const fmt=n=>(Math.round(n*100)/100).toLocaleString('ko-KR');
 const sgn=n=>(n>0?'+':'')+fmt(n);
 function autoEarn(P){const R=P.rules||{},from=R.from||'9999-99',out={upgrade:{},color:{}};
@@ -167,7 +171,7 @@ function pointPage(){const P=D.point;if(!P||!(P.activities||[]).length)return '<
  L.forEach((e,i)=>{const v=pts(e);if(v>=0)earn+=v;else spend+=v;const ym=(e.date||'0000-00').slice(0,7),y=ym.slice(0,4),yy=Y[y]||(Y[y]={t:0,M:{}});yy.t+=v;const mo=yy.M[ym]||(yy.M[ym]={t:0,E:[]});mo.t+=v;mo.E.push({e,i,v})});
  const hb=(k,t)=>{const h=holdRows(P,k);return '<div class="hb"><h4><span>'+t+'</span><span>보유 <b>'+(h.got-h.used)+'</b></span></h4>'+(h.rows.length?h.rows.map(r=>'<div class="hr"><span>'+r.y+'</span><span>('+r.u+'/'+r.g+')</span></div>').join(''):'<div class="hr"><span>아직 없어요</span><span></span></div>')+'<div class="nt">(사용/획득)</div></div>'};
  const row=({e,v})=>{const a=A[e.act]||{name:'(삭제된 활동)',unit:'',points:0};let main,sub=[];
-  if(a.item){main=e.memo||a.name;if(e.memo)sub.push(a.name)}else{main=a.name+' '+fmt(+e.qty||0)+(a.unit||'');if(e.memo)sub.push(e.memo)}
+  if(a.item){main=e.memo||a.name;if(e.memo)sub.push(a.name)}else{main=(a.minus||a.name==='상점 구매')?a.name:a.name+' '+fmt(+e.qty||0)+(a.unit||'');if(e.memo)sub.push(e.memo)}
   if(!(e.pts!==''&&e.pts!=null&&!isNaN(e.pts))){let c=a.item?'기본 '+fmt(a.points):fmt(+e.qty||0)+(a.unit||'')+' × '+fmt(a.points);(a.bonuses||[]).forEach(b=>{const n=(e.bon||{})[b.id];if(n)c+=a.item?' + '+b.name+' '+fmt(b.points*n):' + '+b.name+' '+fmt(n)+'회 × '+fmt(b.points)});sub.unshift(c)}
   return '<div class="lgr"><span>'+esc(main)+(sub.length?'<span class="s">'+esc(sub.join(' · '))+'</span>':'')+'</span><span class="p'+(v<0?' neg':'')+'">'+sgn(v)+'P</span></div>'};
  const ys=Object.keys(Y).sort();
@@ -189,10 +193,10 @@ function coordGrid(){const S=D.coord.series[cs],rar=S.rarities||[],ri=id=>rar.fi
   .sort((a,b)=>ci(a.it.cat)-ci(b.it.cat)||ri(b.it.rarity)-ri(a.it.rarity)||a.ix-b.ix).map(x=>x.it);
  $('#cg').innerHTML=l.length?'<div class="cgrid">'+l.map(i=>'<button class="cc" data-ci="'+esc(i.id)+'" style="aspect-ratio:'+esc(S.ratio||'180/262')+'">'+(i.top?'<img loading="lazy" src="'+esc(i.top)+'" alt="'+esc(i.name)+'">':'')+((i.reprints||[]).length?'<span class="bd2">복각 '+i.reprints.length+'</span>':'')+'</button>').join('')+'</div>':'<div class="soon">'+((S.items||[]).length?'조건에 맞는 카드가 없어요':'아직 등록된 카드가 없어요')+'</div>'}
 function ctile(p,label,nm,full){return '<div class="cd-t'+(full?' full':'')+'"><img src="'+esc(p)+'" alt=""><div class="cd-r"><span></span><span><a class="cd-b" href="'+esc(p)+'" download="'+esc(nm+(label?'_'+label:'')+'.'+cext(p))+'">저장</a> <button class="cd-b" data-cp="'+esc(p)+'">복사</button></span></div></div>'}
-function coordView(id){const S=D.coord.series[cs],i=(S.items||[]).find(x=>x.id===id);if(!i)return;const P=S.mode==='single'?[['top','스윙']]:CPT,cat=(S.cats||[]).find(x=>x.id===i.cat),ra=(S.rarities||[]).find(x=>x.id===i.rarity);
- const parts=(o,nm)=>'<div class="cd-pg">'+P.map(([k,n])=>o[k]?ctile(o[k],n,nm,P.length===1):'').join('')+'</div>';
+function coordView(id){const S=D.coord.series[cs],i=(S.items||[]).find(x=>x.id===id);if(!i)return;const P=S.mode==='single'?[['top','스윙']]:CP3,cat=(S.cats||[]).find(x=>x.id===i.cat),ra=(S.rarities||[]).find(x=>x.id===i.rarity);
+ const parts=(o,nm,it)=>'<div class="cd-pg">'+P.map(([k,n])=>o[k]?ctile(o[k],n,nm,P.length===1):'').join('')+(S.mode==='single'?'':accTiles(o,nm,it))+'</div>';
  let m=document.getElementById('cm');if(!m){m=document.createElement('div');m.id='cm';document.body.appendChild(m)}
- m.innerHTML='<div class="cd-ov" data-cclose><div class="cd-sh"><div class="cd-hd"><div><h3>'+esc(i.name)+'</h3><div class="cd-tg">'+(i.no?'<span>No.'+esc(i.no)+'</span>':'')+(cat?'<span>'+esc(cat.name)+'</span>':'')+(ra?'<span>'+esc(ra.name)+'</span>':'')+'</div></div><button class="cd-b" data-cclose>닫기</button></div><h4>원본</h4>'+parts(i,i.name)+(i.reprints||[]).map((r,n)=>'<h4>복각 · '+esc(r.label||(n+1))+'</h4>'+parts(r,i.name+'_복각'+(n+1))).join('')+'</div></div>'}
+ m.innerHTML='<div class="cd-ov" data-cclose><div class="cd-sh"><div class="cd-hd"><div><h3>'+esc(i.name)+'</h3><div class="cd-tg">'+(cat?'<span>'+esc(cat.name)+'</span>':'')+(ra?'<span>'+esc(ra.name)+'</span>':'')+'</div></div><button class="cd-b" data-cclose>닫기</button></div><h4>원본</h4>'+parts(i,i.name,true)+(i.reprints||[]).map((r,n)=>'<h4>복각 · '+esc(r.label||(n+1))+'</h4>'+parts(r,i.name+'_복각'+(n+1),false)).join('')+'</div></div>'}
 document.addEventListener('click',e=>{const t=e.target.closest('[data-cs],[data-cb],[data-cr],[data-ci],[data-cclose],[data-cp],[data-dd]');if(!t)return;const d=t.dataset;
  if(d.cclose!==undefined){if(t.tagName==='BUTTON'||e.target===t){const m=document.getElementById('cm');if(m)m.innerHTML=''}return}
  if(d.cs!==undefined){cs=+d.cs;cb='';cr='';cq='';ddo='';document.querySelector('.w').innerHTML=coordPage();coordRefresh();return}
@@ -226,14 +230,14 @@ let us=0;
 function unitPage(){const U=D.unit;if(!U||!(U.units||[]).length)return '<div class="soon">UNIT<br>아직 등록된 유닛이 없어요</div>';if(us>=U.units.length)us=0;
  return '<div class="sr">'+U.units.map((u,n)=>'<button class="chp'+(n===us?' on':'')+'" data-us="'+n+'">'+esc(u.name)+'</button>').join('')+'</div><div id="ub"></div>'}
 function unitRefresh(){const u=D.unit.units[us],sec=t=>'<div class="pf-sec"><span>'+t+'</span><i></i></div>';
- let h='<div class="pf-top">'+(u.logo?'<img class="un-logo" src="'+esc(u.logo)+'" alt="'+esc(u.name)+'">':'')+'<div class="pf-name" style="font-size:26px">'+esc(u.name)+'</div>'+(u.desc?'<div class="pf-intro">'+esc(u.desc).replace(/\n/g,'<br>')+'</div>':'')+'</div>';
+ let h='<div class="pf-top"><div class="pf-name" style="font-size:26px">'+esc(u.name)+'</div>'+(u.logo?'<img class="un-logo" src="'+esc(u.logo)+'" alt="'+esc(u.name)+'">':'')+(u.desc?'<div class="pf-intro">'+esc(u.desc).replace(/\n/g,'<br>')+'</div>':'')+'</div>';
  const mem=u.members||[];if(mem.length)h+=sec('MEMBER')+'<div class="mem">'+mem.map(m=>'<span class="mm"><span>'+esc(m.name)+'</span>'+(m.note?'<i>'+esc(m.note)+'</i>':'')+'</span>').join('')+'</div>';
  const lv=[...(u.lives||[])].sort((a,b)=>(a.date||'').localeCompare(b.date||''));
  if(lv.length){let y='';h+=sec('LIVE');lv.forEach(l=>{const yy=(l.date||'').slice(0,4);if(yy!==y){y=yy;h+='<div class="ly">'+esc(yy||'날짜 미정')+'</div>'}const su=/^https?:\/\//i.test(l.url||'')?l.url:'';h+='<div class="lv"><span class="d">'+esc((l.date||'').slice(5).replace('-','.'))+'</span><span>'+(su?'<a class="lk" href="'+esc(su)+'" target="_blank" rel="noopener noreferrer">'+esc(l.title)+' ↗</a>':esc(l.title))+(l.memo?'<span class="m">'+esc(l.memo)+'</span>':'')+'</span></div>'})}
  const cs2=u.coords||[];if(cs2.length)h+=sec('COORD')+'<div class="cgrid">'+cs2.map(c=>'<button class="cc" data-uc="'+esc(c.id)+'" style="aspect-ratio:'+(c.kind==='square'?'1/1':'180/262')+'">'+(c.top?'<img loading="lazy" src="'+esc(c.top)+'" alt="'+esc(c.name)+'">':'')+((c.reprints||[]).length?'<span class="bd2">복각 '+c.reprints.length+'</span>':'')+'</button>').join('')+'</div>';
  $('#ub').innerHTML=h}
-function unitCoordView(id){const c=(D.unit.units[us].coords||[]).find(x=>x.id===id);if(!c)return;const P=c.kind==='square'?[['top','스윙']]:CPT;
- const parts=(o,nm)=>'<div class="cd-pg">'+P.map(([k,n])=>o[k]?ctile(o[k],n,nm,P.length===1):'').join('')+'</div>';
+function unitCoordView(id){const c=(D.unit.units[us].coords||[]).find(x=>x.id===id);if(!c)return;const P=c.kind==='square'?[['top','스윙']]:CP3;
+ const parts=(o,nm)=>'<div class="cd-pg">'+P.map(([k,n])=>o[k]?ctile(o[k],n,nm,P.length===1):'').join('')+(c.kind==='square'?'':accTiles(o,nm,false))+'</div>';
  let m=document.getElementById('cm');if(!m){m=document.createElement('div');m.id='cm';document.body.appendChild(m)}
  m.innerHTML='<div class="cd-ov" data-cclose><div class="cd-sh"><div class="cd-hd"><div><h3>'+esc(c.name)+'</h3></div><button class="cd-b" data-cclose>닫기</button></div>'+((c.reprints||[]).length?'<h4>원본</h4>':'<div style="height:10px"></div>')+parts(c,c.name)+(c.reprints||[]).map((r,n)=>'<h4>복각 · '+esc(r.label||(n+1))+'</h4>'+parts(r,c.name+'_복각'+(n+1))).join('')+'</div></div>'}
 document.addEventListener('click',e=>{const t=e.target.closest('[data-us],[data-uc]');if(!t)return;const d=t.dataset;
