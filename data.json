@@ -3004,6 +3004,17 @@
       "shoes": "img/s1-dofdlshoes-mvbsbvi5y76.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbsc0lonw4",
+      "name": "SUNSET CLASSICAL COORD",
+      "cat": "s1b15",
+      "rarity": "s1r1",
+      "top": "img/s1-lonw4top-mvbsc9ohhbi.png",
+      "bottom": "img/s1-lonw4bottom-mvbsc9oldty.png",
+      "shoes": "img/s1-lonw4shoes-mvbsc9onwpg.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
