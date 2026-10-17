@@ -2483,6 +2483,16 @@
       "shoes": "img/s1-g2oiashoes-mvbr02i2p8u.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbr0trs2o1",
+      "name": "SUGAR LIGHT COORD",
+      "cat": "s1b1",
+      "rarity": "s1r1",
+      "top": "img/s1-rs2o1top-mvbr1r82kjy.png",
+      "shoes": "img/s1-rs2o1shoes-mvbr1r85i4d.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
