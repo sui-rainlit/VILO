@@ -101,6 +101,9 @@ details.yr[open]>summary{border-bottom:1px solid var(--bd)}
 .mem{display:flex;flex-wrap:wrap;gap:8px}.mm{border:1px solid var(--bd);padding:9px 14px;font-size:13px;display:inline-flex;flex-direction:column;align-items:center;gap:3px;min-width:84px}.mm i{font-style:normal;color:var(--mu);font-size:11px}
 .ly{margin:16px 0 2px;color:var(--ac);font-size:13px}
 .lv{display:grid;grid-template-columns:78px 1fr;gap:10px;padding:9px 0;border-bottom:1px dotted var(--bd);font-size:13px}.lv .d{color:var(--mu);font-size:12px}.lv .m{display:block;color:var(--mu);font-size:12px;margin-top:2px}
+.sc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.sc{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;border:1px solid var(--bd);padding:20px 6px;text-decoration:none;color:var(--ink);background:#fff;box-shadow:var(--sh);text-align:center}
+.sc b{font-weight:700;font-size:12px;letter-spacing:.06em;line-height:1.2}.sc span{font-size:11px;color:var(--mu);line-height:1.2}
 .cr-note{font-size:11px;line-height:1.9;color:var(--mu);word-break:break-all}
 .lk{color:var(--ac);text-decoration:underline;text-underline-offset:3px}
 .sw{display:inline-block;width:12px;height:12px;border-radius:0;margin-right:6px;vertical-align:-1px;border:1px solid var(--bd)}
@@ -112,7 +115,7 @@ details.yr[open]>summary{border-bottom:1px solid var(--bd)}
 </style></head>
 <body><div id="app"></div>
 <script>
-const NAV=[['profile','PROFILE'],['point','POINT'],['coord','COORD'],['photo','PHOTO CARD'],['idol','IDOL CARD'],['unit','UNIT']];
+const NAV=[['home','HOME'],['profile','PROFILE'],['point','POINT'],['coord','COORD'],['photo','PHOTO CARD'],['idol','IDOL CARD'],['unit','UNIT']];
 let D={site:{},profile:{fields:[],bio:[]}};
 const $=s=>document.querySelector(s);
 const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -137,8 +140,15 @@ function login(){
  $('#app').innerHTML='<canvas id="fx"></canvas><div class="lg" id="lg"><div>'+logo()+'</div><div class="lb"><div class="k">SCHOOL</div><div class="v">'+esc(D.site.school)+'</div><div class="k">ID</div><div class="v">'+esc(D.site.id)+'</div><button class="go" id="go">Log In</button></div></div>';fx.start()}
 function go(){const b=$('#go');b.disabled=true;const r=b.getBoundingClientRect();fx.burst(r.left+r.width/2,r.top+r.height/2);
  setTimeout(()=>$('#lg').classList.add('out'),RM?0:450);
- setTimeout(()=>{try{sessionStorage.setItem('in','1')}catch(e){}location.hash='#/profile';route()},RM?300:1100)}
-function page(r){if(r==='point')return pointPage();const P=D.profile||{};const nick=((P.fields||[]).find(f=>f.k==='닉네임')||{}).v;const val=v=>{const m=/^#?([0-9a-f]{6})$/i.exec((v||'').trim());return (m?'<i class="sw" style="background:#'+m[1]+'"></i>':'')+esc(v)};
+ setTimeout(()=>{try{sessionStorage.setItem('in','1')}catch(e){}location.hash='#/home';route()},RM?300:1100)}
+function pointHero(){const P=D.point;if(!P||!(P.activities||[]).length)return '';
+ const A={};P.activities.forEach(a=>A[a.id]=a);let earn=0,spend=0;
+ (P.log||[]).forEach(e=>{const a=A[e.act];let v;if(e.pts!==''&&e.pts!=null&&!isNaN(e.pts))v=+e.pts;else if(a){v=a.points*(+e.qty||0);(a.bonuses||[]).forEach(b=>{v+=b.points*((e.bon||{})[b.id]||0)})}else v=0;if(a&&a.minus)v=-Math.abs(v);if(v>=0)earn+=v;else spend+=v});
+ const hb=(k,t)=>{const h=holdRows(P,k);return '<div class="hb"><h4><span>'+t+'</span><span>보유 <b>'+(h.got-h.used)+'</b></span></h4>'+(h.rows.length?h.rows.map(r=>'<div class="hr"><span>'+r.y+'</span><span>('+r.u+'/'+r.g+')</span></div>').join(''):'<div class="hr"><span>아직 없어요</span><span></span></div>')+'<div class="nt">(사용/획득)</div></div>'};
+ return '<div class="pth"><div class="lab">현재 보유 포인트</div><div class="big">'+fmt(earn+spend)+'<small>P</small></div><div class="row"><span>누적 적립 +'+fmt(earn)+'</span><span>사용 '+fmt(spend)+'</span></div><div class="hg">'+hb('upgrade','UPGRADE')+hb('color','COLOR')+'</div></div>'}
+function homePage(){const sc=[['profile','PROFILE','프로필'],['point','POINT','포인트'],['coord','COORD','코디'],['photo','PHOTO CARD','포토카드'],['idol','IDOL CARD','아이돌 카드'],['unit','UNIT','유닛']];
+ return pointHero()+'<div class="pf-sec"><span>SHORTCUT</span><i></i></div><div class="sc-grid">'+sc.map(x=>'<a class="sc" href="#/'+x[0]+'"><b>'+x[1]+'</b><span>'+x[2]+'</span></a>').join('')+'</div>'}
+function page(r){if(r==='home')return homePage();if(r==='point')return pointPage();const P=D.profile||{};const nick=((P.fields||[]).find(f=>f.k==='닉네임')||{}).v;const val=v=>{const m=/^#?([0-9a-f]{6})$/i.exec((v||'').trim());return (m?'<i class="sw" style="background:#'+m[1]+'"></i>':'')+esc(v)};
  if(r==='profile'){const rows=(P.fields||[]),sec=t=>'<div class="pf-sec"><span>'+t+'</span><i></i></div>';
   return '<div class="pf-top">'+(P.sub?'<div class="pf-sub">'+esc(P.sub)+'</div>':'')+'<div class="pf-name">'+esc(P.name||'하세가와 스이')+'</div>'+(P.intro?'<div class="pf-intro">'+esc(P.intro).replace(/\n/g,'<br>')+'</div>':'')+'</div>'
   +sec('PROFILE')+'<div class="idc"><div class="ph3">'+(P.appearance?'<img src="'+esc(P.appearance)+'" alt="">':'외관 사진')+'</div><div class="rows">'+rows.map(f=>'<div class="rw"><span class="kk"><span>'+esc(f.k)+'</span><span class="dots"></span></span><span class="v">'+val(f.v)+'</span></div>').join('')+'</div></div>'
@@ -245,7 +255,7 @@ document.addEventListener('click',e=>{const t=e.target.closest('[data-us],[data-
  if(d.uc)unitCoordView(d.uc)});
 function route(){
  if(!authed()){login();return}
- const r=(location.hash.replace('#/','')||'profile');
+ const r=(location.hash.replace('#/','')||'home');
  $('#app').innerHTML='<div class="nav"><div class="ni">'+logo()+'<div class="m">'+NAV.map(x=>'<a href="#/'+x[0]+'"'+(x[0]===r?' class="on"':'')+'>'+x[1]+'</a>').join('')+'</div><button class="out" id="lo">Log Out</button></div></div><div class="w">'+page(r)+'</div>';
  if(r==='coord')coordRefresh();if(r==='unit'&&D.unit&&(D.unit.units||[]).length)unitRefresh();if(r==='photo'&&D.photo&&(D.photo.items||[]).length)photoRefresh();if(r==='idol'&&D.idol&&(D.idol.items||[]).length)idolRefresh();const a=document.querySelector('.nav a.on');if(a&&a.scrollIntoView)a.scrollIntoView({inline:'center',block:'nearest'});window.scrollTo(0,0)}
 function toast(t){const e=document.createElement('div');e.className='tt';e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),2600)}
