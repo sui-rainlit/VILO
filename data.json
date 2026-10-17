@@ -2881,6 +2881,17 @@
       "shoes": "img/s1-oxoi4shoes-mvbs63do48x.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbs68p0kvx",
+      "name": "FABULOUS COORD",
+      "cat": "s1b14",
+      "rarity": "s1r1",
+      "top": "img/s1-p0kvxtop-mvbs6ijbzgg.png",
+      "bottom": "img/s1-p0kvxbottom-mvbs6ijdhb6.png",
+      "shoes": "img/s1-p0kvxshoes-mvbs6ijf8zh.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
