@@ -2532,6 +2532,17 @@
       "acc": "img/s1-5fyuqacc-mvbri91z3n3.png",
       "reprints": [],
       "needAcc": true
+     },
+     {
+      "id": "cmvbro61cgvk",
+      "name": "MOON HOLIC COORD",
+      "cat": "s1b11",
+      "rarity": "s1r1",
+      "top": "img/s1-1cgvktop-mvbrp6epq4s.png",
+      "bottom": "img/s1-1cgvkbottom-mvbrp6es592.png",
+      "shoes": "img/s1-1cgvkshoes-mvbrp6et7fd.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
