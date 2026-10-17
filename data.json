@@ -2493,6 +2493,16 @@
       "shoes": "img/s1-rs2o1shoes-mvbr1r85i4d.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvbr1wvfude",
+      "name": "SUGAR PLANET COORD",
+      "cat": "s1b1",
+      "rarity": "s1r1",
+      "top": "img/s1-vfudetop-mvbr26a3le6.png",
+      "shoes": "img/s1-vfudeshoes-mvbr26a6t60.png",
+      "reprints": [],
+      "needAcc": false
      }
     ]
    },
