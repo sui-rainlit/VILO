@@ -4124,6 +4124,27 @@
       "shoes": "img/s3-3ryeyshoes-mv91rplv0zw.png",
       "reprints": [],
       "needAcc": false
+     },
+     {
+      "id": "cmvf3xq8kxgs",
+      "name": "MATERIAL SAPPHiRE COORD",
+      "cat": "cmv6mxqiqyyb",
+      "rarity": "s3r5",
+      "top": "img/s3-8kxgstop-mvf3yw0pim0.png",
+      "bottom": "img/s3-8kxgsbottom-mvf3yw0sjbi.png",
+      "shoes": "img/s3-8kxgsshoes-mvf3yw0v1ck.png",
+      "accs": [
+       {
+        "img": "img/s3-8kxgsa0-mvf3yw0wigs.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "룰렛",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
