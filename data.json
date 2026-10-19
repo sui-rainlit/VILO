@@ -3420,6 +3420,21 @@
       "shoes": "img/s1-m2k4gshoes-mvf3s215pfg.png",
       "accs": [],
       "reprints": []
+     },
+     {
+      "id": "cmvf3s7avfm1",
+      "name": "GOOD STREET CCORD",
+      "cat": "s1b12",
+      "rarity": "s1r1",
+      "top": "img/s1-avfm1top-mvf3sgs971x.png",
+      "bottom": "img/s1-avfm1bottom-mvf3sgscn7w.png",
+      "shoes": "img/s1-avfm1shoes-mvf3sgsed8b.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
