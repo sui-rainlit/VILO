@@ -3486,6 +3486,32 @@
       "shoes": "img/s1-a613sshoes-mvf3v9w15v9.png",
       "accs": [],
       "reprints": []
+     },
+     {
+      "id": "cmvf3vhaghys",
+      "name": "RESORT CANCER COORD",
+      "cat": "s1b12",
+      "rarity": "s1r4",
+      "top": "img/s1-aghystop-mvf3wglwuxy.png",
+      "bottom": "img/s1-aghysbottom-mvf3wgm0ezi.png",
+      "shoes": "img/s1-aghysshoes-mvf3wgm21fb.png",
+      "accs": [
+       {
+        "img": "img/s1-aghysa0-mvf3wgm4dbm.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "무인편",
+        "accs": [],
+        "need": true
+       },
+       {
+        "label": "룰렛",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
