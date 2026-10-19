@@ -3909,6 +3909,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvf42z4e4lm",
+      "name": "FRESH STRAWBERRY COORD",
+      "cat": "cmv6mtucprbn",
+      "rarity": "s2r3",
+      "top": "img/s2-4e4lmtop-mvf43h4ye9l.png",
+      "bottom": "img/s2-4e4lmbottom-mvf43h51ac1.png",
+      "shoes": "img/s2-4e4lmshoes-mvf43h531fo.png",
+      "accs": [
+       {
+        "img": "img/s2-4e4lma0-mvf43h55h1o.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
