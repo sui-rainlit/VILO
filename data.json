@@ -3868,6 +3868,21 @@
       "shoes": "img/s2-er0g4shoes-mvbrmhyo5gq.png",
       "reprints": [],
       "needAcc": true
+     },
+     {
+      "id": "cmvf410jgk2y",
+      "name": "MARGUERITE SUMMER COORD",
+      "cat": "cmv6mtucprbn",
+      "rarity": "s2r2",
+      "top": "img/s2-jgk2ytop-mvf41szeqb9.png",
+      "bottom": "img/s2-jgk2ybottom-mvf41szhe31.png",
+      "shoes": "img/s2-jgk2yshoes-mvf41szjh3r.png",
+      "accs": [
+       {
+        "img": "img/s2-jgk2ya0-mvf41szlovr.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
