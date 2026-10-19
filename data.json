@@ -3394,6 +3394,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvf3rdpg6ir",
+      "name": "PAINT DECO COORD",
+      "cat": "s1b12",
+      "rarity": "s1r1",
+      "top": "img/s1-pg6irtop-mvf3rosf6yu.png",
+      "bottom": "img/s1-pg6irbottom-mvf3rosjbuq.png",
+      "shoes": "img/s1-pg6irshoes-mvf3roslo1r.png",
+      "accs": [
+       {
+        "img": "img/s1-pg6ira0-mvf3rosn5b7.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
