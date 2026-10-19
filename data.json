@@ -3894,6 +3894,21 @@
       "shoes": "img/s2-b62pzshoes-mvf427tns4s.png",
       "accs": [],
       "reprints": []
+     },
+     {
+      "id": "cmvf42fh207e",
+      "name": "HAPPINESS MARINE COORD",
+      "cat": "cmv6mtucprbn",
+      "rarity": "s2r2",
+      "top": "img/s2-h207etop-mvf42rgkhpq.png",
+      "bottom": "img/s2-h207ebottom-mvf42rgn8y0.png",
+      "shoes": "img/s2-h207eshoes-mvf42rgpbej.png",
+      "accs": [
+       {
+        "img": "img/s2-h207ea0-mvf42rgqy7w.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
