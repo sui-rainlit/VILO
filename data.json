@@ -3379,6 +3379,21 @@
       "shoes": "img/s1-euv02shoes-mvf3q2a7hn0.png",
       "accs": [],
       "reprints": []
+     },
+     {
+      "id": "cmvf3qsgu9oc",
+      "name": "BRIGHT SUMMER COORD",
+      "cat": "s1b12",
+      "rarity": "s1r1",
+      "top": "img/s1-gu9octop-mvf3r63uvt8.png",
+      "bottom": "img/s1-gu9ocbottom-mvf3r63xdhc.png",
+      "shoes": "img/s1-gu9ocshoes-mvf3r63zn25.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
