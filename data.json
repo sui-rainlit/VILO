@@ -3512,6 +3512,27 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvf3wqjivl7",
+      "name": "STREET ART COORD",
+      "cat": "s1b12",
+      "rarity": "s1r4",
+      "top": "img/s1-jivl7top-mvf3x6msyix.png",
+      "bottom": "img/s1-jivl7bottom-mvf3x6mu42x.png",
+      "shoes": "img/s1-jivl7shoes-mvf3x6mydjv.png",
+      "accs": [
+       {
+        "img": "img/s1-jivl7a0-mvf3x6mzrec.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "무인편",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
