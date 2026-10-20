@@ -5780,6 +5780,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgo1yeprov",
+      "name": "PINK PARTERRE COORD",
+      "cat": "cmv6mxigqy9u",
+      "rarity": "s3r2",
+      "top": "img/s3-eprovtop-mvgo266xt52.png",
+      "bottom": "img/s3-eprovbottom-mvgo266z4si.png",
+      "shoes": "img/s3-eprovshoes-mvgo2671thv.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
