@@ -3924,6 +3924,27 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvglkudhmsi",
+      "name": "PINK COULEUR RIBBON COORD",
+      "cat": "cmv6mtxwpo3u",
+      "rarity": "s2r2",
+      "top": "img/s2-dhmsitop-mvgllrbn5hb.png",
+      "bottom": "img/s2-dhmsibottom-mvgllrbp34j.png",
+      "shoes": "img/s2-dhmsishoes-mvgllrbr54s.png",
+      "accs": [
+       {
+        "img": "img/s2-dhmsia0-mvgllrbs8my.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "온 퍼레이드",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
