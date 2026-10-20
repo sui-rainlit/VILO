@@ -4736,6 +4736,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgmtoo17s1",
+      "name": "BEACH SUNSET COORD",
+      "cat": "cmv6muqnoi2t",
+      "rarity": "s2r2",
+      "top": "img/s2-o17s1top-mvgmu2gfzws.png",
+      "bottom": "img/s2-o17s1bottom-mvgmu2gjpi7.png",
+      "shoes": "img/s2-o17s1shoes-mvgmu2gm1n5.png",
+      "accs": [
+       {
+        "img": "img/s2-o17s1a0-mvgmu2gohp4.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
