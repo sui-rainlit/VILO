@@ -3986,6 +3986,21 @@
       "shoes": "img/s2-li87ushoes-mvglo9p5i1a.png",
       "accs": [],
       "reprints": []
+     },
+     {
+      "id": "cmvglowas4a8",
+      "name": "PEACH TEA TIME COORD",
+      "cat": "cmv6mtp62g8d",
+      "rarity": "s2r2",
+      "top": "img/s2-as4a8top-mvglp780d99.png",
+      "bottom": "img/s2-as4a8bottom-mvglp784ytr.png",
+      "shoes": "img/s2-as4a8shoes-mvglp7868pj.png",
+      "accs": [
+       {
+        "img": "img/s2-as4a8a0-mvglp788m1y.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
