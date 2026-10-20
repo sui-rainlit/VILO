@@ -4766,6 +4766,27 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgmvhy22q2",
+      "name": "MARCHEN LOLLIPOP COORD",
+      "cat": "cmv6muucqqf2",
+      "rarity": "s2r2",
+      "top": "img/s2-y22q2top-mvgmvy2rjzi.png",
+      "bottom": "img/s2-y22q2bottom-mvgmvy2ubnp.png",
+      "shoes": "img/s2-y22q2shoes-mvgmvy2wwuu.png",
+      "accs": [
+       {
+        "img": "img/s2-y22q2a0-mvgmvy2xdgv.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "프렌즈",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
