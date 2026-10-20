@@ -5176,6 +5176,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgn1hyl0j6",
+      "name": "LITTLE CHARMANT COORD",
+      "cat": "cmv6mwy5crdn",
+      "rarity": "s3r2",
+      "top": "img/s3-yl0j6top-mvgn200htxd.png",
+      "bottom": "img/s3-yl0j6bottom-mvgn200jsr8.png",
+      "shoes": "img/s3-yl0j6shoes-mvgn200kaja.png",
+      "accs": [
+       {
+        "img": "img/s3-yl0j6a0-mvgn200lhhg.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
