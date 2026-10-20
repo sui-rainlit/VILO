@@ -5438,6 +5438,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgne7mg8aj",
+      "name": "MULTI SPECTRAL COORD",
+      "cat": "cmv6mxqiqyyb",
+      "rarity": "s3r4",
+      "top": "img/s3-mg8ajtop-mvgneiv8lne.png",
+      "bottom": "img/s3-mg8ajbottom-mvgneivbvt4.png",
+      "shoes": "img/s3-mg8ajshoes-mvgneivdu97.png",
+      "accs": [
+       {
+        "img": "img/s3-mg8aja0-mvgneiveziv.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
