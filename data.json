@@ -5816,6 +5816,21 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvgo3ptn1rc",
+      "name": "CHARMY RIBBON COORD",
+      "cat": "cmv6myw8yi9r",
+      "rarity": "",
+      "top": "img/s3-tn1rctop-mvgo40i5wsm.png",
+      "bottom": "img/s3-tn1rcbottom-mvgo40i83pq.png",
+      "shoes": "img/s3-tn1rcshoes-mvgo40ia297.png",
+      "accs": [
+       {
+        "img": "img/s3-tn1rca0-mvgo40ib9k0.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
