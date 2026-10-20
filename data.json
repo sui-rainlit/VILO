@@ -4075,6 +4075,27 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgltwjf3at",
+      "name": "SECRET DIARY COORD",
+      "cat": "cmv6mtp62g8d",
+      "rarity": "s2r4",
+      "top": "img/s2-jf3attop-mvglui10pak.png",
+      "bottom": "img/s2-jf3atbottom-mvglui12m63.png",
+      "shoes": "img/s2-jf3atshoes-mvglui14c0v.png",
+      "accs": [
+       {
+        "img": "img/s2-jf3ata0-mvglui15hpj.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "온 퍼레이드",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
