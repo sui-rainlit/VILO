@@ -5266,6 +5266,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgn5foe9ur",
+      "name": "MODERN FALL COORD",
+      "cat": "cmv6mxqiqyyb",
+      "rarity": "s3r2",
+      "top": "img/s3-oe9urtop-mvgn5pjj7x0.png",
+      "bottom": "img/s3-oe9urbottom-mvgn5pjmztf.png",
+      "shoes": "img/s3-oe9urshoes-mvgn5pjoz8k.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
