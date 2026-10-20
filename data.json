@@ -5539,6 +5539,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgno56h1hn",
+      "name": "ORIENTAL PASSION COORD",
+      "cat": "cmv6myg1tzl4",
+      "rarity": "s3r2",
+      "top": "img/s3-6h1hntop-mvgnohu4qlh.png",
+      "bottom": "img/s3-6h1hnbottom-mvgnohu8fd8.png",
+      "shoes": "img/s3-6h1hnshoes-mvgnohuagc5.png",
+      "accs": [
+       {
+        "img": "img/s3-6h1hna0-mvgnohub7wj.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
