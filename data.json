@@ -5676,6 +5676,21 @@
       "shoes": "img/s3-qq4ztshoes-mvgnwdh9o27.png",
       "accs": [],
       "reprints": []
+     },
+     {
+      "id": "cmvgnwlef553",
+      "name": "ROYAL OFF BLACK COORD",
+      "cat": "cmv6my38zr43",
+      "rarity": "s3r3",
+      "top": "img/s3-ef553top-mvgnwv6xq9c.png",
+      "bottom": "img/s3-ef553bottom-mvgnwv71zg0.png",
+      "shoes": "img/s3-ef553shoes-mvgnwv73d26.png",
+      "accs": [
+       {
+        "img": "img/s3-ef553a0-mvgnwv74d5m.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
