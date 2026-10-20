@@ -4787,6 +4787,17 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvgmw3ino9j",
+      "name": "SLEEPY CAT COORD",
+      "cat": "cmv6muucqqf2",
+      "rarity": "s2r2",
+      "top": "img/s2-ino9jtop-mvgmwcildc2.png",
+      "bottom": "img/s2-ino9jbottom-mvgmwcio7bg.png",
+      "shoes": "img/s2-ino9jshoes-mvgmwcisvj2.png",
+      "accs": [],
+      "reprints": []
      }
     ]
    },
