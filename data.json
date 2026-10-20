@@ -5554,6 +5554,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgnoubedgm",
+      "name": "VIRIDIAN LACE COORD",
+      "cat": "cmv6mxv618vo",
+      "rarity": "s3r2",
+      "top": "img/s3-bedgmtop-mvgnp4kg7lo.png",
+      "bottom": "img/s3-bedgmbottom-mvgnp4kliyr.png",
+      "shoes": "img/s3-bedgmshoes-mvgnp4ko91w.png",
+      "accs": [
+       {
+        "img": "img/s3-bedgma0-mvgnp4kpmw8.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
