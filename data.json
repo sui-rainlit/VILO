@@ -5650,6 +5650,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgnve4poxw",
+      "name": "FINO DECORATIVE COORD",
+      "cat": "cmv6mxz2qcfk",
+      "rarity": "s3r2",
+      "top": "img/s3-4poxwtop-mvgnvo4fcep.png",
+      "bottom": "img/s3-4poxwbottom-mvgnvo4jfbd.png",
+      "shoes": "img/s3-4poxwshoes-mvgnvo4kmzs.png",
+      "accs": [
+       {
+        "img": "img/s3-4poxwa0-mvgnvo4mtzp.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
