@@ -5324,6 +5324,21 @@
       "shoes": "img/s3-ifc06shoes-mvgn7dv52wo.png",
       "accs": [],
       "reprints": []
+     },
+     {
+      "id": "cmvgn7ooafkt",
+      "name": "MOSAIC BLUE COORD",
+      "cat": "cmv6mxqiqyyb",
+      "rarity": "s3r2",
+      "top": "img/s3-oafkttop-mvgn81j8u6x.png",
+      "bottom": "img/s3-oafktbottom-mvgn81jba3v.png",
+      "shoes": "img/s3-oafktshoes-mvgn81jfejk.png",
+      "accs": [
+       {
+        "img": "img/s3-oafkta0-mvgn81jh3xd.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
