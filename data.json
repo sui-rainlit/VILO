@@ -5765,6 +5765,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgo16w8t0l",
+      "name": "DENIM NEON SIGN COORD",
+      "cat": "cmv6myc8o767",
+      "rarity": "s3r2",
+      "top": "img/s3-w8t0ltop-mvgo1k198yl.png",
+      "bottom": "img/s3-w8t0lbottom-mvgo1k1cp4g.png",
+      "shoes": "img/s3-w8t0lshoes-mvgo1k1e1bv.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
