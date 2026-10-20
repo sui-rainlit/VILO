@@ -4220,6 +4220,21 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvgm5qp4os9",
+      "name": "YELLOW LONDON CHECK COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r2",
+      "top": "img/s2-p4os9top-mvgm606iqp4.png",
+      "bottom": "img/s2-p4os9bottom-mvgm606kuk0.png",
+      "shoes": "img/s2-p4os9shoes-mvgm606msk2.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
