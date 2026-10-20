@@ -4706,6 +4706,21 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvgmsirkyfj",
+      "name": "SODA ICE COORD",
+      "cat": "cmv6muqnoi2t",
+      "rarity": "s2r2",
+      "top": "img/s2-rkyfjtop-mvgmsvrplm7.png",
+      "bottom": "img/s2-rkyfjbottom-mvgmsvrsjso.png",
+      "shoes": "img/s2-rkyfjshoes-mvgmsvrunaj.png",
+      "accs": [
+       {
+        "img": "img/s2-rkyfja0-mvgmsvrwrge.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
