@@ -5120,6 +5120,21 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvgmzit81hv",
+      "name": "POWDER PINK PUPPY COORD",
+      "cat": "cmv6mwy5crdn",
+      "rarity": "s3r2",
+      "top": "img/s3-t81hvtop-mvgmztmgwsv.png",
+      "bottom": "img/s3-t81hvbottom-mvgmztmjayg.png",
+      "shoes": "img/s3-t81hvshoes-mvgmztmmyas.png",
+      "accs": [
+       {
+        "img": "img/s3-t81hva0-mvgmztmnx8d.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
