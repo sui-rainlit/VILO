@@ -4798,6 +4798,21 @@
       "shoes": "img/s2-ino9jshoes-mvgmwcisvj2.png",
       "accs": [],
       "reprints": []
+     },
+     {
+      "id": "cmvgmwla34rd",
+      "name": "MELTY PINK BELL COORD",
+      "cat": "cmv6muucqqf2",
+      "rarity": "s2r2",
+      "top": "img/s2-a34rdtop-mvgmwvuxvq1.png",
+      "bottom": "img/s2-a34rdbottom-mvgmwvv0p57.png",
+      "shoes": "img/s2-a34rdshoes-mvgmwvv2omk.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
