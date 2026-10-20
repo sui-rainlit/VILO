@@ -5750,6 +5750,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgo0qmvxd3",
+      "name": "RED RETRO SPORT COORD",
+      "cat": "cmv6myc8o767",
+      "rarity": "s3r2",
+      "top": "img/s3-mvxd3top-mvgo10lum5z.png",
+      "bottom": "img/s3-mvxd3bottom-mvgo10lx2s1.png",
+      "shoes": "img/s3-mvxd3shoes-mvgo10m0lww.png",
+      "accs": [
+       {
+        "img": "img/s3-mvxd3a0-mvgo10m244w.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
