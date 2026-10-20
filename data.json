@@ -5468,6 +5468,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgnghnabw1",
+      "name": "CHANDELIER PINK COORD",
+      "cat": "cmv6mxc4b2oi",
+      "rarity": "s3r2",
+      "top": "img/s3-nabw1top-mvgngvr0ws0.png",
+      "bottom": "img/s3-nabw1bottom-mvgngvr3l0e.png",
+      "shoes": "img/s3-nabw1shoes-mvgngvr69rt.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
