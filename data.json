@@ -4522,6 +4522,27 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgmky50xwx",
+      "name": "FLOWER MODERN COORD",
+      "cat": "cmv6muzd0eef",
+      "rarity": "s2r2",
+      "top": "img/s2-50xwxtop-mvgmldlk6zn.png",
+      "bottom": "img/s2-50xwxbottom-mvgmldln93d.png",
+      "shoes": "img/s2-50xwxshoes-mvgmldlpksl.png",
+      "accs": [
+       {
+        "img": "img/s2-50xwxa0-mvgmldlr6ou.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "프렌즈",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
