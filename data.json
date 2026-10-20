@@ -4813,6 +4813,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgmxypwp2w",
+      "name": "SPOOKY LITTLE GHOST COORD",
+      "cat": "cmv6muucqqf2",
+      "rarity": "s2r3",
+      "top": "img/s2-pwp2wtop-mvgmyavlneb.png",
+      "bottom": "img/s2-pwp2wbottom-mvgmyavpmw7.png",
+      "shoes": "img/s2-pwp2wshoes-mvgmyavqjws.png",
+      "accs": [
+       {
+        "img": "img/s2-pwp2wa0-mvgmyavs8r3.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
