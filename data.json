@@ -5483,6 +5483,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgnh3h8p9r",
+      "name": "MERMAID BLUE COORD",
+      "cat": "cmv6mxc4b2oi",
+      "rarity": "s3r2",
+      "top": "img/s3-h8p9rtop-mvgnhdm5v00.png",
+      "bottom": "img/s3-h8p9rbottom-mvgnhdm8qsg.png",
+      "shoes": "img/s3-h8p9rshoes-mvgnhdma11i.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
