@@ -5635,6 +5635,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgnuuuawrz",
+      "name": "APPLE MEMOIRE COORD",
+      "cat": "cmv6mxz2qcfk",
+      "rarity": "s3r2",
+      "top": "img/s3-uawrztop-mvgnv5k4fyc.png",
+      "bottom": "img/s3-uawrzbottom-mvgnv5k94kv.png",
+      "shoes": "img/s3-uawrzshoes-mvgnv5kb4a9.png",
+      "accs": [
+       {
+        "img": "img/s3-uawrza0-mvgnv5kcdqh.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
