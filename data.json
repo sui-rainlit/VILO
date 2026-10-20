@@ -5191,6 +5191,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgn2tssfob",
+      "name": "SMART STRAIGHT COORD",
+      "cat": "cmv6mxqiqyyb",
+      "rarity": "s3r2",
+      "top": "img/s3-ssfobtop-mvgn34c49ou.png",
+      "bottom": "img/s3-ssfobbottom-mvgn34c7fim.png",
+      "shoes": "img/s3-ssfobshoes-mvgn34c9unm.png",
+      "accs": [
+       {
+        "img": "img/s3-ssfoba0-mvgn34ca7bm.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
