@@ -4573,6 +4573,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgmmwplguj",
+      "name": "EMERALD OCEAN COORD",
+      "cat": "cmv6muzd0eef",
+      "rarity": "s2r2",
+      "top": "img/s2-plgujtop-mvgmn8z2gh3.png",
+      "bottom": "img/s2-plgujbottom-mvgmn8z6a49.png",
+      "shoes": "img/s2-plgujshoes-mvgmn8z8oft.png",
+      "accs": [
+       {
+        "img": "img/s2-plguja0-mvgmn8z9y8z.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
