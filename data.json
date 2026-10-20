@@ -4394,6 +4394,21 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvgmcg7ds2c",
+      "name": "SKY WISH COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r3",
+      "top": "img/s2-7ds2ctop-mvgmcrj6q49.png",
+      "bottom": "img/s2-7ds2cbottom-mvgmcrj918y.png",
+      "shoes": "img/s2-7ds2cshoes-mvgmcrjcnqm.png",
+      "accs": [
+       {
+        "img": "img/s2-7ds2ca0-mvgmcrje4sz.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
