@@ -5605,6 +5605,21 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvgnqwufnjx",
+      "name": "LAVENDER PITTORESQUE COORD",
+      "cat": "cmv6mxz2qcfk",
+      "rarity": "s3r2",
+      "top": "img/s3-ufnjxtop-mvgnu6fyw20.png",
+      "bottom": "img/s3-ufnjxbottom-mvgnu6g6y3p.png",
+      "shoes": "img/s3-ufnjxshoes-mvgnu6g9lpz.png",
+      "accs": [
+       {
+        "img": "img/s3-ufnjxa0-mvgnu6gbli5.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
