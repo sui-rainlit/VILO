@@ -5620,6 +5620,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgnucne7rf",
+      "name": "GREEN PITTORESQUE COORD",
+      "cat": "cmv6mxz2qcfk",
+      "rarity": "s3r2",
+      "top": "img/s3-ne7rftop-mvgnulf8hbo.png",
+      "bottom": "img/s3-ne7rfbottom-mvgnulfc593.png",
+      "shoes": "img/s3-ne7rfshoes-mvgnulfdtt7.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
