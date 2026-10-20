@@ -5408,6 +5408,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgncmf3v0h",
+      "name": "TRICK CARNIVAL COORD",
+      "cat": "cmv6mxqiqyyb",
+      "rarity": "s3r3",
+      "top": "img/s3-f3v0htop-mvgncxjjtu3.png",
+      "bottom": "img/s3-f3v0hbottom-mvgncxjn51i.png",
+      "shoes": "img/s3-f3v0hshoes-mvgncxjpubb.png",
+      "accs": [
+       {
+        "img": "img/s3-f3v0ha0-mvgncxjqvab.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
