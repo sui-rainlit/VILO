@@ -4256,6 +4256,27 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvgm70s18pf",
+      "name": "SHARP PATROL COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r2",
+      "top": "img/s2-s18pftop-mvgm7lwynf6.png",
+      "bottom": "img/s2-s18pfbottom-mvgm7lx1ro2.png",
+      "shoes": "img/s2-s18pfshoes-mvgm7lx3vjh.png",
+      "accs": [
+       {
+        "img": "img/s2-s18pfa0-mvgm7lx5cdj.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "온 퍼레이드",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
