@@ -5221,6 +5221,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgn3sxg6mk",
+      "name": "GRAPHICAL YELLOW COORD",
+      "cat": "cmv6mxqiqyyb",
+      "rarity": "s3r2",
+      "top": "img/s3-xg6mktop-mvgn461rsic.png",
+      "bottom": "img/s3-xg6mkbottom-mvgn461u3oc.png",
+      "shoes": "img/s3-xg6mkshoes-mvgn461xf55.png",
+      "accs": [
+       {
+        "img": "img/s3-xg6mka0-mvgn461z4ao.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
