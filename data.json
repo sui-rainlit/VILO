@@ -4558,6 +4558,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgmm7zo8e5",
+      "name": "LUNA ROMANTIC COORD",
+      "cat": "cmv6muzd0eef",
+      "rarity": "s2r2",
+      "top": "img/s2-zo8e5top-mvgmmn2aczc.png",
+      "bottom": "img/s2-zo8e5bottom-mvgmmn2dq0g.png",
+      "shoes": "img/s2-zo8e5shoes-mvgmmn2ixlv.png",
+      "accs": [
+       {
+        "img": "img/s2-zo8e5a0-mvgmmn2kqay.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
