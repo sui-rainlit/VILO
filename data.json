@@ -4060,6 +4060,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvglt8nrm82",
+      "name": "MAGICAL STRAWBERRY CANDY COORD",
+      "cat": "cmv6mtp62g8d",
+      "rarity": "s2r3",
+      "top": "img/s2-nrm82top-mvgltk0gqzb.png",
+      "bottom": "img/s2-nrm82bottom-mvgltk0jydh.png",
+      "shoes": "img/s2-nrm82shoes-mvgltk0momv.png",
+      "accs": [
+       {
+        "img": "img/s2-nrm82a0-mvgltk0n051.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
