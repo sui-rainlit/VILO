@@ -4680,6 +4680,32 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgmrar81vg",
+      "name": "BLOOMING QUEEN COORD",
+      "cat": "cmv6mv3xrqq8",
+      "rarity": "s2r5",
+      "top": "img/s2-r81vgtop-mvgmrsdyzb6.png",
+      "bottom": "img/s2-r81vgbottom-mvgmrse1zov.png",
+      "shoes": "img/s2-r81vgshoes-mvgmrse423z.png",
+      "accs": [
+       {
+        "img": "img/s2-r81vga0-mvgmrse5a0n.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "스타즈",
+        "accs": [],
+        "need": true
+       },
+       {
+        "label": "룰렛",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
