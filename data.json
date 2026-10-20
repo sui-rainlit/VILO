@@ -4322,6 +4322,27 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgm9zrgt4e",
+      "name": "DARK PUNK CHECK COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r2",
+      "top": "img/s2-rgt4etop-mvgmaj6bkg8.png",
+      "bottom": "img/s2-rgt4ebottom-mvgmaj6eth6.png",
+      "shoes": "img/s2-rgt4eshoes-mvgmaj6g8d6.png",
+      "accs": [
+       {
+        "img": "img/s2-rgt4ea0-mvgmaj6h2au.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "프렌즈",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
