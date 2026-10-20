@@ -5795,6 +5795,27 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgo2er0cuu",
+      "name": "TYROLEAN LIGHT BLUE COORD",
+      "cat": "cmv6mxigqy9u",
+      "rarity": "s3r4",
+      "top": "img/s3-r0cuutop-mvgo3c2nlhf.png",
+      "bottom": "img/s3-r0cuubottom-mvgo3c2qbnb.png",
+      "shoes": "img/s3-r0cuushoes-mvgo3c2siws.png",
+      "accs": [
+       {
+        "img": "img/s3-r0cuua0-mvgo3c2uwsl.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "프렌즈",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
