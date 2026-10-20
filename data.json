@@ -5584,6 +5584,27 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgnpz3bef6",
+      "name": "NOCTURNE NIGHT COORD",
+      "cat": "cmv6mxv618vo",
+      "rarity": "s3r4",
+      "top": "img/s3-3bef6top-mvgnqgjnejs.png",
+      "bottom": "img/s3-3bef6bottom-mvgnqgjq2c5.png",
+      "shoes": "img/s3-3bef6shoes-mvgnqgjsxng.png",
+      "accs": [
+       {
+        "img": "img/s3-3bef6a0-mvgnqgjtssx.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "프렌즈",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
