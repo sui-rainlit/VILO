@@ -4665,6 +4665,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgmqom9j9h",
+      "name": "ORANGE BAROQUE COORD",
+      "cat": "cmv6mv3xrqq8",
+      "rarity": "s2r2",
+      "top": "img/s2-m9j9htop-mvgmr2kuvml.png",
+      "bottom": "img/s2-m9j9hbottom-mvgmr2l0o3b.png",
+      "shoes": "img/s2-m9j9hshoes-mvgmr2l2ks1.png",
+      "accs": [
+       {
+        "img": "img/s2-m9j9ha0-mvgmr2l4z0y.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
