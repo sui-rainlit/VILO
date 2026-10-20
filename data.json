@@ -4235,6 +4235,27 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgm68oqhxk",
+      "name": "STAR PATROL COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r2",
+      "top": "img/s2-oqhxktop-mvgm6s8sfug.png",
+      "bottom": "img/s2-oqhxkbottom-mvgm6s8uf7o.png",
+      "shoes": "img/s2-oqhxkshoes-mvgm6s8xmco.png",
+      "accs": [
+       {
+        "img": "img/s2-oqhxka0-mvgm6s8yird.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "스타즈",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
