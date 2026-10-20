@@ -5206,6 +5206,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgn3bin18v",
+      "name": "CHIC STRAIGHT COORD",
+      "cat": "cmv6mxqiqyyb",
+      "rarity": "s3r2",
+      "top": "img/s3-in18vtop-mvgn3k3igiq.png",
+      "bottom": "img/s3-in18vbottom-mvgn3k3lymg.png",
+      "shoes": "img/s3-in18vshoes-mvgn3k3neid.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
