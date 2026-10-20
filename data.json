@@ -4409,6 +4409,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgmczrlt0y",
+      "name": "JINGLE SNOW COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r3",
+      "top": "img/s2-rlt0ytop-mvgmdhstkzh.png",
+      "bottom": "img/s2-rlt0ybottom-mvgmdhsxx1y.png",
+      "shoes": "img/s2-rlt0yshoes-mvgmdht2jz6.png",
+      "accs": [
+       {
+        "img": "img/s2-rlt0ya0-mvgmdht4t0y.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
