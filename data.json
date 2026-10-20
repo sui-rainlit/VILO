@@ -5161,6 +5161,21 @@
       "shoes": "img/s3-lf051shoes-mvgn0prxppi.png",
       "accs": [],
       "reprints": []
+     },
+     {
+      "id": "cmvgn0ykxiu8",
+      "name": "LIGHT PINK HUMMING COORD",
+      "cat": "cmv6mwy5crdn",
+      "rarity": "s3r2",
+      "top": "img/s3-kxiu8top-mvgn19pswf4.png",
+      "bottom": "img/s3-kxiu8bottom-mvgn19pvtr1.png",
+      "shoes": "img/s3-kxiu8shoes-mvgn19pxld2.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
