@@ -4751,6 +4751,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgmuj0s8qh",
+      "name": "FINE MARIGOLD COORD",
+      "cat": "cmv6muqnoi2t",
+      "rarity": "s2r3",
+      "top": "img/s2-0s8qhtop-mvgmuv2wg7l.png",
+      "bottom": "img/s2-0s8qhbottom-mvgmuv30ve6.png",
+      "shoes": "img/s2-0s8qhshoes-mvgmuv320fj.png",
+      "accs": [
+       {
+        "img": "img/s2-0s8qha0-mvgmuv33hby.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
