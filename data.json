@@ -4543,6 +4543,21 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvgmlnddwkg",
+      "name": "PINK SUNSHINE FRINGE COORD",
+      "cat": "cmv6muzd0eef",
+      "rarity": "s2r2",
+      "top": "img/s2-ddwkgtop-mvgmlzsklun.png",
+      "bottom": "img/s2-ddwkgbottom-mvgmlzsoq6v.png",
+      "shoes": "img/s2-ddwkgshoes-mvgmlzsqxgr.png",
+      "accs": [
+       {
+        "img": "img/s2-ddwkga0-mvgmlzsr4cp.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
