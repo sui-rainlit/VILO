@@ -4358,6 +4358,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgmb9qrswr",
+      "name": "GIRLY BEAT COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r2",
+      "top": "img/s2-qrswrtop-mvgmbi1n91i.png",
+      "bottom": "img/s2-qrswrbottom-mvgmbi1pnju.png",
+      "shoes": "img/s2-qrswrshoes-mvgmbi1q4hr.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
