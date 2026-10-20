@@ -4169,6 +4169,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgm3j9pyju",
+      "name": "ROCKING MELODY COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r2",
+      "top": "img/s2-9pyjutop-mvgm3vi29sp.png",
+      "bottom": "img/s2-9pyjubottom-mvgm3vi5n3g.png",
+      "shoes": "img/s2-9pyjushoes-mvgm3vi6f9g.png",
+      "accs": [
+       {
+        "img": "img/s2-9pyjua0-mvgm3vi8ylq.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
