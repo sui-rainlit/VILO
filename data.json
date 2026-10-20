@@ -3945,6 +3945,21 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvgllyh1qec",
+      "name": "PURPLE COULEUR RIBBON COORD",
+      "cat": "cmv6mtxwpo3u",
+      "rarity": "s2r2",
+      "top": "img/s2-h1qectop-mvglm8nwbyy.png",
+      "bottom": "img/s2-h1qecbottom-mvglm8o5ayy.png",
+      "shoes": "img/s2-h1qecshoes-mvglm8o6pij.png",
+      "accs": [
+       {
+        "img": "img/s2-h1qeca0-mvglm8o7llk.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
