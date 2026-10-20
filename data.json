@@ -5569,6 +5569,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgnpgjegjl",
+      "name": "FROZEN ROSE COORD",
+      "cat": "cmv6mxv618vo",
+      "rarity": "s3r2",
+      "top": "img/s3-jegjltop-mvgnprptgn6.png",
+      "bottom": "img/s3-jegjlbottom-mvgnprpw9p5.png",
+      "shoes": "img/s3-jegjlshoes-mvgnprpyu7p.png",
+      "accs": [
+       {
+        "img": "img/s3-jegjla0-mvgnprq0owz.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
