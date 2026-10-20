@@ -5281,6 +5281,27 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgn5zg2oww",
+      "name": "VINTAGE FLOWER COORD",
+      "cat": "cmv6mxqiqyyb",
+      "rarity": "s3r2",
+      "top": "img/s3-g2owwtop-mvgn6h7iszx.png",
+      "bottom": "img/s3-g2owwbottom-mvgn6h7l6vy.png",
+      "shoes": "img/s3-g2owwshoes-mvgn6h7n1n0.png",
+      "accs": [
+       {
+        "img": "img/s3-g2owwa0-mvgn6h7p4p6.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "온 퍼레이드",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
