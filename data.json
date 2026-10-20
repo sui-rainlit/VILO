@@ -4721,6 +4721,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgmt4bvjuu",
+      "name": "FUNNY TRICK COORD",
+      "cat": "cmv6muqnoi2t",
+      "rarity": "s2r2",
+      "top": "img/s2-bvjuutop-mvgmthdmma9.png",
+      "bottom": "img/s2-bvjuubottom-mvgmthdp7gp.png",
+      "shoes": "img/s2-bvjuushoes-mvgmthdsqfh.png",
+      "accs": [
+       {
+        "img": "img/s2-bvjuua0-mvgmthdtzea.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
