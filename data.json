@@ -4292,6 +4292,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgm8sx2p9n",
+      "name": "MYSTERIOUS TUXEDO COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r2",
+      "top": "img/s2-x2p9ntop-mvgm94cl9ty.png",
+      "bottom": "img/s2-x2p9nbottom-mvgm94cpr91.png",
+      "shoes": "img/s2-x2p9nshoes-mvgm94crqrl.png",
+      "accs": [
+       {
+        "img": "img/s2-x2p9na0-mvgm94cslry.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
