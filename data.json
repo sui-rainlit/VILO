@@ -5524,6 +5524,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgnni17yl4",
+      "name": "JAPANESQUE ROMAN COORD",
+      "cat": "cmv6myg1tzl4",
+      "rarity": "s3r2",
+      "top": "img/s3-17yl4top-mvgnnt19gey.png",
+      "bottom": "img/s3-17yl4bottom-mvgnnt1c4lc.png",
+      "shoes": "img/s3-17yl4shoes-mvgnnt1eys7.png",
+      "accs": [
+       {
+        "img": "img/s3-17yl4a0-mvgnnt1fyje.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
