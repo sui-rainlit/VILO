@@ -5348,7 +5348,11 @@
       "top": "img/s3-a7ky4top-mvgn8irprqv.png",
       "bottom": "img/s3-a7ky4bottom-mvgn8irs56u.png",
       "shoes": "img/s3-a7ky4shoes-mvgn8iru570.png",
-      "accs": [],
+      "accs": [
+       {
+        "need": true
+       }
+      ],
       "reprints": []
      }
     ]
