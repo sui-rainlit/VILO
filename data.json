@@ -5855,6 +5855,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgokn3s2dw",
+      "name": "BLACKBERRY COCOA COORD",
+      "cat": "cmv6mxqiqyyb",
+      "rarity": "s3r3",
+      "top": "img/s3-3s2dwtop-mvgol9kf2wm.png",
+      "bottom": "img/s3-3s2dwbottom-mvgol9kikxl.png",
+      "shoes": "img/s3-3s2dwshoes-mvgol9kl303.png",
+      "accs": [
+       {
+        "img": "img/s3-3s2dwa0-mvgol9km95t.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
