@@ -5846,6 +5846,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgo4se61pk",
+      "name": "HALLOWEEN PARADE COORD",
+      "cat": "cmv6myw8yi9r",
+      "rarity": "s3r2",
+      "top": "img/s3-e61pktop-mvgo553u9tp.png",
+      "bottom": "img/s3-e61pkbottom-mvgo553ypfe.png",
+      "shoes": "img/s3-e61pkshoes-mvgo5540wdd.png",
+      "accs": [
+       {
+        "img": "img/s3-e61pka0-mvgo5541xe2.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
