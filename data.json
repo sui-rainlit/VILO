@@ -4837,6 +4837,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgop5wz813",
+      "name": "RED GOTHIC STRIPE COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r2",
+      "top": "img/s2-wz813top-mvgopku4aex.png",
+      "bottom": "img/s2-wz813bottom-mvgopku7dij.png",
+      "shoes": "img/s2-wz813shoes-mvgopku8gzb.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
