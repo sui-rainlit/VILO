@@ -4603,6 +4603,27 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgmo7dqqcc",
+      "name": "ARABIAN SPARKLE COORD",
+      "cat": "cmv6muzd0eef",
+      "rarity": "s2r4",
+      "top": "img/s2-dqqcctop-mvgmonczpvs.png",
+      "bottom": "img/s2-dqqccbottom-mvgmond2zo2.png",
+      "shoes": "img/s2-dqqccshoes-mvgmond4mrs.png",
+      "accs": [
+       {
+        "img": "img/s2-dqqcca0-mvgmond6w0n.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "스타즈",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
