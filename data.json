@@ -4111,6 +4111,27 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvglwjmv0p5",
+      "name": "EMU SYNDROME COORD",
+      "cat": "cmv6mug25cpu",
+      "rarity": "s2r2",
+      "top": "img/s2-mv0p5top-mvgm0s11xlp.png",
+      "bottom": "img/s2-mv0p5bottom-mvgm0s13bwg.png",
+      "shoes": "img/s2-mv0p5shoes-mvgm0s15nvl.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": [
+       {
+        "label": "스타즈",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
