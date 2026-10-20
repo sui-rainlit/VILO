@@ -4307,6 +4307,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgm9bdc650",
+      "name": "SPARKLE PINK COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r2",
+      "top": "img/s2-dc650top-mvgm9k2pf50.png",
+      "bottom": "img/s2-dc650bottom-mvgm9k2tmca.png",
+      "shoes": "img/s2-dc650shoes-mvgm9k2voxn.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
