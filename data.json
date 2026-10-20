@@ -4445,6 +4445,27 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvgmemelsve",
+      "name": "STYLISH POLICE COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r4",
+      "top": "img/s2-elsvetop-mvgmf45l5ke.png",
+      "bottom": "img/s2-elsvebottom-mvgmf45o4o2.png",
+      "shoes": "img/s2-elsveshoes-mvgmf45qp09.png",
+      "accs": [
+       {
+        "img": "img/s2-elsvea0-mvgmf45r77r.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "온 퍼레이드",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
