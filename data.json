@@ -4343,6 +4343,21 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvgmap4zplz",
+      "name": "SKY RACE COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r2",
+      "top": "img/s2-4zplztop-mvgmb3az87d.png",
+      "bottom": "img/s2-4zplzbottom-mvgmb3b2jpt.png",
+      "shoes": "img/s2-4zplzshoes-mvgmb3b4vfx.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
