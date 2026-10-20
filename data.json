@@ -5393,6 +5393,21 @@
       "top": "img/s3-hnej7top-mvgnbkemhm8.png",
       "accs": [],
       "reprints": []
+     },
+     {
+      "id": "cmvgnbsw3ck9",
+      "name": "SPARKLING MERMAID COORD",
+      "cat": "cmv6mxqiqyyb",
+      "rarity": "s3r3",
+      "top": "img/s3-w3ck9top-mvgnc3av1lq.png",
+      "bottom": "img/s3-w3ck9bottom-mvgnc3azrxg.png",
+      "shoes": "img/s3-w3ck9shoes-mvgnc3b0p29.png",
+      "accs": [
+       {
+        "img": "img/s3-w3ck9a0-mvgnc3b2odv.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
