@@ -5236,6 +5236,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgn4f729ey",
+      "name": "GRAPHICAL MODE COORD",
+      "cat": "cmv6mxqiqyyb",
+      "rarity": "s3r2",
+      "top": "img/s3-729eytop-mvgn4pzno07.png",
+      "bottom": "img/s3-729eybottom-mvgn4pzq079.png",
+      "shoes": "img/s3-729eyshoes-mvgn4pztm12.png",
+      "accs": [
+       {
+        "img": "img/s3-729eya0-mvgn4pzvu43.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
