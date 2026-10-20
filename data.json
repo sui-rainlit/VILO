@@ -4096,6 +4096,21 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvglvmn8amk",
+      "name": "MYSTIC SYNDROME COORD",
+      "cat": "cmv6mug25cpu",
+      "rarity": "s2r2",
+      "top": "img/s2-n8amktop-mvglvy1oxo2.png",
+      "bottom": "img/s2-n8amkbottom-mvglvy1roeo.png",
+      "shoes": "img/s2-n8amkshoes-mvglvy1sf3z.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
