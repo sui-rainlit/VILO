@@ -5720,6 +5720,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgnzb02mvq",
+      "name": "MAKARON A LA MODE COORD",
+      "cat": "cmv6my7o5t08",
+      "rarity": "s3r2",
+      "top": "img/s3-02mvqtop-mvgnzv0pc7t.png",
+      "bottom": "img/s3-02mvqbottom-mvgnzv0t4pr.png",
+      "shoes": "img/s3-02mvqshoes-mvgnzv0vyqh.png",
+      "accs": [
+       {
+        "img": "img/s3-02mvqa0-mvgnzv0wc6k.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
