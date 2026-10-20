@@ -5735,6 +5735,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgo01gon8u",
+      "name": "WONDROUS PUMPKIN COORD",
+      "cat": "cmv6my7o5t08",
+      "rarity": "s3r2",
+      "top": "img/s3-gon8utop-mvgo0cw01ek.png",
+      "bottom": "img/s3-gon8ubottom-mvgo0cwbu1n.png",
+      "shoes": "img/s3-gon8ushoes-mvgo0cwchfh.png",
+      "accs": [
+       {
+        "img": "img/s3-gon8ua0-mvgo0cwdntj.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
