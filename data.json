@@ -4277,6 +4277,21 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvgm82i6x7o",
+      "name": "PURPLE SHADOW COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r2",
+      "top": "img/s2-i6x7otop-mvgm8h44ghh.png",
+      "bottom": "img/s2-i6x7obottom-mvgm8h4833f.png",
+      "shoes": "img/s2-i6x7oshoes-mvgm8h4a5zs.png",
+      "accs": [
+       {
+        "img": "img/s2-i6x7oa0-mvgm8h4bqlx.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
