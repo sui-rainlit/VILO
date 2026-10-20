@@ -5509,6 +5509,21 @@
       "shoes": "img/s3-utigzshoes-mvgnm53qfxb.png",
       "accs": [],
       "reprints": []
+     },
+     {
+      "id": "cmvgnmt7n94i",
+      "name": "DANCE ADDICTION COORD",
+      "cat": "cmv6myg1tzl4",
+      "rarity": "s3r2",
+      "top": "img/s3-7n94itop-mvgnn9wjdf0.png",
+      "bottom": "img/s3-7n94ibottom-mvgnn9wn7hu.png",
+      "shoes": "img/s3-7n94ishoes-mvgnn9wpht1.png",
+      "accs": [
+       {
+        "img": "img/s3-7n94ia0-mvgnn9wq5bm.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
