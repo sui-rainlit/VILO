@@ -4588,6 +4588,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgmnir9th3",
+      "name": "PURPLE ORCHID COORD",
+      "cat": "cmv6muzd0eef",
+      "rarity": "s2r3",
+      "top": "img/s2-r9th3top-mvgmnyvowcm.png",
+      "bottom": "img/s2-r9th3bottom-mvgmnyvrf4o.png",
+      "shoes": "img/s2-r9th3shoes-mvgmnyvsstd.png",
+      "accs": [
+       {
+        "img": "img/s2-r9th3a0-mvgmnyvt3gw.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
