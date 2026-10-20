@@ -4132,6 +4132,17 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvgm0ytfx0c",
+      "name": "RUBY BIRDCAGE COORD",
+      "cat": "cmv6mug25cpu",
+      "rarity": "s2r2",
+      "top": "img/s2-tfx0ctop-mvgm17abwpm.png",
+      "bottom": "img/s2-tfx0cbottom-mvgm17aeucr.png",
+      "shoes": "img/s2-tfx0cshoes-mvgm17afzme.png",
+      "accs": [],
+      "reprints": []
      }
     ]
    },
