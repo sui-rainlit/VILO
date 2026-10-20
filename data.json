@@ -4481,6 +4481,32 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgmgrg4u66",
+      "name": "ROCK MY HEART COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r4",
+      "top": "img/s2-g4u66top-mvgmhc3fjvm.png",
+      "bottom": "img/s2-g4u66bottom-mvgmhc3ivcz.png",
+      "shoes": "img/s2-g4u66shoes-mvgmhc3jca7.png",
+      "accs": [
+       {
+        "img": "img/s2-g4u66a0-mvgmhc3m5ez.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "스타즈",
+        "accs": [],
+        "need": true
+       },
+       {
+        "label": "룰렛",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
