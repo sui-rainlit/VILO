@@ -4031,6 +4031,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvglqxgz2eu",
+      "name": "CREAMY CAKE COORD",
+      "cat": "cmv6mtp62g8d",
+      "rarity": "s2r2",
+      "top": "img/s2-gz2eutop-mvglr5romvj.png",
+      "bottom": "img/s2-gz2eubottom-mvglr5rrcb4.png",
+      "shoes": "img/s2-gz2eushoes-mvglr5rteps.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
