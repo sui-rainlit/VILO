@@ -4373,6 +4373,27 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgmbtfzn41",
+      "name": "AQUA STARRY ROCK COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r3",
+      "top": "img/s2-fzn41top-mvgmc8gl17e.png",
+      "bottom": "img/s2-fzn41bottom-mvgmc8go2k4.png",
+      "shoes": "img/s2-fzn41shoes-mvgmc8gpr92.png",
+      "accs": [
+       {
+        "img": "img/s2-fzn41a0-mvgmc8gqob4.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "스타즈",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
