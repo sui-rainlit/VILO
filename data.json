@@ -4507,6 +4507,21 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvgmid3w5x9",
+      "name": "WHITE PALACE COORD",
+      "cat": "cmv6mum2ldbk",
+      "rarity": "s2r2",
+      "top": "img/s2-3w5x9top-mvgmip8ppvg.png",
+      "bottom": "img/s2-3w5x9bottom-mvgmip8t4pc.png",
+      "shoes": "img/s2-3w5x9shoes-mvgmip8w38p.png",
+      "accs": [
+       {
+        "img": "img/s2-3w5x9a0-mvgmip8xmfe.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
