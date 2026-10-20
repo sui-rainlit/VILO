@@ -5251,6 +5251,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgn4x8q0uj",
+      "name": "MODERN AUTUMN COORD",
+      "cat": "cmv6mxqiqyyb",
+      "rarity": "s3r2",
+      "top": "img/s3-8q0ujtop-mvgn59l7vgr.png",
+      "bottom": "img/s3-8q0ujbottom-mvgn59la2cr.png",
+      "shoes": "img/s3-8q0ujshoes-mvgn59lcmvn.png",
+      "accs": [
+       {
+        "img": "img/s3-8q0uja0-mvgn59lens9.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
