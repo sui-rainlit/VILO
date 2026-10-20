@@ -4424,6 +4424,27 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgmdq4turk",
+      "name": "SPICE ROCK COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r4",
+      "top": "img/s2-4turktop-mvgmedhuqsd.png",
+      "bottom": "img/s2-4turkbottom-mvgmedhywsu.png",
+      "shoes": "img/s2-4turkshoes-mvgmedi07do.png",
+      "accs": [
+       {
+        "img": "img/s2-4turka0-mvgmedi1ryl.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "온 퍼레이드",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
