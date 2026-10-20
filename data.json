@@ -4466,6 +4466,21 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvgmfefep8x",
+      "name": "AWESOME ROCKING COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r4",
+      "top": "img/s2-fep8xtop-mvgmge6luqg.png",
+      "bottom": "img/s2-fep8xbottom-mvgmge6oe6a.png",
+      "shoes": "img/s2-fep8xshoes-mvgmge6queo.png",
+      "accs": [
+       {
+        "img": "img/s2-fep8xa0-mvgmge6s3wo.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
