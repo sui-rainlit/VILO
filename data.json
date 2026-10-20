@@ -5453,6 +5453,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgnet64sz1",
+      "name": "NEODYMIUM STAR COLOR COORD",
+      "cat": "cmv6mxqiqyyb",
+      "rarity": "s3r4",
+      "top": "img/s3-64sz1top-mvgnfslcxux.png",
+      "bottom": "img/s3-64sz1bottom-mvgnfsljb7f.png",
+      "shoes": "img/s3-64sz1shoes-mvgnfslli8f.png",
+      "accs": [
+       {
+        "img": "img/s3-64sz1a0-mvgnfslm7fv.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
