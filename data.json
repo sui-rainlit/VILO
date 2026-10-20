@@ -4831,6 +4831,27 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvgorionqoq",
+      "name": "PURPLE LONDON CHECK COORD",
+      "cat": "cmv6mucfagmu",
+      "rarity": "s2r2",
+      "top": "img/s2-onqoqtop-mvgos29thgn.png",
+      "bottom": "img/s2-onqoqbottom-mvgos29v24s.png",
+      "shoes": "img/s2-onqoqshoes-mvgos29z554.png",
+      "accs": [
+       {
+        "img": "img/s2-onqoqa0-mvgos2a0xaa.png"
+       }
+      ],
+      "reprints": [
+       {
+        "label": "스타즈",
+        "accs": [],
+        "need": true
+       }
+      ]
      }
     ]
    },
