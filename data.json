@@ -3552,6 +3552,17 @@
         "need": true
        }
       ]
+     },
+     {
+      "id": "cmvxo7bmoy7q",
+      "name": "SWEET TWINS COORD",
+      "cat": "s1b1",
+      "rarity": "s1r2",
+      "top": "img/s1-moy7qtop-mvxo7myaw9j.png",
+      "bottom": "img/s1-moy7qbottom-mvxo7myf4ad.png",
+      "shoes": "img/s1-moy7qshoes-mvxo7myhms1.png",
+      "accs": [],
+      "reprints": []
      }
     ]
    },
