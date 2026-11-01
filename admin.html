@@ -89,7 +89,7 @@ async function delFile(p){PEND.dels.add(p)}
 async function run(msg,fn){if(busy)return false;busy=true;status(msg);PEND.files={};PEND.dels.clear();try{await fn();await flushDeletes();return true}catch(e){toast(why(e));return false}finally{busy=false;status('')}}
 const prev=v=>v instanceof File?(fu.get(v)||(fu.set(v,URL.createObjectURL(v)),fu.get(v))):(v?(pv[v]||v):'');
 const clone=o=>JSON.parse(JSON.stringify(o));
-const IMGS=[['site','logo','VILO 로고'],['profile','appearance','외관 사진'],['profile','idcard','학생증 사진']];
+const IMGS=[['profile','appearance','외관 사진'],['profile','idcard','학생증 사진']];
 function pk(g,k,label){const v=ed[g][k];return '<div class="pk">'+(v?'<img src="'+esc(prev(v))+'" alt="">':'<div class="e"></div>')+'<div style="flex:1"><div style="font-size:13px;margin-bottom:6px">'+label+'</div><label class="b g s fi">'+(v?'변경':'사진 선택')+'<input type="file" accept="image/*" data-p="'+g+':'+k+'"></label> '+(v?'<button class="b r s" data-rm="'+g+':'+k+'">삭제</button>':'')+'</div></div>'}
 function rows(k,a,b,pa,pb){return ed.profile[k].map((x,n)=>'<div class="mr"><input type="text" data-r="'+k+':'+n+':'+a+'" value="'+esc(x[a])+'" placeholder="'+pa+'" style="flex:.7"><input type="text" data-r="'+k+':'+n+':'+b+'" value="'+esc(x[b])+'" placeholder="'+pb+'"><button class="b g s" data-ru="'+k+':'+n+'">↑</button><button class="b g s" data-rv="'+k+':'+n+'">↓</button><button class="b r s" data-rd="'+k+':'+n+'">삭제</button></div>').join('')+'<button class="b g s" data-ra="'+k+'">+ 추가</button>'}
 function render(){
@@ -106,7 +106,7 @@ function render(){
  if(tab==='unit'){renderUnit();return}
  $('#app').innerHTML='<div class="w"><div class="hero"><h1>관리</h1><span><a class="b g s" href="./" target="_blank">사이트 보기</a> <button class="b g s" data-a="disc">연결 해제</button></span></div>'
  +tabsHtml()+'<p class="note">모든 메뉴의 편집을 쓸 수 있어요.</p>'
- +'<h3>사이트</h3><label class="l">학교 이름</label><input type="text" data-f="site:school" value="'+esc(ed.site.school)+'"><label class="l">ID</label><input type="text" data-f="site:id" value="'+esc(ed.site.id)+'" autocapitalize="none"><div style="margin-top:10px">'+pk('site','logo','VILO 로고')+'</div>'
+ +'<h3>사이트</h3><label class="l">학교 이름</label><input type="text" data-f="site:school" value="'+esc(ed.site.school)+'"><label class="l">ID</label><input type="text" data-f="site:id" value="'+esc(ed.site.id)+'" autocapitalize="none">'
  +'<h3>프로필</h3><label class="l">이름 (맨 위 큰 글씨, 비우면 “하세가와 스이”)</label><input type="text" data-f="profile:name" value="'+esc(ed.profile.name||'')+'" placeholder="하세가와 스이"><label class="l">이름 위 작은 글씨 (영문 이름 등, 비워도 돼요)</label><input type="text" data-f="profile:sub" value="'+esc(ed.profile.sub||'')+'"><label class="l">소개 문구 (이름 아래 몇 줄, 비워도 돼요)</label><textarea data-f="profile:intro" rows="3">'+esc(ed.profile.intro||'')+'</textarea><div style="display:grid;gap:8px;margin-top:12px">'+pk('profile','appearance','외관 사진')+pk('profile','idcard','학생증 사진')+'</div><label class="l">사진 출처 (프로필 맨 아래에 작게 표시, 줄바꿈·주소 가능, 비워도 돼요)</label><textarea data-f="profile:credits" rows="4">'+esc(ed.profile.credits||'')+'</textarea>'
  +'<h3>설정 항목 (항목명 / 내용)</h3><p class="note">항목은 위에서부터 그대로 나열돼요. 대표색은 #ff8fb1 같은 색 코드를 쓰면 색 점이 같이 보여요.</p>'+rows('fields','k','v','항목명','내용')+'<h3>HISTORY (날짜 / 내용)</h3>'+rows('bio','d','t','날짜','내용')
  +'</div><div class="sv"><button class="b" data-a="save">저장</button></div>'}

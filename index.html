@@ -22,7 +22,8 @@ button{font:inherit;color:inherit;cursor:pointer}
 .nav{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--bd);padding-top:env(safe-area-inset-top,0px)}
 .ni{width:var(--cw);max-width:100%;height:52px;margin:0 auto;display:flex;align-items:center;gap:8px;padding:0 14px}
 .nav .logo{max-height:30px;max-width:80px}.nav .logo.ph{width:64px;height:30px;font-size:9px;letter-spacing:.1em;flex:none}
-.nav .m{display:flex;align-items:center;gap:2px;overflow-x:auto;flex:1;scrollbar-width:none}.nav .m::-webkit-scrollbar{display:none}
+.nav .m{display:flex;align-items:center;gap:2px;overflow-x:auto;flex:1;scrollbar-width:none}
+.nav .m>a:first-child{margin-left:auto}.nav .m>a:last-child{margin-right:auto}.nav .m::-webkit-scrollbar{display:none}
 .nav a,.nav .out{flex:none;display:flex;align-items:center;justify-content:center;height:32px;line-height:1;padding:0 10px;font-size:11px;letter-spacing:.04em;text-decoration:none}
 .nav a{color:var(--mu)}
 .nav a.on{background:var(--gr);color:var(--ink)}
@@ -119,25 +120,24 @@ const NAV=[['home','HOME'],['profile','PROFILE'],['point','POINT'],['coord','COO
 let D={site:{},profile:{fields:[],bio:[]}};
 const $=s=>document.querySelector(s);
 const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const logo=c=>D.site.logo?'<img class="logo" src="'+esc(D.site.logo)+'" alt="VILO">':'<div class="logo ph">VILO LOGO</div>';
 const authed=()=>{try{return sessionStorage.getItem('in')==='1'}catch(e){return false}};
 const COL=['#ffb88c','#ff9fbd','#a9b8ff','#8fd3ff','#ffe58a'];
 const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
 const fx={st:[],x:null,t:0,
- mk(){return{x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:3+Math.random()*7,p:Math.random()*6.28,s:.8+Math.random()*1.6,vy:-(.1+Math.random()*.25),c:COL[Math.random()*5|0],amb:1,life:1,rot:Math.random()}},
+ mk(){return{x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:2.5+Math.random()*3.5,p:Math.random()*6.28,s:.8+Math.random()*1.4,vy:-(.08+Math.random()*.15),c:COL[Math.random()*5|0],amb:1,life:1,rot:Math.random()}},
  start(){const c=$('#fx');if(!c)return;const x=this.x=c.getContext('2d');const fit=()=>{const d=devicePixelRatio||1;c.width=innerWidth*d;c.height=innerHeight*d;x.setTransform(d,0,0,d,0,0)};fit();addEventListener('resize',fit);
-  this.st=[];if(!RM)for(let i=0;i<36;i++)this.st.push(this.mk());this.last=performance.now();requestAnimationFrame(n=>this.loop(n))},
- burst(px,py){if(RM)return;for(let i=0;i<70;i++){const a=Math.random()*6.28,v=2+Math.random()*6;this.st.push({x:px,y:py,r:4+Math.random()*9,p:0,s:0,vx:Math.cos(a)*v,vy:Math.sin(a)*v-2,c:COL[Math.random()*5|0],amb:0,life:1,rot:Math.random()})}},
+  this.st=[];if(!RM)for(let i=0;i<14;i++)this.st.push(this.mk());this.last=performance.now();requestAnimationFrame(n=>this.loop(n))},
+ burst(px,py){if(RM)return;for(let i=0;i<24;i++){const a=Math.random()*6.28,v=1.6+Math.random()*3.6;this.st.push({x:px,y:py,r:3+Math.random()*4.5,p:0,s:0,vx:Math.cos(a)*v,vy:Math.sin(a)*v-2,c:COL[Math.random()*5|0],amb:0,life:1,rot:Math.random()})}},
  loop(n){const c=$('#fx');if(!c)return;const x=this.x,dt=Math.min(40,n-this.last)/16;this.last=n;x.clearRect(0,0,innerWidth,innerHeight);
   this.st=this.st.filter(o=>o.amb||o.life>0);
   for(const o of this.st){let al;
-   if(o.amb){o.y+=o.vy*dt;if(o.y<-12){o.y=innerHeight+12;o.x=Math.random()*innerWidth}al=.3+.5*Math.sin(n/1000*o.s+o.p)}
-   else{o.x+=o.vx*dt;o.y+=o.vy*dt;o.vy+=.09*dt;o.vx*=.985;o.life-=.014*dt;al=Math.max(0,o.life)}
-   x.globalAlpha=Math.max(0,Math.min(1,al));x.fillStyle=o.c;x.shadowColor=o.c;x.shadowBlur=8;
+   if(o.amb){o.y+=o.vy*dt;if(o.y<-12){o.y=innerHeight+12;o.x=Math.random()*innerWidth}al=.22+.33*Math.sin(n/1000*o.s+o.p)}
+   else{o.x+=o.vx*dt;o.y+=o.vy*dt;o.vy+=.09*dt;o.vx*=.985;o.life-=.02*dt;al=Math.max(0,o.life)}
+   x.globalAlpha=Math.max(0,Math.min(1,al));x.fillStyle=o.c;x.shadowColor=o.c;x.shadowBlur=4;
    x.beginPath();const rot=o.rot*6.28+(o.amb?0:n/400);for(let i=0;i<8;i++){const a=rot+i*Math.PI/4,r=i%2?o.r*.3:o.r;x.lineTo(o.x+Math.cos(a)*r,o.y+Math.sin(a)*r)}x.closePath();x.fill()}
   x.globalAlpha=1;requestAnimationFrame(m=>this.loop(m))}};
 function login(){
- $('#app').innerHTML='<canvas id="fx"></canvas><div class="lg" id="lg"><div>'+logo()+'</div><div class="lb"><div class="k">SCHOOL</div><div class="v">'+esc(D.site.school)+'</div><div class="k">ID</div><div class="v">'+esc(D.site.id)+'</div><button class="go" id="go">Log In</button></div></div>';fx.start()}
+ $('#app').innerHTML='<canvas id="fx"></canvas><div class="lg" id="lg"><div class="lb"><div class="k">SCHOOL</div><div class="v">'+esc(D.site.school)+'</div><div class="k">ID</div><div class="v">'+esc(D.site.id)+'</div><button class="go" id="go">Log In</button></div></div>';fx.start()}
 function go(){const b=$('#go');b.disabled=true;const r=b.getBoundingClientRect();fx.burst(r.left+r.width/2,r.top+r.height/2);
  setTimeout(()=>$('#lg').classList.add('out'),RM?0:450);
  setTimeout(()=>{try{sessionStorage.setItem('in','1')}catch(e){}location.hash='#/home';route()},RM?300:1100)}
@@ -256,7 +256,7 @@ document.addEventListener('click',e=>{const t=e.target.closest('[data-us],[data-
 function route(){
  if(!authed()){login();return}
  const r=(location.hash.replace('#/','')||'home');
- $('#app').innerHTML='<div class="nav"><div class="ni">'+logo()+'<div class="m">'+NAV.map(x=>'<a href="#/'+x[0]+'"'+(x[0]===r?' class="on"':'')+'>'+x[1]+'</a>').join('')+'</div><button class="out" id="lo">Log Out</button></div></div><div class="w">'+page(r)+'</div>';
+ $('#app').innerHTML='<div class="nav"><div class="ni"><div class="m">'+NAV.map(x=>'<a href="#/'+x[0]+'"'+(x[0]===r?' class="on"':'')+'>'+x[1]+'</a>').join('')+'</div><button class="out" id="lo">Log Out</button></div></div><div class="w">'+page(r)+'</div>';
  if(r==='coord')coordRefresh();if(r==='unit'&&D.unit&&(D.unit.units||[]).length)unitRefresh();if(r==='photo'&&D.photo&&(D.photo.items||[]).length)photoRefresh();if(r==='idol'&&D.idol&&(D.idol.items||[]).length)idolRefresh();const a=document.querySelector('.nav a.on');if(a&&a.scrollIntoView)a.scrollIntoView({inline:'center',block:'nearest'});window.scrollTo(0,0)}
 function toast(t){const e=document.createElement('div');e.className='tt';e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),2600)}
 async function copyImg(p){try{const bl=await (await fetch(p)).blob(),bm=await createImageBitmap(bl),c=document.createElement('canvas');c.width=bm.width;c.height=bm.height;c.getContext('2d').drawImage(bm,0,0);const png=await new Promise(r=>c.toBlob(r,'image/png'));await navigator.clipboard.write([new ClipboardItem({'image/png':png})]);toast('복사했어요')}catch(e){toast('복사가 안 되면 이미지를 길게 눌러 복사하세요')}}
