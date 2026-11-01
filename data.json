@@ -4913,6 +4913,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmvxogehf86c",
+      "name": "FLUFFY CAT COORD",
+      "cat": "cmv6muucqqf2",
+      "rarity": "s2r2",
+      "top": "img/s2-hf86ctop-mvxogsxclyk.png",
+      "bottom": "img/s2-hf86cbottom-mvxogsxfyv5.png",
+      "shoes": "img/s2-hf86cshoes-mvxogsxg3vt.png",
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": []
      }
     ]
    },
