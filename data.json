@@ -6444,6 +6444,21 @@
       "top": "img/s5-zrxiltop-mv7nbwfpnzh.png",
       "shoes": "img/s5-zrxilshoes-mv7nbwfs54h.png",
       "reprints": []
+     },
+     {
+      "id": "cmvxnwx4cm6p",
+      "name": "7th ORANGE SHINE STARS COORD",
+      "cat": "cmv6q66fnb9r",
+      "rarity": "",
+      "top": "img/s5-4cm6ptop-mvxny08qu6x.png",
+      "bottom": "img/s5-4cm6pbottom-mvxny08td1m.png",
+      "shoes": "img/s5-4cm6pshoes-mvxny08vc6u.png",
+      "accs": [
+       {
+        "img": "img/s5-4cm6pa0-mvxny08xzut.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    }
