@@ -3563,6 +3563,20 @@
       "shoes": "img/s1-moy7qshoes-mvxo7myhms1.png",
       "accs": [],
       "reprints": []
+     },
+     {
+      "id": "cmvxo89ugucn",
+      "name": "LADY LAME RIBBON COORD",
+      "cat": "s1b18",
+      "rarity": "s1r1",
+      "top": "img/s1-ugucntop-mvxo9bo36e7.png",
+      "shoes": "img/s1-ugucnshoes-mvxo9bo6cia.png",
+      "accs": [
+       {
+        "img": "img/s1-ugucna0-mvxo9bo85ar.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
