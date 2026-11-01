@@ -7293,6 +7293,26 @@
     "no": "4"
    },
    {
+    "id": "kmvxo9lp7zn6",
+    "name": "엘자 포르테",
+    "img": "img/idol-p7zn6-mvxo9xhc179.png"
+   },
+   {
+    "id": "kmvxoa8p16s7",
+    "name": "하나조노 키라라",
+    "img": "img/idol-p16s7-mvxoabi9rkw.png"
+   },
+   {
+    "id": "kmvxoajl4ly4",
+    "name": "키자키 레이",
+    "img": "img/idol-l4ly4-mvxoalyco61.png"
+   },
+   {
+    "id": "kmvxoau3qh9y",
+    "name": "후타바 아리아",
+    "img": "img/idol-3qh9y-mvxoaw60pjo.png"
+   },
+   {
     "id": "kmv8c3i64w6v",
     "name": "유우키 아이네",
     "img": "img/idol-64w6v-mv8c3mz1all.png",
@@ -7315,26 +7335,6 @@
     "name": "히나타 에마",
     "img": "img/idol-dv3ga-mv8c4awe71c.png",
     "no": "8"
-   },
-   {
-    "id": "kmvxo9lp7zn6",
-    "name": "엘자 포르테",
-    "img": "img/idol-p7zn6-mvxo9xhc179.png"
-   },
-   {
-    "id": "kmvxoa8p16s7",
-    "name": "하나조노 키라라",
-    "img": "img/idol-p16s7-mvxoabi9rkw.png"
-   },
-   {
-    "id": "kmvxoajl4ly4",
-    "name": "키자키 레이",
-    "img": "img/idol-l4ly4-mvxoalyco61.png"
-   },
-   {
-    "id": "kmvxoau3qh9y",
-    "name": "후타바 아리아",
-    "img": "img/idol-3qh9y-mvxoaw60pjo.png"
    }
   ]
  },
