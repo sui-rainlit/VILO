@@ -7721,7 +7721,21 @@
      }
     ],
     "lives": [],
-    "coords": [],
+    "coords": [
+     {
+      "id": "kmw697g01mvd",
+      "name": "MARCHING STYLISH BLUE COORD",
+      "kind": "parts",
+      "top": "img/unit-xn061mvdtop-mw6985h3wze.png",
+      "shoes": "img/unit-xn061mvdshoes-mw6985h546f.png",
+      "accs": [
+       {
+        "img": "img/unit-xn061mvda0-mw6985h7vh2.png"
+       }
+      ],
+      "reprints": []
+     }
+    ],
     "desc": ""
    }
   ]
