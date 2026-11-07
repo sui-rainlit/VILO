@@ -7661,6 +7661,11 @@
       "kind": "parts",
       "top": "img/unit-vjqq3s3vtop-mvbr9zvx51r.png",
       "shoes": "img/unit-vjqq3s3vshoes-mvbr9zvzzdf.png",
+      "accs": [
+       {
+        "img": "img/unit-vjqq3s3va0-mw6974pztla.png"
+       }
+      ],
       "reprints": []
      },
      {
