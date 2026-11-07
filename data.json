@@ -7444,7 +7444,16 @@
       "name": "PASSION SUNLIGHT COORD",
       "kind": "parts",
       "top": "img/unit-aukoze5qtop-mv7o2h42y5e.png",
-      "shoes": "img/unit-aukoze5qshoes-mv7o2h44yyi.png"
+      "shoes": "img/unit-aukoze5qshoes-mv7o2h44yyi.png",
+      "accs": [],
+      "reprints": [
+       {
+        "label": "",
+        "top": "img/unit-aukoze5qr0top-mw693lbyhtq.png",
+        "shoes": "img/unit-aukoze5qr0shoes-mw693lc0yl3.png",
+        "accs": []
+       }
+      ]
      },
      {
       "id": "kmv7oecdfgpz",
