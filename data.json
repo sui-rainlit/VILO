@@ -7604,6 +7604,11 @@
       "kind": "parts",
       "top": "img/unit-qm21ufretop-mvbrabnq4ox.png",
       "shoes": "img/unit-qm21ufreshoes-mvbrabnse6m.png",
+      "accs": [
+       {
+        "img": "img/unit-qm21ufrea0-mw695lqzgol.png"
+       }
+      ],
       "reprints": []
      },
      {
