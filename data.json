@@ -6407,18 +6407,19 @@
      {
       "id": "cmv6o7uxnx16",
       "name": "BLUE LINK COORD",
-      "no": "01-04",
       "cat": "s5c1",
       "rarity": "",
-      "top": "img/s5-xnx16top-mv7nusj8qfs.png",
-      "bottom": "img/s5-xnx16bottom-mv7nusjaokz.png",
-      "shoes": "img/s5-xnx16shoes-mv7nusjb7eq.png",
+      "top": "img/s5-xnx16top-mw69191q6si.png",
+      "bottom": "img/s5-xnx16bottom-mw69191tlf4.png",
+      "shoes": "img/s5-xnx16shoes-mw69191wih3.png",
+      "accs": [],
       "reprints": [
        {
         "label": "온 퍼레이드",
         "top": "img/s5-xnx16r0top-mv7nusjd5fa.png",
         "bottom": "img/s5-xnx16r0bottom-mv7nusjemek.png",
-        "shoes": "img/s5-xnx16r0shoes-mv7nusjftda.png"
+        "shoes": "img/s5-xnx16r0shoes-mv7nusjftda.png",
+        "accs": []
        }
       ]
      },
