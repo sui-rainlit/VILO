@@ -2341,9 +2341,14 @@
       "top": "img/s1-sah9stop-mvap5g0boi4.png",
       "bottom": "img/s1-sah9sbottom-mvap5g0eepr.png",
       "shoes": "img/s1-sah9sshoes-mvap5g0fusr.png",
-      "acc": "img/s1-sah9sacc-mvap5g0gqn1.png",
       "reprints": [],
-      "needAcc": true
+      "accs": [
+       {
+        "img": "img/s1-sah9sacc-mvap5g0gqn1.png",
+        "label": "",
+        "need": false
+       }
+      ]
      },
      {
       "id": "cmvap95x7ean",
