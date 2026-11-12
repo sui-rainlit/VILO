@@ -2341,14 +2341,18 @@
       "top": "img/s1-sah9stop-mvap5g0boi4.png",
       "bottom": "img/s1-sah9sbottom-mvap5g0eepr.png",
       "shoes": "img/s1-sah9sshoes-mvap5g0fusr.png",
-      "reprints": [],
       "accs": [
        {
-        "img": "img/s1-sah9sacc-mvap5g0gqn1.png",
-        "label": "",
-        "need": false
+        "img": "img/s1-sah9sacc-mvap5g0gqn1.png"
+       },
+       {
+        "img": "img/s1-sah9sa1-mwdaixhhsov.png"
+       },
+       {
+        "need": true
        }
-      ]
+      ],
+      "reprints": []
      },
      {
       "id": "cmvap95x7ean",
