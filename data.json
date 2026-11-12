@@ -3000,14 +3000,12 @@
       "top": "img/s1-dhgbvtop-mvbs8z5a0mq.png",
       "bottom": "img/s1-dhgbvbottom-mvbs8z5dwjr.png",
       "shoes": "img/s1-dhgbvshoes-mvbs8z5fuwy.png",
-      "reprints": [],
       "accs": [
        {
-        "img": "",
-        "label": "",
-        "need": false
+        "img": "img/s1-dhgbva0-mwdasc0e02q.png"
        }
-      ]
+      ],
+      "reprints": []
      },
      {
       "id": "cmvbs94fhski",
