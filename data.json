@@ -2958,8 +2958,18 @@
       "top": "img/s1-602ijtop-mvbs495ne10.png",
       "bottom": "img/s1-602ijbottom-mvbs495qfpz.png",
       "shoes": "img/s1-602ijshoes-mvbs495s9mu.png",
-      "reprints": [],
-      "needAcc": true
+      "accs": [
+       {
+        "need": true
+       }
+      ],
+      "reprints": [
+       {
+        "label": "온 퍼레이드",
+        "accs": [],
+        "need": true
+       }
+      ]
      },
      {
       "id": "cmvbs4eboyn2",
