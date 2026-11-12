@@ -1866,8 +1866,21 @@
       "top": "img/s1-yb2g7top-mvao3ozbr00.png",
       "bottom": "img/s1-yb2g7bottom-mvao3ozdjcy.png",
       "shoes": "img/s1-yb2g7shoes-mvao3ozfszr.png",
-      "reprints": [],
-      "needAcc": true
+      "accs": [
+       {
+        "label": "1",
+        "need": true
+       },
+       {
+        "label": "2",
+        "need": true
+       },
+       {
+        "label": "3",
+        "need": true
+       }
+      ],
+      "reprints": []
      },
      {
       "id": "cmvao569424e",
