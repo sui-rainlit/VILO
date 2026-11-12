@@ -3001,7 +3001,13 @@
       "bottom": "img/s1-dhgbvbottom-mvbs8z5dwjr.png",
       "shoes": "img/s1-dhgbvshoes-mvbs8z5fuwy.png",
       "reprints": [],
-      "needAcc": true
+      "accs": [
+       {
+        "img": "",
+        "label": "",
+        "need": false
+       }
+      ]
      },
      {
       "id": "cmvbs94fhski",
