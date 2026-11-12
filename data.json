@@ -2767,7 +2767,13 @@
       "bottom": "img/s1-0i057bottom-mvbrx51cy1f.png",
       "shoes": "img/s1-0i057shoes-mvbrx51eei1.png",
       "reprints": [],
-      "needAcc": true
+      "accs": [
+       {
+        "img": "",
+        "label": "",
+        "need": false
+       }
+      ]
      },
      {
       "id": "cmvbrxaamc8u",
