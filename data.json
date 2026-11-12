@@ -2512,9 +2512,22 @@
       "top": "img/s1-kk7ddtop-mvbquvq2ry7.png",
       "bottom": "img/s1-kk7ddbottom-mvbquvq5yw7.png",
       "shoes": "img/s1-kk7ddshoes-mvbquvq74sq.png",
-      "acc": "img/s1-kk7ddacc-mvbquvq821n.png",
-      "reprints": [],
-      "needAcc": true
+      "accs": [
+       {
+        "img": "img/s1-kk7ddacc-mvbquvq821n.png",
+        "label": "1",
+        "need": true
+       },
+       {
+        "label": "2",
+        "need": true
+       },
+       {
+        "label": "3",
+        "need": true
+       }
+      ],
+      "reprints": []
      },
      {
       "id": "cmvbqv0tfqly",
