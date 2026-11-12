@@ -6102,6 +6102,21 @@
        }
       ],
       "reprints": []
+     },
+     {
+      "id": "cmwdcjttqt17",
+      "name": "NIGHT SKY LUNA COORD",
+      "cat": "cmv6mxv618vo",
+      "rarity": "s3r3",
+      "top": "img/s3-tqt17top-mwdckdg4auf.png",
+      "bottom": "img/s3-tqt17bottom-mwdckdg7yrm.png",
+      "shoes": "img/s3-tqt17shoes-mwdckdg99pb.png",
+      "accs": [
+       {
+        "img": "img/s3-tqt17a0-mwdckdga3l9.png"
+       }
+      ],
+      "reprints": []
      }
     ]
    },
