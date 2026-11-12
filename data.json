@@ -1456,6 +1456,15 @@
     "pts": "",
     "memo": "",
     "bon": {}
+   },
+   {
+    "id": "lmwdaoofkpiq",
+    "date": "2026-11-12",
+    "act": "a5",
+    "qty": 1,
+    "pts": -30,
+    "memo": "",
+    "bon": {}
    }
   ],
   "rules": {
