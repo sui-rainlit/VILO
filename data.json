@@ -2567,14 +2567,18 @@
       "top": "img/s1-5fyuqtop-mvbri91u3ea.png",
       "bottom": "img/s1-5fyuqbottom-mvbri91wrpp.png",
       "shoes": "img/s1-5fyuqshoes-mvbri91ycbg.png",
-      "reprints": [],
       "accs": [
        {
         "img": "img/s1-5fyuqacc-mvbri91z3n3.png",
-        "label": "",
-        "need": false
+        "label": "1"
+       },
+       {
+        "img": "img/s1-5fyuqa1-mwdao3uszl0.png",
+        "label": "2",
+        "need": true
        }
-      ]
+      ],
+      "reprints": []
      },
      {
       "id": "cmvbro61cgvk",
