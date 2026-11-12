@@ -1868,8 +1868,8 @@
       "shoes": "img/s1-yb2g7shoes-mvao3ozfszr.png",
       "accs": [
        {
-        "label": "1",
-        "need": true
+        "img": "img/s1-yb2g7a0-mwdbdauqio3.png",
+        "label": "1"
        },
        {
         "label": "2",
