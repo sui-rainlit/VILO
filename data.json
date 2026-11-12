@@ -2343,12 +2343,15 @@
       "shoes": "img/s1-sah9sshoes-mvap5g0fusr.png",
       "accs": [
        {
-        "img": "img/s1-sah9sacc-mvap5g0gqn1.png"
+        "img": "img/s1-sah9sacc-mvap5g0gqn1.png",
+        "label": "1"
        },
        {
-        "img": "img/s1-sah9sa1-mwdaixhhsov.png"
+        "label": "2",
+        "need": true
        },
        {
+        "label": "3",
         "need": true
        }
       ],
