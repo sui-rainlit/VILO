@@ -1981,26 +1981,38 @@
       "top": "img/s1-s1eu0top-mvaocn8dv9s.png",
       "bottom": "img/s1-s1eu0bottom-mvaocn8fu98.png",
       "shoes": "img/s1-s1eu0shoes-mvaocn8hn0n.png",
-      "acc": "img/s1-s1eu0acc-mvaocn8i0gj.png",
+      "accs": [
+       {
+        "img": "img/s1-s1eu0acc-mvaocn8i0gj.png",
+        "label": "1"
+       },
+       {
+        "label": "2",
+        "need": true
+       }
+      ],
       "reprints": [
        {
         "label": "무인편",
+        "accs": [],
         "need": true
        },
        {
         "label": "스타즈",
+        "accs": [],
         "need": true
        },
        {
         "label": "룰렛",
+        "accs": [],
         "need": true
        },
        {
         "label": "앙코르",
+        "accs": [],
         "need": true
        }
-      ],
-      "needAcc": false
+      ]
      },
      {
       "id": "cmvaohguhuv9",
