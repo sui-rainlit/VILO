@@ -2766,14 +2766,12 @@
       "top": "img/s1-0i057top-mvbrx51aikl.png",
       "bottom": "img/s1-0i057bottom-mvbrx51cy1f.png",
       "shoes": "img/s1-0i057shoes-mvbrx51eei1.png",
-      "reprints": [],
       "accs": [
        {
-        "img": "",
-        "label": "",
-        "need": false
+        "img": "img/s1-0i057a0-mwdapq5ep0c.png"
        }
-      ]
+      ],
+      "reprints": []
      },
      {
       "id": "cmvbrxaamc8u",
