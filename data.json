@@ -2366,8 +2366,17 @@
       "top": "img/s1-wo0gytop-mvap4otnpsg.png",
       "bottom": "img/s1-wo0gybottom-mvap4otpgby.png",
       "shoes": "img/s1-wo0gyshoes-mvap4otr540.png",
-      "reprints": [],
-      "needAcc": true
+      "accs": [
+       {
+        "label": "1",
+        "need": true
+       },
+       {
+        "label": "2",
+        "need": true
+       }
+      ],
+      "reprints": []
      },
      {
       "id": "cmvap4tsah9s",
