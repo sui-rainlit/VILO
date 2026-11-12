@@ -6903,20 +6903,6 @@
   ],
   "items": [
    {
-    "id": "kmv7p325sx8r",
-    "name": "THRONE OF THE BLACK BIRD",
-    "img": "img/photo-5sx8r-mv7p3fzu2k5.jpg",
-    "char": "cmv7oy5lsnyi",
-    "type": "tmv7oxq6lt28"
-   },
-   {
-    "id": "kmv7p3mn346l",
-    "name": "THE TWINKLING CARNIVAL",
-    "img": "img/photo-n346l-mv7p3ulq9z6.jpg",
-    "char": "cmv7oy4rbhik",
-    "type": "tmv7oxqslg5d"
-   },
-   {
     "id": "kmv7p41vh11y",
     "name": "MOTHER AND CHILD STYLISH THIEF",
     "img": "img/photo-vh11y-mv7p48jpzyz.jpg",
@@ -6931,94 +6917,24 @@
     "type": "tmv7oxnkhbhz"
    },
    {
-    "id": "kmv7p4mcqpzg",
-    "name": "HEART OF JAPAN・JAPAN・SAKURA",
-    "img": "img/photo-cqpzg-mv7p4tnicke.jpg",
-    "char": "cmv7ot3lmo2h",
+    "id": "kmv7x35fqkm2",
+    "name": "CRIMSON DEVIL",
+    "img": "img/photo-fqkm2-mv7x39cw8dr.png",
+    "char": "cmv7osxsmriw",
+    "type": "tmv7oxqfejke"
+   },
+   {
+    "id": "kmv8bnkoe5lv",
+    "name": "THE FLOATY TIMER",
+    "img": "img/photo-oe5lv-mv8bny02k2w.png",
+    "char": "cmv7osxsmriw",
     "type": "tmv7oxnkhbhz"
    },
    {
-    "id": "kmv7wo1td1b6",
-    "name": "THE ALP'S FLOWER",
-    "img": "img/photo-td1b6-mv7wogtmvl9.jpg",
-    "char": "cmv7ou9xrvgg",
-    "type": "tmv7oxnkhbhz"
-   },
-   {
-    "id": "kmv7wom1n0m1",
-    "name": "WINTER'S HEALING DRESS",
-    "img": "img/photo-1n0m1-mv7wou0sqc2.png",
-    "char": "cmv7owfgkdoy",
-    "type": "tmv7oxnkhbhz"
-   },
-   {
-    "id": "kmv7woztbotk",
-    "name": "CHRISTMAS FLOWER",
-    "img": "img/photo-tbotk-mv7wpb31bpt.jpg",
-    "char": "cmv7ouccyggk",
-    "type": ""
-   },
-   {
-    "id": "kmv7wpfbvrrg",
-    "name": "THE OVERLY IDOL-IDOL",
-    "img": "img/photo-bvrrg-mv7wpmenoyq.jpg",
-    "char": "cmv7oy5budcm",
-    "type": "tmv7oxnkhbhz"
-   },
-   {
-    "id": "kmv7wpqrnhfq",
-    "name": "FEMININE PIRATE",
-    "img": "img/photo-rnhfq-mv7wpwgork2.jpg",
-    "char": "cmv7oxxc3ght",
-    "type": "tmv7oxnkhbhz"
-   },
-   {
-    "id": "kmv7wq1h5z5w",
-    "name": "GIRLY PIRATE",
-    "img": "img/photo-h5z5w-mv7wq95akxs.jpg",
-    "char": "cmv7oy4h12bj",
-    "type": "tmv7oxnkhbhz"
-   },
-   {
-    "id": "kmv7wqofjtpw",
-    "name": "THE REASON FOR TEARS",
-    "img": "img/photo-fjtpw-mv7wqvhcf65.jpg",
-    "char": "cmv7ow3vtiaw",
-    "type": "tmv7oxnkhbhz"
-   },
-   {
-    "id": "kmv7wrat74tv",
-    "name": "FLOWER MARCHEN",
-    "img": "img/photo-t74tv-mv7wrj4lu78.jpg",
-    "char": "cmv7ow30ys74",
-    "type": "tmv7oxnkhbhz"
-   },
-   {
-    "id": "kmv7wrn5xvs8",
-    "name": "SUNFLOWER GARDEN",
-    "img": "img/photo-5xvs8-mv7wrt12i5y.jpg",
-    "char": "cmv7oxxc3ght",
-    "type": "tmv7oxnkhbhz"
-   },
-   {
-    "id": "kmv7wsewwz2b",
-    "name": "MONSTER CAT",
-    "img": "img/photo-wwz2b-mv7wsngpkqt.png",
-    "char": "cmv7ow3kmnic",
-    "type": "tmv7oxnkhbhz"
-   },
-   {
-    "id": "kmv7wt3d63l1",
-    "name": "ALBIREO OF THRILLS",
-    "img": "img/photo-d63l1-mv7wtagy9nu.png",
-    "char": "cmv7oy5budcm",
-    "type": "tmv7oxnkhbhz"
-   },
-   {
-    "id": "kmv7wugw4ak1",
-    "name": "​  SPICA OF THE NIGHTS OF SPRING",
-    "img": "img/photo-w4ak1-mv7wumzuxs0.png",
-    "char": "cmv7wu7qabww",
+    "id": "kmv8bzbwcjh3",
+    "name": "PASTEL LANGUAGE",
+    "img": "img/photo-wcjh3-mv8bzjwwd1s.png",
+    "char": "cmv7osxsmriw",
     "type": "tmv7oxnkhbhz"
    },
    {
@@ -7029,45 +6945,52 @@
     "type": "tmv7oxq6lt28"
    },
    {
-    "id": "kmv7wvsjzvl0",
-    "name": "THE TREASURE IS MINE!",
-    "img": "img/photo-jzvl0-mv7wvzg1xni.jpg",
-    "char": "cmv7ot372y7k",
-    "type": "tmv7oxq6lt28"
-   },
-   {
-    "id": "kmv7ww3kos7a",
-    "name": "UNION ROCK",
-    "img": "img/photo-kos7a-mv7ww97kowa.png",
-    "char": "cmv7otzubxxa",
-    "type": "tmv7oxq6lt28"
-   },
-   {
-    "id": "kmv7wwfc2pdz",
-    "name": "GOSPEL ON THE HOLY NIGHT",
-    "img": "img/photo-c2pdz-mv7wwlhw9at.jpg",
-    "char": "cmv7ow3vtiaw",
-    "type": "tmv7oxq6lt28"
-   },
-   {
-    "id": "kmv7wwpivmkp",
-    "name": "ROCKIN' RASPBERRY",
-    "img": "img/photo-ivmkp-mv7www2j6h0.jpg",
-    "char": "cmv7oy42gkbf",
-    "type": "tmv7oxq6lt28"
-   },
-   {
-    "id": "kmv7wx0nvzfd",
-    "name": "PRINCE PIRATE",
-    "img": "img/photo-nvzfd-mv7wx5rm0sg.png",
-    "char": "cmv7wtv5hr0f",
-    "type": "tmv7oxq6lt28"
-   },
-   {
     "id": "kmv7wxbesn9r",
     "name": "THE CELESTIAL BODIES AND THE GENTLE SMILE",
     "img": "img/photo-esn9r-mv7wxmumbnr.jpg",
     "char": "cmv7ot2abi5v",
+    "type": "tmv7oxq6lt28"
+   },
+   {
+    "id": "kmv8bzpzoblj",
+    "name": "COSMO SCIENCE",
+    "img": "img/photo-zoblj-mv8bzufzk9o.png",
+    "char": "cmv7ot2abi5v",
+    "type": "tmv7oxq6lt28"
+   },
+   {
+    "id": "kmv7x1r1n5ub",
+    "name": "THE SWAYING TULLE SKIRT",
+    "img": "img/photo-1n5ub-mv7x20966th.png",
+    "char": "cmv7ot2lj8e9",
+    "type": "tmv7oxqfejke"
+   },
+   {
+    "id": "kmv8bzzkg2wy",
+    "name": "MATH PANTHER",
+    "img": "img/photo-kg2wy-mv8c03zoueu.png",
+    "char": "cmv7ot2lj8e9",
+    "type": "tmv7oxqfejke"
+   },
+   {
+    "id": "kmv8beh2qj11",
+    "name": "RAINBOW-COLORED PHANTOM",
+    "img": "img/photo-2qj11-mv8beqiysav.png",
+    "char": "cmv7ot2w2iud",
+    "type": "tmv7oxqslg5d"
+   },
+   {
+    "id": "kmv8bh4vy12f",
+    "name": "WATER WITCH",
+    "img": "img/photo-vy12f-mv8bh8zzzyu.png",
+    "char": "cmv7ot2w2iud",
+    "type": "tmv7oxqslg5d"
+   },
+   {
+    "id": "kmv7wvsjzvl0",
+    "name": "THE TREASURE IS MINE!",
+    "img": "img/photo-jzvl0-mv7wvzg1xni.jpg",
+    "char": "cmv7ot372y7k",
     "type": "tmv7oxq6lt28"
    },
    {
@@ -7078,25 +7001,53 @@
     "type": "tmv7oxq6lt28"
    },
    {
-    "id": "kmv7wy1zq4g9",
-    "name": "ICE WITCH",
-    "img": "img/photo-zq4g9-mv7wyaid6sw.png",
-    "char": "cmv7ows1wirt",
+    "id": "kmv8btlgs42a",
+    "name": "THE PURE WHITE QUEEN",
+    "img": "img/photo-gs42a-mv8btq1u92h.png",
+    "char": "cmv7ot372y7k",
     "type": "tmv7oxq6lt28"
    },
    {
-    "id": "kmv7wyftkggz",
-    "name": "THUNDER WITCH",
-    "img": "img/photo-tkggz-mv7wymyz37h.png",
-    "char": "cmv7owem8et2",
+    "id": "kmv7p4mcqpzg",
+    "name": "HEART OF JAPAN・JAPAN・SAKURA",
+    "img": "img/photo-cqpzg-mv7p4tnicke.jpg",
+    "char": "cmv7ot3lmo2h",
+    "type": "tmv7oxnkhbhz"
+   },
+   {
+    "id": "kmv8bhrqfjyj",
+    "name": "FIRE WITCH",
+    "img": "img/photo-qfjyj-mv8bhwrt56a.png",
+    "char": "cmv7otrka8x1",
+    "type": "tmv7oxqslg5d"
+   },
+   {
+    "id": "kmv8bujcddsx",
+    "name": "MAGICAL EGG",
+    "img": "img/photo-cddsx-mv8bupzaml5.png",
+    "char": "cmv7otrka8x1",
+    "type": "tmv7oxqslg5d"
+   },
+   {
+    "id": "kmv8bq6ox6id",
+    "name": "HEADING TOWARDS THE FUTURE DREAMS",
+    "img": "img/photo-ox6id-mv8bqi0xr5p.png",
+    "char": "cmv7ottv97h5",
     "type": "tmv7oxq6lt28"
    },
    {
-    "id": "kmv7wyt4rde4",
-    "name": "HEART OF JAPAN·MOON",
-    "img": "img/photo-4rde4-mv7wyztt7a7.jpg",
-    "char": "cmv7ovwarnul",
-    "type": "tmv7oxqfejke"
+    "id": "kmv7ww3kos7a",
+    "name": "UNION ROCK",
+    "img": "img/photo-kos7a-mv7ww97kowa.png",
+    "char": "cmv7otzubxxa",
+    "type": "tmv7oxq6lt28"
+   },
+   {
+    "id": "kmv8bu7hgcyq",
+    "name": "POP POP EGG",
+    "img": "img/photo-hgcyq-mv8bue1hee0.png",
+    "char": "cmv7ou03ufh2",
+    "type": "tmv7oxqslg5d"
    },
    {
     "id": "kmv7wz3zo9i9",
@@ -7113,31 +7064,24 @@
     "type": "tmv7oxqfejke"
    },
    {
-    "id": "kmv7wzruq3xj",
-    "name": "THE EARLY BLOOMING FUYU TSUBAKI",
-    "img": "img/photo-uq3xj-mv7wzyvqtc8.jpg",
-    "char": "cmv7owyl47ce",
-    "type": "tmv7oxqfejke"
+    "id": "kmv7wo1td1b6",
+    "name": "THE ALP'S FLOWER",
+    "img": "img/photo-td1b6-mv7wogtmvl9.jpg",
+    "char": "cmv7ou9xrvgg",
+    "type": "tmv7oxnkhbhz"
    },
    {
-    "id": "kmv7x031e23e",
-    "name": "WINTER'S BRILLIANT DRESS",
-    "img": "img/photo-1e23e-mv7x094bpjt.jpg",
-    "char": "cmv7owdyql8v",
-    "type": "tmv7oxqfejke"
+    "id": "kmv7woztbotk",
+    "name": "CHRISTMAS FLOWER",
+    "img": "img/photo-tbotk-mv7wpb31bpt.jpg",
+    "char": "cmv7ouccyggk",
+    "type": ""
    },
    {
-    "id": "kmv7x0cztr44",
-    "name": "THE ADULT AND CUTE AZELEA",
-    "img": "img/photo-ztr44-mv7x0if9c7y.jpg",
-    "char": "cmv7oy51h7re",
-    "type": "tmv7oxqfejke"
-   },
-   {
-    "id": "kmv7x0nu1cls",
-    "name": "OUR WISH THAT WE WANT TO COME TRUE",
-    "img": "img/photo-u1cls-mv7x0tudyak.jpg",
-    "char": "cmv7oyr2m14z",
+    "id": "kmv7wyt4rde4",
+    "name": "HEART OF JAPAN·MOON",
+    "img": "img/photo-4rde4-mv7wyztt7a7.jpg",
+    "char": "cmv7ovwarnul",
     "type": "tmv7oxqfejke"
    },
    {
@@ -7148,20 +7092,6 @@
     "type": "tmv7oxqfejke"
    },
    {
-    "id": "kmv7x1r1n5ub",
-    "name": "THE SWAYING TULLE SKIRT",
-    "img": "img/photo-1n5ub-mv7x20966th.png",
-    "char": "cmv7ot2lj8e9",
-    "type": "tmv7oxqfejke"
-   },
-   {
-    "id": "kmv7x25ivy51",
-    "name": "THE ADMIRED STAGE",
-    "img": "img/photo-ivy51-mv7x2cyvv8h.jpg",
-    "char": "cmv7owqp0zcj",
-    "type": "tmv7oxqfejke"
-   },
-   {
     "id": "kmv7x2ht3ubp",
     "name": "THE FRAGRANCE OF BLACK TEA AND MARRON",
     "img": "img/photo-t3ubp-mv7x2qd50tx.jpg",
@@ -7169,73 +7099,45 @@
     "type": "tmv7oxqfejke"
    },
    {
-    "id": "kmv7x2vg4awl",
-    "name": "TIP-TOEING A LITTLE BEAT",
-    "img": "img/photo-g4awl-mv7x3151adm.jpg",
-    "char": "cmv7oy4h12bj",
-    "type": "tmv7oxqfejke"
+    "id": "kmv7wrat74tv",
+    "name": "FLOWER MARCHEN",
+    "img": "img/photo-t74tv-mv7wrj4lu78.jpg",
+    "char": "cmv7ow30ys74",
+    "type": "tmv7oxnkhbhz"
    },
    {
-    "id": "kmv7x35fqkm2",
-    "name": "CRIMSON DEVIL",
-    "img": "img/photo-fqkm2-mv7x39cw8dr.png",
-    "char": "cmv7osxsmriw",
-    "type": "tmv7oxqfejke"
+    "id": "kmwdcginuryz",
+    "name": "THE PRINCESS AND THE BALL",
+    "img": "img/photo-nuryz-mwdcgu0dfci.jpg",
+    "char": "cmv7ow3kmnic",
+    "type": "tmv7oxnkhbhz"
    },
    {
-    "id": "kmv7x3ndtl8b",
-    "name": "ANTARES OF CONFIDENCE",
-    "img": "img/photo-dtl8b-mv7x3tjvwc7.png",
-    "char": "cmv7oy51h7re",
-    "type": "tmv7oxqfejke"
+    "id": "kmv7wsewwz2b",
+    "name": "MONSTER CAT",
+    "img": "img/photo-wwz2b-mv7wsngpkqt.png",
+    "char": "cmv7ow3kmnic",
+    "type": "tmv7oxnkhbhz"
    },
    {
-    "id": "kmv7x3ycvybd",
-    "name": "ALDEBARAN OF THE SUNS",
-    "img": "img/photo-cvybd-mv7x42xl0oi.png",
-    "char": "cmv7wtnwkorf",
-    "type": "tmv7oxqfejke"
+    "id": "kmv7wqofjtpw",
+    "name": "THE REASON FOR TEARS",
+    "img": "img/photo-fjtpw-mv7wqvhcf65.jpg",
+    "char": "cmv7ow3vtiaw",
+    "type": "tmv7oxnkhbhz"
    },
    {
-    "id": "kmv8beh2qj11",
-    "name": "RAINBOW-COLORED PHANTOM",
-    "img": "img/photo-2qj11-mv8beqiysav.png",
-    "char": "cmv7ot2w2iud",
-    "type": "tmv7oxqslg5d"
+    "id": "kmv7wwfc2pdz",
+    "name": "GOSPEL ON THE HOLY NIGHT",
+    "img": "img/photo-c2pdz-mv7wwlhw9at.jpg",
+    "char": "cmv7ow3vtiaw",
+    "type": "tmv7oxq6lt28"
    },
    {
-    "id": "kmv8bf6kurcu",
-    "name": "SWEET PIRATE",
-    "img": "img/photo-kurcu-mv8bfdde1ki.jpg",
-    "char": "cmv7wu7eaxzy",
-    "type": "tmv7oxqslg5d"
-   },
-   {
-    "id": "kmv8bfq5oyfg",
-    "name": "POPPIN☆SUMMER",
-    "img": "img/photo-5oyfg-mv8bfvznkzg.jpg",
-    "char": "cmv7oy6669pp",
-    "type": "tmv7oxqslg5d"
-   },
-   {
-    "id": "kmv8bg1pm12s",
-    "name": "HAWAIIAN KITTY CAT",
-    "img": "img/photo-pm12s-mv8bg78qsm1.jpg",
-    "char": "cmv7oy4rbhik",
-    "type": "tmv7oxqslg5d"
-   },
-   {
-    "id": "kmv8bgczmpch",
-    "name": "TO THE GLIMMERING WORLD",
-    "img": "img/photo-zmpch-mv8bgkeby6z.png",
-    "char": "cmv7oyqp9tgn",
-    "type": "tmv7oxqslg5d"
-   },
-   {
-    "id": "kmv8bh4vy12f",
-    "name": "WATER WITCH",
-    "img": "img/photo-vy12f-mv8bh8zzzyu.png",
-    "char": "cmv7ot2w2iud",
+    "id": "kmwdcfs1fc0z",
+    "name": "THE SIGN OF A SMILE",
+    "img": "img/photo-1fc0z-mwdcgd059tr.jpg",
+    "char": "cmv7owdo09j1",
     "type": "tmv7oxqslg5d"
    },
    {
@@ -7246,18 +7148,18 @@
     "type": "tmv7oxqslg5d"
    },
    {
-    "id": "kmv8bhrqfjyj",
-    "name": "FIRE WITCH",
-    "img": "img/photo-qfjyj-mv8bhwrt56a.png",
-    "char": "cmv7otrka8x1",
+    "id": "kmv8c092bva1",
+    "name": "APPEARANCE OF A RIVAL",
+    "img": "img/photo-2bva1-mv8c0eha5za.png",
+    "char": "cmv7owdo09j1",
     "type": "tmv7oxqslg5d"
    },
    {
-    "id": "kmv8bi200yuo",
-    "name": "LYNX OF THE PURE COLORS",
-    "img": "img/photo-00yuo-mv8bi7ehrd4.png",
-    "char": "cmv7oy4rbhik",
-    "type": "tmv7oxqslg5d"
+    "id": "kmv7x031e23e",
+    "name": "WINTER'S BRILLIANT DRESS",
+    "img": "img/photo-1e23e-mv7x094bpjt.jpg",
+    "char": "cmv7owdyql8v",
+    "type": "tmv7oxqfejke"
    },
    {
     "id": "kmv8bmqxfmch",
@@ -7267,17 +7169,10 @@
     "type": "tmv7oxqfejke"
    },
    {
-    "id": "kmv8bnkoe5lv",
-    "name": "THE FLOATY TIMER",
-    "img": "img/photo-oe5lv-mv8bny02k2w.png",
-    "char": "cmv7osxsmriw",
-    "type": "tmv7oxnkhbhz"
-   },
-   {
-    "id": "kmv8bq6ox6id",
-    "name": "HEADING TOWARDS THE FUTURE DREAMS",
-    "img": "img/photo-ox6id-mv8bqi0xr5p.png",
-    "char": "cmv7ottv97h5",
+    "id": "kmv7wyftkggz",
+    "name": "THUNDER WITCH",
+    "img": "img/photo-tkggz-mv7wymyz37h.png",
+    "char": "cmv7owem8et2",
     "type": "tmv7oxq6lt28"
    },
    {
@@ -7288,25 +7183,46 @@
     "type": "tmv7oxq6lt28"
    },
    {
-    "id": "kmv8btlgs42a",
-    "name": "THE PURE WHITE QUEEN",
-    "img": "img/photo-gs42a-mv8btq1u92h.png",
-    "char": "cmv7ot372y7k",
+    "id": "kmv7wom1n0m1",
+    "name": "WINTER'S HEALING DRESS",
+    "img": "img/photo-1n0m1-mv7wou0sqc2.png",
+    "char": "cmv7owfgkdoy",
+    "type": "tmv7oxnkhbhz"
+   },
+   {
+    "id": "kmv7x25ivy51",
+    "name": "THE ADMIRED STAGE",
+    "img": "img/photo-ivy51-mv7x2cyvv8h.jpg",
+    "char": "cmv7owqp0zcj",
+    "type": "tmv7oxqfejke"
+   },
+   {
+    "id": "kmv7wy1zq4g9",
+    "name": "ICE WITCH",
+    "img": "img/photo-zq4g9-mv7wyaid6sw.png",
+    "char": "cmv7ows1wirt",
     "type": "tmv7oxq6lt28"
    },
    {
-    "id": "kmv8bu7hgcyq",
-    "name": "POP POP EGG",
-    "img": "img/photo-hgcyq-mv8bue1hee0.png",
-    "char": "cmv7ou03ufh2",
-    "type": "tmv7oxqslg5d"
+    "id": "kmv7wzruq3xj",
+    "name": "THE EARLY BLOOMING FUYU TSUBAKI",
+    "img": "img/photo-uq3xj-mv7wzyvqtc8.jpg",
+    "char": "cmv7owyl47ce",
+    "type": "tmv7oxqfejke"
    },
    {
-    "id": "kmv8bujcddsx",
-    "name": "MAGICAL EGG",
-    "img": "img/photo-cddsx-mv8bupzaml5.png",
-    "char": "cmv7otrka8x1",
-    "type": "tmv7oxqslg5d"
+    "id": "kmv7wpqrnhfq",
+    "name": "FEMININE PIRATE",
+    "img": "img/photo-rnhfq-mv7wpwgork2.jpg",
+    "char": "cmv7oxxc3ght",
+    "type": "tmv7oxnkhbhz"
+   },
+   {
+    "id": "kmv7wrn5xvs8",
+    "name": "SUNFLOWER GARDEN",
+    "img": "img/photo-5xvs8-mv7wrt12i5y.jpg",
+    "char": "cmv7oxxc3ght",
+    "type": "tmv7oxnkhbhz"
    },
    {
     "id": "kmv8bwaphqkf",
@@ -7316,48 +7232,6 @@
     "type": "tmv7oxnkhbhz"
    },
    {
-    "id": "kmv8bx15iyss",
-    "name": "THE ORCHID OF ELEGANCE",
-    "img": "img/photo-5iyss-mv8bx768z1u.png",
-    "char": "cmv7oy51h7re",
-    "type": "tmv7oxqfejke"
-   },
-   {
-    "id": "kmv8bxc15yov",
-    "name": "THE MARIGOLD OF LOVE",
-    "img": "img/photo-15yov-mv8bxgulpok.png",
-    "char": "cmv7oy6669pp",
-    "type": "tmv7oxqslg5d"
-   },
-   {
-    "id": "kmv8bzbwcjh3",
-    "name": "PASTEL LANGUAGE",
-    "img": "img/photo-wcjh3-mv8bzjwwd1s.png",
-    "char": "cmv7osxsmriw",
-    "type": "tmv7oxnkhbhz"
-   },
-   {
-    "id": "kmv8bzpzoblj",
-    "name": "COSMO SCIENCE",
-    "img": "img/photo-zoblj-mv8bzufzk9o.png",
-    "char": "cmv7ot2abi5v",
-    "type": "tmv7oxq6lt28"
-   },
-   {
-    "id": "kmv8bzzkg2wy",
-    "name": "MATH PANTHER",
-    "img": "img/photo-kg2wy-mv8c03zoueu.png",
-    "char": "cmv7ot2lj8e9",
-    "type": "tmv7oxqfejke"
-   },
-   {
-    "id": "kmv8c092bva1",
-    "name": "APPEARANCE OF A RIVAL",
-    "img": "img/photo-2bva1-mv8c0eha5za.png",
-    "char": "cmv7owdo09j1",
-    "type": "tmv7oxqslg5d"
-   },
-   {
     "id": "kmv8c0j9fucu",
     "name": "UNDERWATER AQUAMARINE",
     "img": "img/photo-9fucu-mv8c0od0dcg.png",
@@ -7365,10 +7239,108 @@
     "type": "tmv7oxqfejke"
    },
    {
+    "id": "kmwdchmmzdhj",
+    "name": "BREATHER OF ALTAIR",
+    "img": "img/photo-mzdhj-mwdci2np7xh.jpg",
+    "char": "cmv7oy42gkbf",
+    "type": "tmv7oxq6lt28"
+   },
+   {
+    "id": "kmv7wwpivmkp",
+    "name": "ROCKIN' RASPBERRY",
+    "img": "img/photo-ivmkp-mv7www2j6h0.jpg",
+    "char": "cmv7oy42gkbf",
+    "type": "tmv7oxq6lt28"
+   },
+   {
+    "id": "kmv7wq1h5z5w",
+    "name": "GIRLY PIRATE",
+    "img": "img/photo-h5z5w-mv7wq95akxs.jpg",
+    "char": "cmv7oy4h12bj",
+    "type": "tmv7oxnkhbhz"
+   },
+   {
+    "id": "kmv7x2vg4awl",
+    "name": "TIP-TOEING A LITTLE BEAT",
+    "img": "img/photo-g4awl-mv7x3151adm.jpg",
+    "char": "cmv7oy4h12bj",
+    "type": "tmv7oxqfejke"
+   },
+   {
+    "id": "kmv7p3mn346l",
+    "name": "THE TWINKLING CARNIVAL",
+    "img": "img/photo-n346l-mv7p3ulq9z6.jpg",
+    "char": "cmv7oy4rbhik",
+    "type": "tmv7oxqslg5d"
+   },
+   {
+    "id": "kmv8bg1pm12s",
+    "name": "HAWAIIAN KITTY CAT",
+    "img": "img/photo-pm12s-mv8bg78qsm1.jpg",
+    "char": "cmv7oy4rbhik",
+    "type": "tmv7oxqslg5d"
+   },
+   {
+    "id": "kmv8bi200yuo",
+    "name": "LYNX OF THE PURE COLORS",
+    "img": "img/photo-00yuo-mv8bi7ehrd4.png",
+    "char": "cmv7oy4rbhik",
+    "type": "tmv7oxqslg5d"
+   },
+   {
+    "id": "kmv7x0cztr44",
+    "name": "THE ADULT AND CUTE AZELEA",
+    "img": "img/photo-ztr44-mv7x0if9c7y.jpg",
+    "char": "cmv7oy51h7re",
+    "type": "tmv7oxqfejke"
+   },
+   {
+    "id": "kmv7x3ndtl8b",
+    "name": "ANTARES OF CONFIDENCE",
+    "img": "img/photo-dtl8b-mv7x3tjvwc7.png",
+    "char": "cmv7oy51h7re",
+    "type": "tmv7oxqfejke"
+   },
+   {
+    "id": "kmv8bx15iyss",
+    "name": "THE ORCHID OF ELEGANCE",
+    "img": "img/photo-5iyss-mv8bx768z1u.png",
+    "char": "cmv7oy51h7re",
+    "type": "tmv7oxqfejke"
+   },
+   {
+    "id": "kmv7wpfbvrrg",
+    "name": "THE OVERLY IDOL-IDOL",
+    "img": "img/photo-bvrrg-mv7wpmenoyq.jpg",
+    "char": "cmv7oy5budcm",
+    "type": "tmv7oxnkhbhz"
+   },
+   {
+    "id": "kmv7wt3d63l1",
+    "name": "ALBIREO OF THRILLS",
+    "img": "img/photo-d63l1-mv7wtagy9nu.png",
+    "char": "cmv7oy5budcm",
+    "type": "tmv7oxnkhbhz"
+   },
+   {
+    "id": "kmv7p325sx8r",
+    "name": "THRONE OF THE BLACK BIRD",
+    "img": "img/photo-5sx8r-mv7p3fzu2k5.jpg",
+    "char": "cmv7oy5lsnyi",
+    "type": "tmv7oxq6lt28"
+   },
+   {
     "id": "kmv8c0t2iwgo",
     "name": "LOVELY RUBY",
     "img": "img/photo-2iwgo-mv8c0z8kpna.png",
     "char": "cmv7oy5lsnyi",
+    "type": "tmv7oxqfejke"
+   },
+   {
+    "id": "kmwdch425ht2",
+    "name": "RADIANCE OF THE SUNSET",
+    "img": "img/photo-25ht2-mwdchgfsi05.jpg",
+    "char": "cmv7oy5w5zdm",
     "type": "tmv7oxqfejke"
    },
    {
@@ -7379,6 +7351,20 @@
     "type": "tmv7oxqfejke"
    },
    {
+    "id": "kmv8bfq5oyfg",
+    "name": "POPPIN☆SUMMER",
+    "img": "img/photo-5oyfg-mv8bfvznkzg.jpg",
+    "char": "cmv7oy6669pp",
+    "type": "tmv7oxqslg5d"
+   },
+   {
+    "id": "kmv8bxc15yov",
+    "name": "THE MARIGOLD OF LOVE",
+    "img": "img/photo-15yov-mv8bxgulpok.png",
+    "char": "cmv7oy6669pp",
+    "type": "tmv7oxqslg5d"
+   },
+   {
     "id": "kmv8c1d98dis",
     "name": "DAINTY WHITE PEARL",
     "img": "img/photo-98dis-mv8c1ikxoim.png",
@@ -7386,32 +7372,46 @@
     "type": "tmv7oxqfejke"
    },
    {
-    "id": "kmwdcfs1fc0z",
-    "name": "THE SIGN OF A SMILE",
-    "img": "img/photo-1fc0z-mwdcgd059tr.jpg",
-    "char": "cmv7owdo09j1",
-    "type": "tmv7oxqslg5d"
-   },
-   {
-    "id": "kmwdcginuryz",
-    "name": "THE PRINCESS AND THE BALL",
-    "img": "img/photo-nuryz-mwdcgu0dfci.jpg",
-    "char": "cmv7ow3kmnic",
-    "type": "tmv7oxnkhbhz"
-   },
-   {
-    "id": "kmwdch425ht2",
-    "name": "RADIANCE OF THE SUNSET",
-    "img": "img/photo-25ht2-mwdchgfsi05.jpg",
-    "char": "cmv7oy5w5zdm",
+    "id": "kmv7x3ycvybd",
+    "name": "ALDEBARAN OF THE SUNS",
+    "img": "img/photo-cvybd-mv7x42xl0oi.png",
+    "char": "cmv7wtnwkorf",
     "type": "tmv7oxqfejke"
    },
    {
-    "id": "kmwdchmmzdhj",
-    "name": "BREATHER OF ALTAIR",
-    "img": "img/photo-mzdhj-mwdci2np7xh.jpg",
-    "char": "cmv7oy42gkbf",
+    "id": "kmv7wx0nvzfd",
+    "name": "PRINCE PIRATE",
+    "img": "img/photo-nvzfd-mv7wx5rm0sg.png",
+    "char": "cmv7wtv5hr0f",
     "type": "tmv7oxq6lt28"
+   },
+   {
+    "id": "kmv8bf6kurcu",
+    "name": "SWEET PIRATE",
+    "img": "img/photo-kurcu-mv8bfdde1ki.jpg",
+    "char": "cmv7wu7eaxzy",
+    "type": "tmv7oxqslg5d"
+   },
+   {
+    "id": "kmv7wugw4ak1",
+    "name": "​  SPICA OF THE NIGHTS OF SPRING",
+    "img": "img/photo-w4ak1-mv7wumzuxs0.png",
+    "char": "cmv7wu7qabww",
+    "type": "tmv7oxnkhbhz"
+   },
+   {
+    "id": "kmv8bgczmpch",
+    "name": "TO THE GLIMMERING WORLD",
+    "img": "img/photo-zmpch-mv8bgkeby6z.png",
+    "char": "cmv7oyqp9tgn",
+    "type": "tmv7oxqslg5d"
+   },
+   {
+    "id": "kmv7x0nu1cls",
+    "name": "OUR WISH THAT WE WANT TO COME TRUE",
+    "img": "img/photo-u1cls-mv7x0tudyak.jpg",
+    "char": "cmv7oyr2m14z",
+    "type": "tmv7oxqfejke"
    }
   ]
  },
